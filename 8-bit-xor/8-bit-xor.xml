@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/emlun/documents/elektronik/emlun-cpu/8-bit-xor/8-bit-xor.sch</source>
+    <date>sön 29 apr 2018 22:27:53</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>8-bit-xor.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="Q1">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE6F09D</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE71D1E</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE71D84</tstamp>
+    </comp>
+    <comp ref="Q5">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE7206F</tstamp>
+    </comp>
+    <comp ref="Q7">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE7210B</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE72280</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>J8-8_bit_bus_connector</value>
+      <footprint>emlun:J8-8_bit_bus_connector</footprint>
+      <libsource lib="emlun" part="J8-8_bit_bus_connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE7A804</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>J8-8_bit_bus_connector</value>
+      <footprint>emlun:J8-8_bit_bus_connector</footprint>
+      <libsource lib="emlun" part="J8-8_bit_bus_connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE7A871</tstamp>
+    </comp>
+    <comp ref="Q6">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE8AB3A</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE8AE4A</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE8C330</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE8C33C</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE8C342</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>J8-8_bit_bus_connector</value>
+      <footprint>emlun:J8-8_bit_bus_connector</footprint>
+      <libsource lib="emlun" part="J8-8_bit_bus_connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9123B</tstamp>
+    </comp>
+    <comp ref="Q8">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE97894</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE978A0</tstamp>
+    </comp>
+    <comp ref="Q9">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE978A6</tstamp>
+    </comp>
+    <comp ref="Q12">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE978B8</tstamp>
+    </comp>
+    <comp ref="Q14">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE978BE</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE978CA</tstamp>
+    </comp>
+    <comp ref="Q13">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE978DC</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE978E4</tstamp>
+    </comp>
+    <comp ref="Q10">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE978F6</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE97902</tstamp>
+    </comp>
+    <comp ref="Q11">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE97908</tstamp>
+    </comp>
+    <comp ref="Q15">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BB07</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BB13</tstamp>
+    </comp>
+    <comp ref="Q16">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BB19</tstamp>
+    </comp>
+    <comp ref="Q19">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BB2B</tstamp>
+    </comp>
+    <comp ref="Q21">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BB31</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BB3D</tstamp>
+    </comp>
+    <comp ref="Q20">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BB4F</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BB57</tstamp>
+    </comp>
+    <comp ref="Q17">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BB69</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BB75</tstamp>
+    </comp>
+    <comp ref="Q18">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BB7B</tstamp>
+    </comp>
+    <comp ref="Q22">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BB9D</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BBA9</tstamp>
+    </comp>
+    <comp ref="Q23">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BBAF</tstamp>
+    </comp>
+    <comp ref="Q26">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BBC1</tstamp>
+    </comp>
+    <comp ref="Q28">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BBC7</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BBD3</tstamp>
+    </comp>
+    <comp ref="Q27">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BBE5</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BBED</tstamp>
+    </comp>
+    <comp ref="Q24">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BBFF</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BC0B</tstamp>
+    </comp>
+    <comp ref="Q25">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9BC11</tstamp>
+    </comp>
+    <comp ref="Q29">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA817B</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8187</tstamp>
+    </comp>
+    <comp ref="Q30">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA818D</tstamp>
+    </comp>
+    <comp ref="Q33">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA819F</tstamp>
+    </comp>
+    <comp ref="Q35">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA81A5</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA81B1</tstamp>
+    </comp>
+    <comp ref="Q34">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA81C3</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA81CB</tstamp>
+    </comp>
+    <comp ref="Q31">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA81DD</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA81E9</tstamp>
+    </comp>
+    <comp ref="Q32">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA81EF</tstamp>
+    </comp>
+    <comp ref="Q36">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8211</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA821D</tstamp>
+    </comp>
+    <comp ref="Q37">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8223</tstamp>
+    </comp>
+    <comp ref="Q40">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8235</tstamp>
+    </comp>
+    <comp ref="Q42">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA823B</tstamp>
+    </comp>
+    <comp ref="R35">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8247</tstamp>
+    </comp>
+    <comp ref="Q41">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8259</tstamp>
+    </comp>
+    <comp ref="R36">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8261</tstamp>
+    </comp>
+    <comp ref="Q38">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8273</tstamp>
+    </comp>
+    <comp ref="R33">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA827F</tstamp>
+    </comp>
+    <comp ref="Q39">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8285</tstamp>
+    </comp>
+    <comp ref="Q43">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA82A7</tstamp>
+    </comp>
+    <comp ref="R38">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA82B3</tstamp>
+    </comp>
+    <comp ref="Q44">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA82B9</tstamp>
+    </comp>
+    <comp ref="Q47">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA82CB</tstamp>
+    </comp>
+    <comp ref="Q49">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA82D1</tstamp>
+    </comp>
+    <comp ref="R41">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA82DD</tstamp>
+    </comp>
+    <comp ref="Q48">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA82EF</tstamp>
+    </comp>
+    <comp ref="R42">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA82F7</tstamp>
+    </comp>
+    <comp ref="Q45">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8309</tstamp>
+    </comp>
+    <comp ref="R39">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8315</tstamp>
+    </comp>
+    <comp ref="Q46">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA831B</tstamp>
+    </comp>
+    <comp ref="Q50">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA833D</tstamp>
+    </comp>
+    <comp ref="R44">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8349</tstamp>
+    </comp>
+    <comp ref="Q51">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA834F</tstamp>
+    </comp>
+    <comp ref="Q54">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8361</tstamp>
+    </comp>
+    <comp ref="Q56">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8367</tstamp>
+    </comp>
+    <comp ref="R47">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8373</tstamp>
+    </comp>
+    <comp ref="Q55">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA8385</tstamp>
+    </comp>
+    <comp ref="R48">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA838D</tstamp>
+    </comp>
+    <comp ref="Q52">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA839F</tstamp>
+    </comp>
+    <comp ref="R45">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA83AB</tstamp>
+    </comp>
+    <comp ref="Q53">
+      <value>2N7000</value>
+      <footprint>electrokit:TO-92_Molded_Wide_Inline</footprint>
+      <libsource lib="transistors" part="2N7000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEA83B1</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEFADA5</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEFB06E</tstamp>
+    </comp>
+    <comp ref="R43">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEFDD3A</tstamp>
+    </comp>
+    <comp ref="R46">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AEFDD40</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF00365</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF0036B</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF01B6F</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF01B75</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF026BF</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF026C5</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF05B53</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF05B59</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF07CA1</tstamp>
+    </comp>
+    <comp ref="R34">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF07CA7</tstamp>
+    </comp>
+    <comp ref="R37">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF09A13</tstamp>
+    </comp>
+    <comp ref="R40">
+      <value>R</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF09A19</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>J2-power_connector</value>
+      <footprint>emlun:J2-2_pole_connector</footprint>
+      <libsource lib="emlun" part="J2-power_connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF4A7A4</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>J8-8_bit_bus_connector</value>
+      <footprint>emlun:J8-8_bit_bus_connector</footprint>
+      <libsource lib="emlun" part="J8-8_bit_bus_connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF4B148</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>J8-8_bit_bus_connector</value>
+      <footprint>emlun:J8-8_bit_bus_connector</footprint>
+      <libsource lib="emlun" part="J8-8_bit_bus_connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF4C530</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>J2-2-pole_connector</value>
+      <footprint>emlun:J2-2_pole_connector</footprint>
+      <libsource lib="emlun" part="J2-2-pole_connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF5F1EC</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>J8-8_bit_bus_connector</value>
+      <footprint>emlun:J8-8_bit_bus_connector</footprint>
+      <libsource lib="emlun" part="J8-8_bit_bus_connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AF670BF</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="transistors" part="2N7000">
+      <aliases>
+        <alias>TP0610L</alias>
+        <alias>VP0610L</alias>
+      </aliases>
+      <description>200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92</description>
+      <docs>https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf</docs>
+      <footprints>
+        <fp>TO?92*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">2N7000</field>
+        <field name="Footprint">TO_SOT_Packages_THT:TO-92_Molded_Narrow</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="emlun" part="J2-2-pole_connector">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">J2-2-pole_connector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="emlun" part="J2-power_connector">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">J2-power_connector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="power_in"/>
+        <pin num="2" name="2" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="emlun" part="J8-8_bit_bus_connector">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">J8-8_bit_bus_connector</field>
+      </fields>
+      <pins>
+        <pin num="0" name="0" type="BiDi"/>
+        <pin num="1" name="1" type="BiDi"/>
+        <pin num="2" name="2" type="BiDi"/>
+        <pin num="3" name="3" type="BiDi"/>
+        <pin num="4" name="4" type="BiDi"/>
+        <pin num="5" name="5" type="BiDi"/>
+        <pin num="6" name="6" type="BiDi"/>
+        <pin num="7" name="7" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="transistors">
+      <uri>/usr/share/kicad/library/transistors.lib</uri>
+    </library>
+    <library logical="emlun">
+      <uri>/home/emlun/documents/elektronik/emlun-cpu/library/emlun.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(Q12-Pad3)">
+      <node ref="R11" pin="2"/>
+      <node ref="Q13" pin="2"/>
+      <node ref="Q12" pin="3"/>
+    </net>
+    <net code="2" name="Net-(Q11-Pad2)">
+      <node ref="Q11" pin="2"/>
+      <node ref="Q13" pin="3"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="3" name="VCC">
+      <node ref="R9" pin="1"/>
+      <node ref="R47" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="R14" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="R27" pin="1"/>
+      <node ref="R39" pin="1"/>
+      <node ref="R42" pin="1"/>
+      <node ref="R30" pin="1"/>
+      <node ref="R41" pin="1"/>
+      <node ref="R48" pin="1"/>
+      <node ref="R8" pin="1"/>
+      <node ref="R45" pin="1"/>
+      <node ref="R29" pin="1"/>
+      <node ref="R32" pin="1"/>
+      <node ref="R44" pin="1"/>
+      <node ref="R12" pin="1"/>
+      <node ref="R17" pin="1"/>
+      <node ref="R38" pin="1"/>
+      <node ref="R20" pin="1"/>
+      <node ref="R35" pin="1"/>
+      <node ref="R24" pin="1"/>
+      <node ref="R36" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="R18" pin="1"/>
+      <node ref="R15" pin="1"/>
+      <node ref="R23" pin="1"/>
+      <node ref="R33" pin="1"/>
+      <node ref="R21" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R26" pin="1"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="4" name="Net-(Q5-Pad3)">
+      <node ref="Q5" pin="3"/>
+      <node ref="R5" pin="2"/>
+      <node ref="Q6" pin="2"/>
+    </net>
+    <net code="5" name="Net-(Q4-Pad2)">
+      <node ref="Q4" pin="2"/>
+      <node ref="Q6" pin="3"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="6" name="Net-(Q26-Pad3)">
+      <node ref="Q26" pin="3"/>
+      <node ref="Q27" pin="2"/>
+      <node ref="R23" pin="2"/>
+    </net>
+    <net code="7" name="Net-(Q25-Pad2)">
+      <node ref="R24" pin="2"/>
+      <node ref="Q27" pin="3"/>
+      <node ref="Q25" pin="2"/>
+    </net>
+    <net code="8" name="Net-(Q33-Pad3)">
+      <node ref="R29" pin="2"/>
+      <node ref="Q33" pin="3"/>
+      <node ref="Q34" pin="2"/>
+    </net>
+    <net code="9" name="Net-(Q19-Pad3)">
+      <node ref="Q19" pin="3"/>
+      <node ref="Q20" pin="2"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="10" name="Net-(Q18-Pad2)">
+      <node ref="Q20" pin="3"/>
+      <node ref="R18" pin="2"/>
+      <node ref="Q18" pin="2"/>
+    </net>
+    <net code="11" name="GND">
+      <node ref="R43" pin="1"/>
+      <node ref="Q39" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="Q38" pin="1"/>
+      <node ref="R46" pin="1"/>
+      <node ref="R10" pin="1"/>
+      <node ref="Q23" pin="1"/>
+      <node ref="Q4" pin="1"/>
+      <node ref="Q3" pin="1"/>
+      <node ref="Q41" pin="1"/>
+      <node ref="Q42" pin="1"/>
+      <node ref="Q7" pin="1"/>
+      <node ref="Q43" pin="1"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="R13" pin="1"/>
+      <node ref="Q20" pin="1"/>
+      <node ref="Q36" pin="1"/>
+      <node ref="Q13" pin="1"/>
+      <node ref="Q16" pin="1"/>
+      <node ref="Q21" pin="1"/>
+      <node ref="Q37" pin="1"/>
+      <node ref="Q8" pin="1"/>
+      <node ref="Q9" pin="1"/>
+      <node ref="Q31" pin="1"/>
+      <node ref="R16" pin="1"/>
+      <node ref="Q44" pin="1"/>
+      <node ref="Q32" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="Q6" pin="1"/>
+      <node ref="Q15" pin="1"/>
+      <node ref="Q11" pin="1"/>
+      <node ref="Q14" pin="1"/>
+      <node ref="Q34" pin="1"/>
+      <node ref="Q10" pin="1"/>
+      <node ref="Q56" pin="1"/>
+      <node ref="Q51" pin="1"/>
+      <node ref="Q53" pin="1"/>
+      <node ref="Q55" pin="1"/>
+      <node ref="Q17" pin="1"/>
+      <node ref="Q52" pin="1"/>
+      <node ref="Q48" pin="1"/>
+      <node ref="R19" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="R34" pin="1"/>
+      <node ref="R40" pin="1"/>
+      <node ref="R37" pin="1"/>
+      <node ref="Q35" pin="1"/>
+      <node ref="Q22" pin="1"/>
+      <node ref="Q30" pin="1"/>
+      <node ref="Q29" pin="1"/>
+      <node ref="Q27" pin="1"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="Q24" pin="1"/>
+      <node ref="Q25" pin="1"/>
+      <node ref="Q46" pin="1"/>
+      <node ref="Q49" pin="1"/>
+      <node ref="Q50" pin="1"/>
+      <node ref="Q45" pin="1"/>
+      <node ref="Q18" pin="1"/>
+      <node ref="R22" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="R31" pin="1"/>
+      <node ref="R28" pin="1"/>
+      <node ref="Q28" pin="1"/>
+      <node ref="R25" pin="1"/>
+    </net>
+    <net code="12" name="Net-(Q46-Pad2)">
+      <node ref="R42" pin="2"/>
+      <node ref="Q48" pin="3"/>
+      <node ref="Q46" pin="2"/>
+    </net>
+    <net code="13" name="/c6">
+      <node ref="Q46" pin="3"/>
+      <node ref="J3" pin="6"/>
+      <node ref="Q45" pin="3"/>
+      <node ref="J4" pin="6"/>
+      <node ref="R39" pin="2"/>
+    </net>
+    <net code="14" name="Net-(Q47-Pad1)">
+      <node ref="Q49" pin="3"/>
+      <node ref="Q47" pin="1"/>
+    </net>
+    <net code="15" name="Net-(Q43-Pad3)">
+      <node ref="Q43" pin="3"/>
+      <node ref="Q45" pin="2"/>
+      <node ref="R38" pin="2"/>
+      <node ref="Q44" pin="3"/>
+    </net>
+    <net code="16" name="Net-(Q47-Pad3)">
+      <node ref="R41" pin="2"/>
+      <node ref="Q48" pin="2"/>
+      <node ref="Q47" pin="3"/>
+    </net>
+    <net code="17" name="Net-(Q53-Pad2)">
+      <node ref="Q55" pin="3"/>
+      <node ref="R48" pin="2"/>
+      <node ref="Q53" pin="2"/>
+    </net>
+    <net code="18" name="/c7">
+      <node ref="J4" pin="7"/>
+      <node ref="Q52" pin="3"/>
+      <node ref="R45" pin="2"/>
+      <node ref="J3" pin="7"/>
+      <node ref="Q53" pin="3"/>
+    </net>
+    <net code="19" name="Net-(Q54-Pad1)">
+      <node ref="Q56" pin="3"/>
+      <node ref="Q54" pin="1"/>
+    </net>
+    <net code="20" name="/b7">
+      <node ref="J7" pin="0"/>
+      <node ref="Q51" pin="2"/>
+      <node ref="R46" pin="2"/>
+      <node ref="Q56" pin="2"/>
+      <node ref="J8" pin="0"/>
+    </net>
+    <net code="21" name="Net-(Q50-Pad3)">
+      <node ref="Q50" pin="3"/>
+      <node ref="Q52" pin="2"/>
+      <node ref="Q51" pin="3"/>
+      <node ref="R44" pin="2"/>
+    </net>
+    <net code="22" name="Net-(Q32-Pad2)">
+      <node ref="Q32" pin="2"/>
+      <node ref="R30" pin="2"/>
+      <node ref="Q34" pin="3"/>
+    </net>
+    <net code="23" name="Net-(Q54-Pad3)">
+      <node ref="R47" pin="2"/>
+      <node ref="Q54" pin="3"/>
+      <node ref="Q55" pin="2"/>
+    </net>
+    <net code="24" name="/b6">
+      <node ref="J7" pin="1"/>
+      <node ref="J8" pin="1"/>
+      <node ref="Q49" pin="2"/>
+      <node ref="R40" pin="2"/>
+      <node ref="Q44" pin="2"/>
+    </net>
+    <net code="25" name="/a3">
+      <node ref="Q22" pin="2"/>
+      <node ref="Q26" pin="2"/>
+      <node ref="R19" pin="2"/>
+      <node ref="J6" pin="3"/>
+      <node ref="J5" pin="3"/>
+    </net>
+    <net code="26" name="/a4">
+      <node ref="J5" pin="4"/>
+      <node ref="Q33" pin="2"/>
+      <node ref="J6" pin="4"/>
+      <node ref="R25" pin="2"/>
+      <node ref="Q29" pin="2"/>
+    </net>
+    <net code="27" name="/a5">
+      <node ref="J5" pin="5"/>
+      <node ref="J6" pin="5"/>
+      <node ref="Q36" pin="2"/>
+      <node ref="R31" pin="2"/>
+      <node ref="Q40" pin="2"/>
+    </net>
+    <net code="28" name="/c5">
+      <node ref="J3" pin="5"/>
+      <node ref="J4" pin="5"/>
+      <node ref="Q39" pin="3"/>
+      <node ref="R33" pin="2"/>
+      <node ref="Q38" pin="3"/>
+    </net>
+    <net code="29" name="/c0">
+      <node ref="Q4" pin="3"/>
+      <node ref="J4" pin="0"/>
+      <node ref="J3" pin="0"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="30" name="/c1">
+      <node ref="Q10" pin="3"/>
+      <node ref="J4" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="Q11" pin="3"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="31" name="/c2">
+      <node ref="Q17" pin="3"/>
+      <node ref="J4" pin="2"/>
+      <node ref="J3" pin="2"/>
+      <node ref="R15" pin="2"/>
+      <node ref="Q18" pin="3"/>
+    </net>
+    <net code="32" name="/c3">
+      <node ref="J3" pin="3"/>
+      <node ref="Q24" pin="3"/>
+      <node ref="R21" pin="2"/>
+      <node ref="Q25" pin="3"/>
+      <node ref="J4" pin="3"/>
+    </net>
+    <net code="33" name="/c4">
+      <node ref="Q31" pin="3"/>
+      <node ref="J4" pin="4"/>
+      <node ref="Q32" pin="3"/>
+      <node ref="R27" pin="2"/>
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="34" name="/b5">
+      <node ref="J7" pin="2"/>
+      <node ref="Q42" pin="2"/>
+      <node ref="J8" pin="2"/>
+      <node ref="R34" pin="2"/>
+      <node ref="Q37" pin="2"/>
+    </net>
+    <net code="35" name="/b4">
+      <node ref="J7" pin="3"/>
+      <node ref="Q35" pin="2"/>
+      <node ref="Q30" pin="2"/>
+      <node ref="J8" pin="3"/>
+      <node ref="R28" pin="2"/>
+    </net>
+    <net code="36" name="/b3">
+      <node ref="R22" pin="2"/>
+      <node ref="Q28" pin="2"/>
+      <node ref="J8" pin="4"/>
+      <node ref="Q23" pin="2"/>
+      <node ref="J7" pin="4"/>
+    </net>
+    <net code="37" name="/a6">
+      <node ref="Q47" pin="2"/>
+      <node ref="J5" pin="6"/>
+      <node ref="R37" pin="2"/>
+      <node ref="J6" pin="6"/>
+      <node ref="Q43" pin="2"/>
+    </net>
+    <net code="38" name="Net-(Q40-Pad3)">
+      <node ref="Q40" pin="3"/>
+      <node ref="R35" pin="2"/>
+      <node ref="Q41" pin="2"/>
+    </net>
+    <net code="39" name="Net-(Q39-Pad2)">
+      <node ref="R36" pin="2"/>
+      <node ref="Q39" pin="2"/>
+      <node ref="Q41" pin="3"/>
+    </net>
+    <net code="40" name="/a7">
+      <node ref="J5" pin="7"/>
+      <node ref="R43" pin="2"/>
+      <node ref="Q50" pin="2"/>
+      <node ref="J6" pin="7"/>
+      <node ref="Q54" pin="2"/>
+    </net>
+    <net code="41" name="Net-(Q12-Pad1)">
+      <node ref="Q12" pin="1"/>
+      <node ref="Q14" pin="3"/>
+    </net>
+    <net code="42" name="/a1">
+      <node ref="J5" pin="1"/>
+      <node ref="Q8" pin="2"/>
+      <node ref="Q12" pin="2"/>
+      <node ref="J6" pin="1"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="43" name="/b1">
+      <node ref="R10" pin="2"/>
+      <node ref="Q9" pin="2"/>
+      <node ref="J8" pin="6"/>
+      <node ref="Q14" pin="2"/>
+      <node ref="J7" pin="6"/>
+    </net>
+    <net code="44" name="Net-(Q10-Pad2)">
+      <node ref="Q10" pin="2"/>
+      <node ref="Q8" pin="3"/>
+      <node ref="R8" pin="2"/>
+      <node ref="Q9" pin="3"/>
+    </net>
+    <net code="45" name="Net-(Q19-Pad1)">
+      <node ref="Q21" pin="3"/>
+      <node ref="Q19" pin="1"/>
+    </net>
+    <net code="46" name="Net-(Q15-Pad3)">
+      <node ref="Q16" pin="3"/>
+      <node ref="Q17" pin="2"/>
+      <node ref="R14" pin="2"/>
+      <node ref="Q15" pin="3"/>
+    </net>
+    <net code="47" name="/a2">
+      <node ref="Q15" pin="2"/>
+      <node ref="J6" pin="2"/>
+      <node ref="R13" pin="2"/>
+      <node ref="Q19" pin="2"/>
+      <node ref="J5" pin="2"/>
+    </net>
+    <net code="48" name="/b2">
+      <node ref="R16" pin="2"/>
+      <node ref="Q16" pin="2"/>
+      <node ref="J7" pin="5"/>
+      <node ref="J8" pin="5"/>
+      <node ref="Q21" pin="2"/>
+    </net>
+    <net code="49" name="/a0">
+      <node ref="R1" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="J5" pin="0"/>
+      <node ref="Q5" pin="2"/>
+      <node ref="J6" pin="0"/>
+    </net>
+    <net code="50" name="/b0">
+      <node ref="Q2" pin="2"/>
+      <node ref="Q7" pin="2"/>
+      <node ref="J7" pin="7"/>
+      <node ref="J8" pin="7"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="51" name="Net-(Q1-Pad3)">
+      <node ref="Q3" pin="2"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="R2" pin="2"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="52" name="Net-(Q5-Pad1)">
+      <node ref="Q7" pin="3"/>
+      <node ref="Q5" pin="1"/>
+    </net>
+    <net code="53" name="Net-(Q36-Pad3)">
+      <node ref="Q36" pin="3"/>
+      <node ref="R32" pin="2"/>
+      <node ref="Q37" pin="3"/>
+      <node ref="Q38" pin="2"/>
+    </net>
+    <net code="54" name="Net-(Q33-Pad1)">
+      <node ref="Q33" pin="1"/>
+      <node ref="Q35" pin="3"/>
+    </net>
+    <net code="55" name="Net-(Q40-Pad1)">
+      <node ref="Q42" pin="3"/>
+      <node ref="Q40" pin="1"/>
+    </net>
+    <net code="56" name="Net-(Q22-Pad3)">
+      <node ref="Q23" pin="3"/>
+      <node ref="R20" pin="2"/>
+      <node ref="Q22" pin="3"/>
+      <node ref="Q24" pin="2"/>
+    </net>
+    <net code="57" name="Net-(Q26-Pad1)">
+      <node ref="Q26" pin="1"/>
+      <node ref="Q28" pin="3"/>
+    </net>
+    <net code="58" name="Net-(Q29-Pad3)">
+      <node ref="Q29" pin="3"/>
+      <node ref="Q31" pin="2"/>
+      <node ref="R26" pin="2"/>
+      <node ref="Q30" pin="3"/>
+    </net>
+  </nets>
+</export>
