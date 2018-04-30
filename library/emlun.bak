@@ -14,6 +14,20 @@ X 1 1 0 -250 100 U 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
+# J2-2-pole_connector
+#
+DEF J2-2-pole_connector J 0 40 Y Y 1 F N
+F0 "J" 0 0 60 H V C CNN
+F1 "J2-2-pole_connector" 0 100 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -100 -50 100 -150 0 1 0 N
+X 1 1 -50 -250 100 U 50 50 1 1 U
+X 2 2 50 -250 100 U 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
 # J2-2_bit_bus
 #
 DEF J2-2_bit_bus J 0 40 Y Y 1 F N
