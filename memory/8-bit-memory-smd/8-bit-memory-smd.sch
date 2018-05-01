@@ -32,7 +32,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:emlun
-LIBS:8-bit-memory-cache
+LIBS:8-bit-memory-smd-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
