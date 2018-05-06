@@ -1,4 +1,4 @@
-update=sön 17 sep 2017 22:38:10
+update=sön  6 maj 2018 19:18:09
 version=1
 last_client=kicad
 [general]
@@ -29,7 +29,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=library
+LibDir=../library
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -60,4 +60,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=library/emlun
+LibName30=emlun
