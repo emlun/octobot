@@ -1,3 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 4068B_8_AND
+D And 8 inputs
+K CMOS 4068B
+$ENDCMP
+#
 #End Doc Library
