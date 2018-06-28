@@ -377,7 +377,7 @@ Wire Wire Line
 Text Label 2200 2700 0    60   ~ 0
 I0
 $Comp
-L emlun:J8-8_bit_bus_connector J2
+L 8-bit-memory-tht-rescue:J8-8_bit_bus_connector-emlun J2
 U 1 1 59C7FAF8
 P 1500 2150
 F 0 "J2" H 1500 2150 60  0000 C CNN
@@ -388,7 +388,7 @@ F 3 "" H 1500 2150 60  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L emlun:J1-1_bit_bus J1
+L 8-bit-memory-tht-rescue:J1-1_bit_bus-emlun J1
 U 1 1 59C7FD55
 P 1500 1600
 F 0 "J1" H 1500 1600 60  0000 C CNN
@@ -479,7 +479,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 3450 6200 2500
 $Comp
-L emlun:J8-8_bit_bus_connector J3
+L 8-bit-memory-tht-rescue:J8-8_bit_bus_connector-emlun J3
 U 1 1 59C81A4F
 P 8250 2150
 F 0 "J3" H 8250 2150 60  0000 C CNN
@@ -4548,7 +4548,7 @@ F 3 "" H 8100 20100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L emlun:PWR-2_pole_power_connector J4
+L 8-bit-memory-tht-rescue:PWR-2_pole_power_connector-emlun J4
 U 1 1 5B3A72AC
 P 1500 2750
 F 0 "J4" H 1500 2750 60  0000 C CNN
@@ -5015,7 +5015,7 @@ Wire Wire Line
 	8100 19650 9700 19650
 Wire Wire Line
 	9700 19650 9700 21200
+Connection ~ 8100 19650
 Wire Bus Line
 	2000 1800 2000 15650
-Connection ~ 8100 19650
 $EndSCHEMATC
