@@ -1524,12 +1524,12 @@ do7
 $Comp
 L emlun:PWR-2_pole_power_connector J7
 U 1 1 5B559A2F
-P 9750 2700
-F 0 "J7" V 9692 2769 60  0000 L CNN
-F 1 "PWR-2_pole_power_connector" V 9798 2769 60  0000 L CNN
-F 2 "" H 9750 2700 60  0001 C CNN
-F 3 "" H 9750 2700 60  0001 C CNN
-	1    9750 2700
+P 9850 2700
+F 0 "J7" V 9792 2769 60  0000 L CNN
+F 1 "PWR-2_pole_power_connector" V 9898 2769 60  0000 L CNN
+F 2 "" H 9850 2700 60  0001 C CNN
+F 3 "" H 9850 2700 60  0001 C CNN
+	1    9850 2700
 	0    1    1    0   
 $EndComp
 $Comp
