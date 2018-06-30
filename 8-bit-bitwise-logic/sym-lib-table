@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 8-bit-bitwise-logic-rescue)(type Legacy)(uri ${KIPRJMOD}/8-bit-bitwise-logic-rescue.lib)(options "")(descr ""))
+  (lib (name emlun1)(type Legacy)(uri /home/emlun/private/documents/elektronik/emlun-cpu/library/emlun.lib)(options "")(descr ""))
+)
