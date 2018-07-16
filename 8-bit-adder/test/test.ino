@@ -1,3 +1,20 @@
+// Adder test program
+//
+// Setup:
+//  1. Connect pins PD2 - PD7, PB0 and PB1 to bits 0-7 of the S output
+//  2. Connect pin PB2 to the OVERFLOW output
+//  3. Connect pin PB3 to the CARRY_IN input
+//  4. Connect pin PB4 to a shift register serial data input
+//  5. Connect pin PB5 to a shift register data clock input
+//  6. Connect pin PC0 to a shift register storage clock input
+//  7. Connect pin PC1 to an LED
+//  8. Connect the serial data output of the shift register to the serial data input on a second shift register
+//  9. Connect parallel data outputs 0-7 of the first shift register to bits 0-7 of the A input
+// 10. Connect parallel data outputs 0-7 of the second shift register to bits 0-7 of the B input
+// 11. Connect the output enable terminals of the shift registers to ground
+// 12. Connect the master reset terminals of the shift registers to high voltage
+
+
 int OUTPUT_START = 2;
 int OUTPUT_LENGTH = 9;
 int CARRY_PIN = 11;
