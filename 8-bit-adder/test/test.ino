@@ -9,6 +9,7 @@ int DONE_PIN = 15;
 int PINS = DONE_PIN + 1;
 
 void setup() {
+  Serial.begin(9600);
   pinMode(CARRY_PIN, OUTPUT);
   for (int i = OUTPUT_START; i < OUTPUT_START + OUTPUT_LENGTH; ++i) {
     pinMode(i, INPUT);
@@ -53,9 +54,9 @@ void writeSerialByte(unsigned int b, unsigned int data_pin, unsigned int clock_p
 unsigned int test() {
   unsigned int correct = 0;
   unsigned int wrong = 0;
-  for (int carry = 0; carry < 2; ++carry) {
-    for (int a = 0; a < 256; ++a) {
-      for (int b = 0; b < 256; ++b) {
+  for (int a = 0; a < 256; ++a) {
+    for (int b = 0; b < 256; ++b) {
+      for (int carry = 0; carry < 2; ++carry) {
         writeSerialByte(b, DATA_PIN, CLOCK_PIN);
         writeSerialByte(a, DATA_PIN, CLOCK_PIN);
         flashPin(STORAGE_CLOCK_PIN);
@@ -69,6 +70,12 @@ unsigned int test() {
         }
       }
     }
+    Serial.print(a);
+    Serial.print(" correct: ");
+    Serial.print(correct);
+    Serial.print(", wrong: ");
+    Serial.print(wrong);
+    Serial.println();
   }
   return wrong;
 }
@@ -80,6 +87,11 @@ void loop() {
   writeSerialByte(wrong, DATA_PIN, CLOCK_PIN);
   flashPin(STORAGE_CLOCK_PIN);
   digitalWrite(DONE_PIN, HIGH);
+
+  Serial.println("Done!");
+  Serial.print("Wrong: ");
+  Serial.print(wrong);
+  Serial.println();
 
   delay(600000);
 }
