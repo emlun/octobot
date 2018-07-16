@@ -1,10 +1,10 @@
-int OUTPUT_START = 0;
+int OUTPUT_START = 2;
 int OUTPUT_LENGTH = 9;
-int CARRY_PIN = 9;
-int DATA_PIN = 10;
-int CLOCK_PIN = 11;
-int STORAGE_CLOCK_PIN = 12;
-int DONE_PIN = 13;
+int CARRY_PIN = 11;
+int DATA_PIN = 12;
+int CLOCK_PIN = 13;
+int STORAGE_CLOCK_PIN = 14;
+int DONE_PIN = 15;
 
 int PINS = DONE_PIN + 1;
 
