@@ -149,10 +149,10 @@ F 3 "" H 700 6800 60  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L power:GND #PWR019
+L power:GND #PWR025
 U 1 1 5B55A668
 P 1050 6750
-F 0 "#PWR019" H 1050 6500 50  0001 C CNN
+F 0 "#PWR025" H 1050 6500 50  0001 C CNN
 F 1 "GND" H 1055 6577 50  0000 C CNN
 F 2 "" H 1050 6750 50  0001 C CNN
 F 3 "" H 1050 6750 50  0001 C CNN
@@ -160,10 +160,10 @@ F 3 "" H 1050 6750 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:VCC #PWR020
+L power:VCC #PWR026
 U 1 1 5B55A813
 P 1050 6850
-F 0 "#PWR020" H 1050 6700 50  0001 C CNN
+F 0 "#PWR026" H 1050 6700 50  0001 C CNN
 F 1 "VCC" H 1068 7023 50  0000 C CNN
 F 2 "" H 1050 6850 50  0001 C CNN
 F 3 "" H 1050 6850 50  0001 C CNN
@@ -203,10 +203,10 @@ o6
 Text Label 1200 6450 2    50   ~ 0
 o7
 $Comp
-L Transistor_FET:2N7000 Q12
+L Transistor_FET:2N7000 Q16
 U 1 1 5B5021E6
 P 3100 6400
-F 0 "Q12" H 3305 6446 50  0000 L CNN
+F 0 "Q16" H 3305 6446 50  0000 L CNN
 F 1 "2N7000" H 3305 6355 50  0000 L CNN
 F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 6325 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 6400 50  0001 L CNN
@@ -214,31 +214,29 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 6400 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q13
+L Transistor_FET:2N7000 Q1
 U 1 1 5B502326
-P 3100 6800
-F 0 "Q13" H 3305 6846 50  0000 L CNN
-F 1 "2N7000" H 3305 6755 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 6725 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 6800 50  0001 L CNN
-	1    3100 6800
+P 4950 1150
+F 0 "Q1" H 5155 1196 50  0000 L CNN
+F 1 "2N7000" H 5155 1105 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 5150 1075 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4950 1150 50  0001 L CNN
+	1    4950 1150
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR021
+L power:GND #PWR02
 U 1 1 5B5026A3
-P 3200 7000
-F 0 "#PWR021" H 3200 6750 50  0001 C CNN
-F 1 "GND" H 3205 6827 50  0000 C CNN
-F 2 "" H 3200 7000 50  0001 C CNN
-F 3 "" H 3200 7000 50  0001 C CNN
-	1    3200 7000
+P 5050 1350
+F 0 "#PWR02" H 5050 1100 50  0001 C CNN
+F 1 "GND" H 5055 1177 50  0000 C CNN
+F 2 "" H 5050 1350 50  0001 C CNN
+F 3 "" H 5050 1350 50  0001 C CNN
+	1    5050 1350
 	1    0    0    -1  
 $EndComp
 Text Label 2900 6400 0    50   ~ 0
 a0
-Text Label 2900 6800 0    50   ~ 0
-sa
 $Comp
 L Device:R R8
 U 1 1 5B5044C6
@@ -251,10 +249,10 @@ F 3 "~" H 3200 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR018
+L power:VCC #PWR022
 U 1 1 5B504980
 P 3200 5900
-F 0 "#PWR018" H 3200 5750 50  0001 C CNN
+F 0 "#PWR022" H 3200 5750 50  0001 C CNN
 F 1 "VCC" H 3217 6073 50  0000 C CNN
 F 2 "" H 3200 5900 50  0001 C CNN
 F 3 "" H 3200 5900 50  0001 C CNN
@@ -262,187 +260,121 @@ F 3 "" H 3200 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 3200 6200
-Wire Wire Line
-	3200 6200 3650 6200
 $Comp
 L Transistor_FET:2N7000 Q20
 U 1 1 5B52F7BF
-P 3850 9950
-F 0 "Q20" H 4055 9996 50  0000 L CNN
-F 1 "2N7000" H 4055 9905 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4050 9875 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 9950 50  0001 L CNN
-	1    3850 9950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q14
-U 1 1 5B5447C3
-P 3100 7400
-F 0 "Q14" H 3305 7446 50  0000 L CNN
-F 1 "2N7000" H 3305 7355 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 7325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 7400 50  0001 L CNN
-	1    3100 7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q15
-U 1 1 5B5447CA
-P 3100 7800
-F 0 "Q15" H 3305 7846 50  0000 L CNN
-F 1 "2N7000" H 3305 7755 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 7725 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 7800 50  0001 L CNN
-	1    3100 7800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR022
-U 1 1 5B5447D1
-P 3200 8000
-F 0 "#PWR022" H 3200 7750 50  0001 C CNN
-F 1 "GND" H 3205 7827 50  0000 C CNN
-F 2 "" H 3200 8000 50  0001 C CNN
-F 3 "" H 3200 8000 50  0001 C CNN
-	1    3200 8000
-	1    0    0    -1  
-$EndComp
-Text Label 2900 7400 0    50   ~ 0
-b0
-Text Label 2900 7800 0    50   ~ 0
-sb
-Wire Wire Line
-	3200 7200 3650 7200
-$Comp
-L Device:R R9
-U 1 1 5B5841EC
-P 3950 9600
-F 0 "R9" H 4020 9646 50  0000 L CNN
-F 1 "R" H 4020 9555 50  0000 L CNN
-F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3880 9600 50  0001 C CNN
-F 3 "~" H 3950 9600 50  0001 C CNN
-	1    3950 9600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR024
-U 1 1 5B5841F3
-P 3950 9450
-F 0 "#PWR024" H 3950 9300 50  0001 C CNN
-F 1 "VCC" H 3967 9623 50  0000 C CNN
-F 2 "" H 3950 9450 50  0001 C CNN
-F 3 "" H 3950 9450 50  0001 C CNN
-	1    3950 9450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR026
-U 1 1 5B5AF0B1
-P 3950 10150
-F 0 "#PWR026" H 3950 9900 50  0001 C CNN
-F 1 "GND" H 3955 9977 50  0000 C CNN
-F 2 "" H 3950 10150 50  0001 C CNN
-F 3 "" H 3950 10150 50  0001 C CNN
-	1    3950 10150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 9750 4450 9750
-Connection ~ 3950 9750
-Text Label 4450 9750 0    50   ~ 0
-o0
-$Comp
-L Transistor_FET:2N7000 Q16
-U 1 1 5B5C9B30
-P 3100 8400
-F 0 "Q16" H 3305 8446 50  0000 L CNN
-F 1 "2N7000" H 3305 8355 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 8325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 8400 50  0001 L CNN
-	1    3100 8400
+P 5900 6400
+F 0 "Q20" H 6105 6446 50  0000 L CNN
+F 1 "2N7000" H 6105 6355 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 6100 6325 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5900 6400 50  0001 L CNN
+	1    5900 6400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_FET:2N7000 Q17
-U 1 1 5B5C9B37
-P 3100 8800
-F 0 "Q17" H 3305 8846 50  0000 L CNN
-F 1 "2N7000" H 3305 8755 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 8725 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 8800 50  0001 L CNN
-	1    3100 8800
+U 1 1 5B5447C3
+P 3800 6400
+F 0 "Q17" H 4005 6446 50  0000 L CNN
+F 1 "2N7000" H 4005 6355 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4000 6325 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3800 6400 50  0001 L CNN
+	1    3800 6400
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR023
-U 1 1 5B5C9B3E
-P 3200 9000
-F 0 "#PWR023" H 3200 8750 50  0001 C CNN
-F 1 "GND" H 3205 8827 50  0000 C CNN
-F 2 "" H 3200 9000 50  0001 C CNN
-F 3 "" H 3200 9000 50  0001 C CNN
-	1    3200 9000
+L Transistor_FET:2N7000 Q4
+U 1 1 5B5447CA
+P 4950 2200
+F 0 "Q4" H 5155 2246 50  0000 L CNN
+F 1 "2N7000" H 5155 2155 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 5150 2125 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4950 2200 50  0001 L CNN
+	1    4950 2200
 	1    0    0    -1  
 $EndComp
-Text Label 2900 8400 0    50   ~ 0
-c0
-Text Label 2900 8800 0    50   ~ 0
-sc
+$Comp
+L power:GND #PWR07
+U 1 1 5B5447D1
+P 5050 2400
+F 0 "#PWR07" H 5050 2150 50  0001 C CNN
+F 1 "GND" H 5055 2227 50  0000 C CNN
+F 2 "" H 5050 2400 50  0001 C CNN
+F 3 "" H 5050 2400 50  0001 C CNN
+	1    5050 2400
+	1    0    0    -1  
+$EndComp
+Text Label 3600 6400 0    50   ~ 0
+b0
+$Comp
+L Device:R R9
+U 1 1 5B5841EC
+P 6000 6050
+F 0 "R9" H 6070 6096 50  0000 L CNN
+F 1 "R" H 6070 6005 50  0000 L CNN
+F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5930 6050 50  0001 C CNN
+F 3 "~" H 6000 6050 50  0001 C CNN
+	1    6000 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR023
+U 1 1 5B5841F3
+P 6000 5900
+F 0 "#PWR023" H 6000 5750 50  0001 C CNN
+F 1 "VCC" H 6017 6073 50  0000 C CNN
+F 2 "" H 6000 5900 50  0001 C CNN
+F 3 "" H 6000 5900 50  0001 C CNN
+	1    6000 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 5B5AF0B1
+P 6000 6600
+F 0 "#PWR024" H 6000 6350 50  0001 C CNN
+F 1 "GND" H 6005 6427 50  0000 C CNN
+F 2 "" H 6000 6600 50  0001 C CNN
+F 3 "" H 6000 6600 50  0001 C CNN
+	1    6000 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 6200 6500 6200
+Connection ~ 6000 6200
+Text Label 6500 6200 0    50   ~ 0
+o0
 $Comp
 L Transistor_FET:2N7000 Q18
-U 1 1 5B5E02EC
-P 3100 9400
-F 0 "Q18" H 3305 9446 50  0000 L CNN
-F 1 "2N7000" H 3305 9355 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 9325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 9400 50  0001 L CNN
-	1    3100 9400
+U 1 1 5B5C9B30
+P 4500 6400
+F 0 "Q18" H 4705 6446 50  0000 L CNN
+F 1 "2N7000" H 4705 6355 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4700 6325 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 6400 50  0001 L CNN
+	1    4500 6400
 	1    0    0    -1  
 $EndComp
+Text Label 4300 6400 0    50   ~ 0
+c0
 $Comp
 L Transistor_FET:2N7000 Q19
-U 1 1 5B5E02F3
-P 3100 9800
-F 0 "Q19" H 3305 9846 50  0000 L CNN
-F 1 "2N7000" H 3305 9755 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 9725 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 9800 50  0001 L CNN
-	1    3100 9800
+U 1 1 5B5E02EC
+P 5200 6400
+F 0 "Q19" H 5405 6446 50  0000 L CNN
+F 1 "2N7000" H 5405 6355 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 5400 6325 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5200 6400 50  0001 L CNN
+	1    5200 6400
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR025
-U 1 1 5B5E02FA
-P 3200 10000
-F 0 "#PWR025" H 3200 9750 50  0001 C CNN
-F 1 "GND" H 3205 9827 50  0000 C CNN
-F 2 "" H 3200 10000 50  0001 C CNN
-F 3 "" H 3200 10000 50  0001 C CNN
-	1    3200 10000
-	1    0    0    -1  
-$EndComp
-Text Label 2900 9400 0    50   ~ 0
+Text Label 5000 6400 0    50   ~ 0
 d0
-Text Label 2900 9800 0    50   ~ 0
-sd
-Wire Wire Line
-	3200 9200 3650 9200
-Wire Wire Line
-	3200 8200 3650 8200
-Connection ~ 3650 7200
-Wire Wire Line
-	3650 7200 3650 6200
-Wire Wire Line
-	3650 7200 3650 8200
-Connection ~ 3650 8200
-Wire Wire Line
-	3650 8200 3650 9200
 $Comp
-L Transistor_FET:2N7000 Q9
+L Transistor_FET:2N7000 Q13
 U 1 1 5B62D226
 P 3100 4800
-F 0 "Q9" H 3305 4846 50  0000 L CNN
+F 0 "Q13" H 3305 4846 50  0000 L CNN
 F 1 "2N7000" H 3305 4755 50  0000 L CNN
 F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 4725 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 4800 50  0001 L CNN
@@ -450,10 +382,10 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 4800 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q10
+L Transistor_FET:2N7000 Q14
 U 1 1 5B62D22D
 P 3100 5200
-F 0 "Q10" H 3305 5246 50  0000 L CNN
+F 0 "Q14" H 3305 5246 50  0000 L CNN
 F 1 "2N7000" H 3305 5155 50  0000 L CNN
 F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 5125 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 5200 50  0001 L CNN
@@ -461,10 +393,10 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 5200 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L power:GND #PWR020
 U 1 1 5B62D234
 P 3200 5400
-F 0 "#PWR016" H 3200 5150 50  0001 C CNN
+F 0 "#PWR020" H 3200 5150 50  0001 C CNN
 F 1 "GND" H 3205 5227 50  0000 C CNN
 F 2 "" H 3200 5400 50  0001 C CNN
 F 3 "" H 3200 5400 50  0001 C CNN
@@ -472,10 +404,10 @@ F 3 "" H 3200 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q1
+L Transistor_FET:2N7000 Q2
 U 1 1 5B62DA88
 P 3100 1350
-F 0 "Q1" H 3305 1396 50  0000 L CNN
+F 0 "Q2" H 3305 1396 50  0000 L CNN
 F 1 "2N7000" H 3305 1305 50  0000 L CNN
 F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 1275 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 1350 50  0001 L CNN
@@ -483,10 +415,10 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 1350 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q2
+L Transistor_FET:2N7000 Q3
 U 1 1 5B62DAF0
 P 3800 1350
-F 0 "Q2" H 4006 1304 50  0000 L CNN
+F 0 "Q3" H 4006 1304 50  0000 L CNN
 F 1 "2N7000" H 4006 1395 50  0000 L CNN
 F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4000 1275 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3800 1350 50  0001 L CNN
@@ -519,10 +451,10 @@ F 3 "" H 3200 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
+L power:GND #PWR03
 U 1 1 5B62E299
 P 3200 1550
-F 0 "#PWR02" H 3200 1300 50  0001 C CNN
+F 0 "#PWR03" H 3200 1300 50  0001 C CNN
 F 1 "GND" H 3205 1377 50  0000 C CNN
 F 2 "" H 3200 1550 50  0001 C CNN
 F 3 "" H 3200 1550 50  0001 C CNN
@@ -530,10 +462,10 @@ F 3 "" H 3200 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
+L power:GND #PWR04
 U 1 1 5B62E2E0
 P 3700 1550
-F 0 "#PWR03" H 3700 1300 50  0001 C CNN
+F 0 "#PWR04" H 3700 1300 50  0001 C CNN
 F 1 "GND" H 3705 1377 50  0000 C CNN
 F 2 "" H 3700 1550 50  0001 C CNN
 F 3 "" H 3700 1550 50  0001 C CNN
@@ -541,10 +473,10 @@ F 3 "" H 3700 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q3
+L Transistor_FET:2N7000 Q5
 U 1 1 5B62EDB5
 P 3100 2500
-F 0 "Q3" H 3305 2546 50  0000 L CNN
+F 0 "Q5" H 3305 2546 50  0000 L CNN
 F 1 "2N7000" H 3305 2455 50  0000 L CNN
 F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 2425 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 2500 50  0001 L CNN
@@ -552,10 +484,10 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 2500 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q4
+L Transistor_FET:2N7000 Q6
 U 1 1 5B62EDBC
 P 3800 2500
-F 0 "Q4" H 4006 2546 50  0000 L CNN
+F 0 "Q6" H 4006 2546 50  0000 L CNN
 F 1 "2N7000" H 4006 2455 50  0000 L CNN
 F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4000 2425 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3800 2500 50  0001 L CNN
@@ -577,10 +509,10 @@ F 3 "~" H 3200 2150 50  0001 C CNN
 $EndComp
 Connection ~ 3200 2300
 $Comp
-L power:VCC #PWR04
+L power:VCC #PWR05
 U 1 1 5B62EDCC
 P 3200 2000
-F 0 "#PWR04" H 3200 1850 50  0001 C CNN
+F 0 "#PWR05" H 3200 1850 50  0001 C CNN
 F 1 "VCC" H 3217 2173 50  0000 C CNN
 F 2 "" H 3200 2000 50  0001 C CNN
 F 3 "" H 3200 2000 50  0001 C CNN
@@ -588,10 +520,10 @@ F 3 "" H 3200 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L power:GND #PWR08
 U 1 1 5B62EDD2
 P 3200 2700
-F 0 "#PWR06" H 3200 2450 50  0001 C CNN
+F 0 "#PWR08" H 3200 2450 50  0001 C CNN
 F 1 "GND" H 3205 2527 50  0000 C CNN
 F 2 "" H 3200 2700 50  0001 C CNN
 F 3 "" H 3200 2700 50  0001 C CNN
@@ -599,10 +531,10 @@ F 3 "" H 3200 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR07
+L power:GND #PWR09
 U 1 1 5B62EDD8
 P 3700 2700
-F 0 "#PWR07" H 3700 2450 50  0001 C CNN
+F 0 "#PWR09" H 3700 2450 50  0001 C CNN
 F 1 "GND" H 3705 2527 50  0000 C CNN
 F 2 "" H 3700 2700 50  0001 C CNN
 F 3 "" H 3700 2700 50  0001 C CNN
@@ -610,10 +542,10 @@ F 3 "" H 3700 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q7
+L Transistor_FET:2N7000 Q10
 U 1 1 5B630086
 P 3100 3650
-F 0 "Q7" H 3305 3696 50  0000 L CNN
+F 0 "Q10" H 3305 3696 50  0000 L CNN
 F 1 "2N7000" H 3305 3605 50  0000 L CNN
 F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 3575 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 3650 50  0001 L CNN
@@ -621,10 +553,10 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 3650 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q8
+L Transistor_FET:2N7000 Q11
 U 1 1 5B63008D
 P 3800 3650
-F 0 "Q8" H 4006 3604 50  0000 L CNN
+F 0 "Q11" H 4006 3604 50  0000 L CNN
 F 1 "2N7000" H 4006 3695 50  0000 L CNN
 F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4000 3575 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3800 3650 50  0001 L CNN
@@ -646,10 +578,10 @@ F 3 "~" H 3200 3300 50  0001 C CNN
 $EndComp
 Connection ~ 3200 3450
 $Comp
-L power:VCC #PWR010
+L power:VCC #PWR012
 U 1 1 5B63009D
 P 3200 3150
-F 0 "#PWR010" H 3200 3000 50  0001 C CNN
+F 0 "#PWR012" H 3200 3000 50  0001 C CNN
 F 1 "VCC" H 3217 3323 50  0000 C CNN
 F 2 "" H 3200 3150 50  0001 C CNN
 F 3 "" H 3200 3150 50  0001 C CNN
@@ -657,10 +589,10 @@ F 3 "" H 3200 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR012
+L power:GND #PWR015
 U 1 1 5B6300A3
 P 3200 3850
-F 0 "#PWR012" H 3200 3600 50  0001 C CNN
+F 0 "#PWR015" H 3200 3600 50  0001 C CNN
 F 1 "GND" H 3205 3677 50  0000 C CNN
 F 2 "" H 3200 3850 50  0001 C CNN
 F 3 "" H 3200 3850 50  0001 C CNN
@@ -668,10 +600,10 @@ F 3 "" H 3200 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR013
+L power:GND #PWR016
 U 1 1 5B6300A9
 P 3700 3850
-F 0 "#PWR013" H 3700 3600 50  0001 C CNN
+F 0 "#PWR016" H 3700 3600 50  0001 C CNN
 F 1 "GND" H 3705 3677 50  0000 C CNN
 F 2 "" H 3700 3850 50  0001 C CNN
 F 3 "" H 3700 3850 50  0001 C CNN
@@ -679,10 +611,10 @@ F 3 "" H 3700 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q5
+L Transistor_FET:2N7000 Q7
 U 1 1 5B630D74
 P 4550 2500
-F 0 "Q5" H 4756 2546 50  0000 L CNN
+F 0 "Q7" H 4756 2546 50  0000 L CNN
 F 1 "2N7000" H 4756 2455 50  0000 L CNN
 F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4750 2425 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4550 2500 50  0001 L CNN
@@ -690,10 +622,10 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4550 2500 50  000
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR08
+L power:GND #PWR010
 U 1 1 5B630D7B
 P 4450 2700
-F 0 "#PWR08" H 4450 2450 50  0001 C CNN
+F 0 "#PWR010" H 4450 2450 50  0001 C CNN
 F 1 "GND" H 4455 2527 50  0000 C CNN
 F 2 "" H 4450 2700 50  0001 C CNN
 F 3 "" H 4450 2700 50  0001 C CNN
@@ -712,10 +644,10 @@ F 3 "~" H 4450 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR05
+L power:VCC #PWR06
 U 1 1 5B631773
 P 4450 2000
-F 0 "#PWR05" H 4450 1850 50  0001 C CNN
+F 0 "#PWR06" H 4450 1850 50  0001 C CNN
 F 1 "VCC" H 4467 2173 50  0000 C CNN
 F 2 "" H 4450 2000 50  0001 C CNN
 F 3 "" H 4450 2000 50  0001 C CNN
@@ -725,10 +657,10 @@ $EndComp
 Wire Wire Line
 	4000 1350 4000 1750
 $Comp
-L Transistor_FET:2N7000 Q6
+L Transistor_FET:2N7000 Q9
 U 1 1 5B633D52
 P 2350 3650
-F 0 "Q6" H 2555 3696 50  0000 L CNN
+F 0 "Q9" H 2555 3696 50  0000 L CNN
 F 1 "2N7000" H 2555 3605 50  0000 L CNN
 F 2 "electrokit:TO-92_Molded_Wide_Inline" H 2550 3575 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 2350 3650 50  0001 L CNN
@@ -747,10 +679,10 @@ F 3 "~" H 2450 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR09
+L power:VCC #PWR011
 U 1 1 5B633D62
 P 2450 3150
-F 0 "#PWR09" H 2450 3000 50  0001 C CNN
+F 0 "#PWR011" H 2450 3000 50  0001 C CNN
 F 1 "VCC" H 2467 3323 50  0000 C CNN
 F 2 "" H 2450 3150 50  0001 C CNN
 F 3 "" H 2450 3150 50  0001 C CNN
@@ -774,10 +706,10 @@ F 3 "~" H 3200 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR014
+L power:VCC #PWR017
 U 1 1 5B639C8E
 P 3200 4300
-F 0 "#PWR014" H 3200 4150 50  0001 C CNN
+F 0 "#PWR017" H 3200 4150 50  0001 C CNN
 F 1 "VCC" H 3217 4473 50  0000 C CNN
 F 2 "" H 3200 4300 50  0001 C CNN
 F 3 "" H 3200 4300 50  0001 C CNN
@@ -785,10 +717,10 @@ F 3 "" H 3200 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q11
+L Transistor_FET:2N7000 Q15
 U 1 1 5B63BCA6
 P 3850 5300
-F 0 "Q11" H 4055 5346 50  0000 L CNN
+F 0 "Q15" H 4055 5346 50  0000 L CNN
 F 1 "2N7000" H 4055 5255 50  0000 L CNN
 F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4050 5225 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 5300 50  0001 L CNN
@@ -807,10 +739,10 @@ F 3 "~" H 3950 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR015
+L power:VCC #PWR018
 U 1 1 5B63BCB4
 P 3950 4300
-F 0 "#PWR015" H 3950 4150 50  0001 C CNN
+F 0 "#PWR018" H 3950 4150 50  0001 C CNN
 F 1 "VCC" H 3967 4473 50  0000 C CNN
 F 2 "" H 3950 4300 50  0001 C CNN
 F 3 "" H 3950 4300 50  0001 C CNN
@@ -901,3115 +833,2395 @@ Wire Wire Line
 	3950 5100 3950 4600
 Connection ~ 3950 4600
 Wire Wire Line
-	3650 9200 3650 9950
-Connection ~ 3650 9200
-$Comp
-L Transistor_FET:2N7000 Q21
-U 1 1 5B675DD0
-P 3100 11050
-F 0 "Q21" H 3305 11096 50  0000 L CNN
-F 1 "2N7000" H 3305 11005 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 10975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 11050 50  0001 L CNN
-	1    3100 11050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q22
-U 1 1 5B675DD7
-P 3100 11450
-F 0 "Q22" H 3305 11496 50  0000 L CNN
-F 1 "2N7000" H 3305 11405 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 11375 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 11450 50  0001 L CNN
-	1    3100 11450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR028
-U 1 1 5B675DDE
-P 3200 11650
-F 0 "#PWR028" H 3200 11400 50  0001 C CNN
-F 1 "GND" H 3205 11477 50  0000 C CNN
-F 2 "" H 3200 11650 50  0001 C CNN
-F 3 "" H 3200 11650 50  0001 C CNN
-	1    3200 11650
-	1    0    0    -1  
-$EndComp
-Text Label 2900 11050 0    50   ~ 0
-a1
-Text Label 2900 11450 0    50   ~ 0
-sa
-$Comp
-L Device:R R10
-U 1 1 5B675DE6
-P 3200 10700
-F 0 "R10" H 3270 10746 50  0000 L CNN
-F 1 "R" H 3270 10655 50  0000 L CNN
-F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 10700 50  0001 C CNN
-F 3 "~" H 3200 10700 50  0001 C CNN
-	1    3200 10700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR027
-U 1 1 5B675DED
-P 3200 10550
-F 0 "#PWR027" H 3200 10400 50  0001 C CNN
-F 1 "VCC" H 3217 10723 50  0000 C CNN
-F 2 "" H 3200 10550 50  0001 C CNN
-F 3 "" H 3200 10550 50  0001 C CNN
-	1    3200 10550
-	1    0    0    -1  
-$EndComp
-Connection ~ 3200 10850
-Wire Wire Line
-	3200 10850 3650 10850
-$Comp
-L Transistor_FET:2N7000 Q29
-U 1 1 5B675DF5
-P 3850 14600
-F 0 "Q29" H 4055 14646 50  0000 L CNN
-F 1 "2N7000" H 4055 14555 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4050 14525 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 14600 50  0001 L CNN
-	1    3850 14600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q23
-U 1 1 5B675DFC
-P 3100 12050
-F 0 "Q23" H 3305 12096 50  0000 L CNN
-F 1 "2N7000" H 3305 12005 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 11975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 12050 50  0001 L CNN
-	1    3100 12050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q24
-U 1 1 5B675E03
-P 3100 12450
-F 0 "Q24" H 3305 12496 50  0000 L CNN
-F 1 "2N7000" H 3305 12405 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 12375 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 12450 50  0001 L CNN
-	1    3100 12450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR029
-U 1 1 5B675E0A
-P 3200 12650
-F 0 "#PWR029" H 3200 12400 50  0001 C CNN
-F 1 "GND" H 3205 12477 50  0000 C CNN
-F 2 "" H 3200 12650 50  0001 C CNN
-F 3 "" H 3200 12650 50  0001 C CNN
-	1    3200 12650
-	1    0    0    -1  
-$EndComp
-Text Label 2900 12050 0    50   ~ 0
-b1
-Text Label 2900 12450 0    50   ~ 0
-sb
-Wire Wire Line
-	3200 11850 3650 11850
-$Comp
-L Device:R R11
-U 1 1 5B675E13
-P 3950 14250
-F 0 "R11" H 4020 14296 50  0000 L CNN
-F 1 "R" H 4020 14205 50  0000 L CNN
-F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3880 14250 50  0001 C CNN
-F 3 "~" H 3950 14250 50  0001 C CNN
-	1    3950 14250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR031
-U 1 1 5B675E1A
-P 3950 14100
-F 0 "#PWR031" H 3950 13950 50  0001 C CNN
-F 1 "VCC" H 3967 14273 50  0000 C CNN
-F 2 "" H 3950 14100 50  0001 C CNN
-F 3 "" H 3950 14100 50  0001 C CNN
-	1    3950 14100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR033
-U 1 1 5B675E20
-P 3950 14800
-F 0 "#PWR033" H 3950 14550 50  0001 C CNN
-F 1 "GND" H 3955 14627 50  0000 C CNN
-F 2 "" H 3950 14800 50  0001 C CNN
-F 3 "" H 3950 14800 50  0001 C CNN
-	1    3950 14800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 14400 4450 14400
-Connection ~ 3950 14400
-Text Label 4450 14400 0    50   ~ 0
-o1
-$Comp
-L Transistor_FET:2N7000 Q25
-U 1 1 5B675E29
-P 3100 13050
-F 0 "Q25" H 3305 13096 50  0000 L CNN
-F 1 "2N7000" H 3305 13005 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 12975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 13050 50  0001 L CNN
-	1    3100 13050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q26
-U 1 1 5B675E30
-P 3100 13450
-F 0 "Q26" H 3305 13496 50  0000 L CNN
-F 1 "2N7000" H 3305 13405 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 13375 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 13450 50  0001 L CNN
-	1    3100 13450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR030
-U 1 1 5B675E37
-P 3200 13650
-F 0 "#PWR030" H 3200 13400 50  0001 C CNN
-F 1 "GND" H 3205 13477 50  0000 C CNN
-F 2 "" H 3200 13650 50  0001 C CNN
-F 3 "" H 3200 13650 50  0001 C CNN
-	1    3200 13650
-	1    0    0    -1  
-$EndComp
-Text Label 2900 13050 0    50   ~ 0
-c1
-Text Label 2900 13450 0    50   ~ 0
-sc
-$Comp
-L Transistor_FET:2N7000 Q27
-U 1 1 5B675E3F
-P 3100 14050
-F 0 "Q27" H 3305 14096 50  0000 L CNN
-F 1 "2N7000" H 3305 14005 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 13975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 14050 50  0001 L CNN
-	1    3100 14050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q28
-U 1 1 5B675E46
-P 3100 14450
-F 0 "Q28" H 3305 14496 50  0000 L CNN
-F 1 "2N7000" H 3305 14405 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 14375 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 14450 50  0001 L CNN
-	1    3100 14450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR032
-U 1 1 5B675E4D
-P 3200 14650
-F 0 "#PWR032" H 3200 14400 50  0001 C CNN
-F 1 "GND" H 3205 14477 50  0000 C CNN
-F 2 "" H 3200 14650 50  0001 C CNN
-F 3 "" H 3200 14650 50  0001 C CNN
-	1    3200 14650
-	1    0    0    -1  
-$EndComp
-Text Label 2900 14050 0    50   ~ 0
-d1
-Text Label 2900 14450 0    50   ~ 0
-sd
-Wire Wire Line
-	3200 13850 3650 13850
-Wire Wire Line
-	3200 12850 3650 12850
-Connection ~ 3650 11850
-Wire Wire Line
-	3650 11850 3650 10850
-Wire Wire Line
-	3650 11850 3650 12850
-Connection ~ 3650 12850
-Wire Wire Line
-	3650 12850 3650 13850
-Wire Wire Line
-	3650 13850 3650 14600
-Connection ~ 3650 13850
-Wire Wire Line
 	1850 1750 1900 1750
-$Comp
-L Transistor_FET:2N7000 Q30
-U 1 1 5B678FAE
-P 3100 15600
-F 0 "Q30" H 3305 15646 50  0000 L CNN
-F 1 "2N7000" H 3305 15555 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 15525 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 15600 50  0001 L CNN
-	1    3100 15600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q31
-U 1 1 5B678FB5
-P 3100 16000
-F 0 "Q31" H 3305 16046 50  0000 L CNN
-F 1 "2N7000" H 3305 15955 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 15925 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 16000 50  0001 L CNN
-	1    3100 16000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR035
-U 1 1 5B678FBC
-P 3200 16200
-F 0 "#PWR035" H 3200 15950 50  0001 C CNN
-F 1 "GND" H 3205 16027 50  0000 C CNN
-F 2 "" H 3200 16200 50  0001 C CNN
-F 3 "" H 3200 16200 50  0001 C CNN
-	1    3200 16200
-	1    0    0    -1  
-$EndComp
-Text Label 2900 15600 0    50   ~ 0
-a2
-Text Label 2900 16000 0    50   ~ 0
-sa
-$Comp
-L Device:R R12
-U 1 1 5B678FC4
-P 3200 15250
-F 0 "R12" H 3270 15296 50  0000 L CNN
-F 1 "R" H 3270 15205 50  0000 L CNN
-F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 15250 50  0001 C CNN
-F 3 "~" H 3200 15250 50  0001 C CNN
-	1    3200 15250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR034
-U 1 1 5B678FCB
-P 3200 15100
-F 0 "#PWR034" H 3200 14950 50  0001 C CNN
-F 1 "VCC" H 3217 15273 50  0000 C CNN
-F 2 "" H 3200 15100 50  0001 C CNN
-F 3 "" H 3200 15100 50  0001 C CNN
-	1    3200 15100
-	1    0    0    -1  
-$EndComp
-Connection ~ 3200 15400
-Wire Wire Line
-	3200 15400 3650 15400
-$Comp
-L Transistor_FET:2N7000 Q38
-U 1 1 5B678FD3
-P 3850 19150
-F 0 "Q38" H 4055 19196 50  0000 L CNN
-F 1 "2N7000" H 4055 19105 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4050 19075 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 19150 50  0001 L CNN
-	1    3850 19150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q32
-U 1 1 5B678FDA
-P 3100 16600
-F 0 "Q32" H 3305 16646 50  0000 L CNN
-F 1 "2N7000" H 3305 16555 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 16525 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 16600 50  0001 L CNN
-	1    3100 16600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q33
-U 1 1 5B678FE1
-P 3100 17000
-F 0 "Q33" H 3305 17046 50  0000 L CNN
-F 1 "2N7000" H 3305 16955 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 16925 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 17000 50  0001 L CNN
-	1    3100 17000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR036
-U 1 1 5B678FE8
-P 3200 17200
-F 0 "#PWR036" H 3200 16950 50  0001 C CNN
-F 1 "GND" H 3205 17027 50  0000 C CNN
-F 2 "" H 3200 17200 50  0001 C CNN
-F 3 "" H 3200 17200 50  0001 C CNN
-	1    3200 17200
-	1    0    0    -1  
-$EndComp
-Text Label 2900 16600 0    50   ~ 0
-b2
-Text Label 2900 17000 0    50   ~ 0
-sb
-Wire Wire Line
-	3200 16400 3650 16400
-$Comp
-L Device:R R13
-U 1 1 5B678FF1
-P 3950 18800
-F 0 "R13" H 4020 18846 50  0000 L CNN
-F 1 "R" H 4020 18755 50  0000 L CNN
-F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3880 18800 50  0001 C CNN
-F 3 "~" H 3950 18800 50  0001 C CNN
-	1    3950 18800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR038
-U 1 1 5B678FF8
-P 3950 18650
-F 0 "#PWR038" H 3950 18500 50  0001 C CNN
-F 1 "VCC" H 3967 18823 50  0000 C CNN
-F 2 "" H 3950 18650 50  0001 C CNN
-F 3 "" H 3950 18650 50  0001 C CNN
-	1    3950 18650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR040
-U 1 1 5B678FFE
-P 3950 19350
-F 0 "#PWR040" H 3950 19100 50  0001 C CNN
-F 1 "GND" H 3955 19177 50  0000 C CNN
-F 2 "" H 3950 19350 50  0001 C CNN
-F 3 "" H 3950 19350 50  0001 C CNN
-	1    3950 19350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 18950 4450 18950
-Connection ~ 3950 18950
-Text Label 4450 18950 0    50   ~ 0
-o2
-$Comp
-L Transistor_FET:2N7000 Q34
-U 1 1 5B679007
-P 3100 17600
-F 0 "Q34" H 3305 17646 50  0000 L CNN
-F 1 "2N7000" H 3305 17555 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 17525 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 17600 50  0001 L CNN
-	1    3100 17600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q35
-U 1 1 5B67900E
-P 3100 18000
-F 0 "Q35" H 3305 18046 50  0000 L CNN
-F 1 "2N7000" H 3305 17955 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 17925 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 18000 50  0001 L CNN
-	1    3100 18000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR037
-U 1 1 5B679015
-P 3200 18200
-F 0 "#PWR037" H 3200 17950 50  0001 C CNN
-F 1 "GND" H 3205 18027 50  0000 C CNN
-F 2 "" H 3200 18200 50  0001 C CNN
-F 3 "" H 3200 18200 50  0001 C CNN
-	1    3200 18200
-	1    0    0    -1  
-$EndComp
-Text Label 2900 17600 0    50   ~ 0
-c2
-Text Label 2900 18000 0    50   ~ 0
-sc
-$Comp
-L Transistor_FET:2N7000 Q36
-U 1 1 5B67901D
-P 3100 18600
-F 0 "Q36" H 3305 18646 50  0000 L CNN
-F 1 "2N7000" H 3305 18555 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 18525 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 18600 50  0001 L CNN
-	1    3100 18600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q37
-U 1 1 5B679024
-P 3100 19000
-F 0 "Q37" H 3305 19046 50  0000 L CNN
-F 1 "2N7000" H 3305 18955 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 18925 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 19000 50  0001 L CNN
-	1    3100 19000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR039
-U 1 1 5B67902B
-P 3200 19200
-F 0 "#PWR039" H 3200 18950 50  0001 C CNN
-F 1 "GND" H 3205 19027 50  0000 C CNN
-F 2 "" H 3200 19200 50  0001 C CNN
-F 3 "" H 3200 19200 50  0001 C CNN
-	1    3200 19200
-	1    0    0    -1  
-$EndComp
-Text Label 2900 18600 0    50   ~ 0
-d2
-Text Label 2900 19000 0    50   ~ 0
-sd
-Wire Wire Line
-	3200 18400 3650 18400
-Wire Wire Line
-	3200 17400 3650 17400
-Connection ~ 3650 16400
-Wire Wire Line
-	3650 16400 3650 15400
-Wire Wire Line
-	3650 16400 3650 17400
-Connection ~ 3650 17400
-Wire Wire Line
-	3650 17400 3650 18400
-Wire Wire Line
-	3650 18400 3650 19150
-Connection ~ 3650 18400
-$Comp
-L Transistor_FET:2N7000 Q39
-U 1 1 5B67903C
-P 3100 20250
-F 0 "Q39" H 3305 20296 50  0000 L CNN
-F 1 "2N7000" H 3305 20205 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 20175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 20250 50  0001 L CNN
-	1    3100 20250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q40
-U 1 1 5B679043
-P 3100 20650
-F 0 "Q40" H 3305 20696 50  0000 L CNN
-F 1 "2N7000" H 3305 20605 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 20575 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 20650 50  0001 L CNN
-	1    3100 20650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR042
-U 1 1 5B67904A
-P 3200 20850
-F 0 "#PWR042" H 3200 20600 50  0001 C CNN
-F 1 "GND" H 3205 20677 50  0000 C CNN
-F 2 "" H 3200 20850 50  0001 C CNN
-F 3 "" H 3200 20850 50  0001 C CNN
-	1    3200 20850
-	1    0    0    -1  
-$EndComp
-Text Label 2900 20250 0    50   ~ 0
-a3
-Text Label 2900 20650 0    50   ~ 0
-sa
-$Comp
-L Device:R R14
-U 1 1 5B679052
-P 3200 19900
-F 0 "R14" H 3270 19946 50  0000 L CNN
-F 1 "R" H 3270 19855 50  0000 L CNN
-F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 19900 50  0001 C CNN
-F 3 "~" H 3200 19900 50  0001 C CNN
-	1    3200 19900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR041
-U 1 1 5B679059
-P 3200 19750
-F 0 "#PWR041" H 3200 19600 50  0001 C CNN
-F 1 "VCC" H 3217 19923 50  0000 C CNN
-F 2 "" H 3200 19750 50  0001 C CNN
-F 3 "" H 3200 19750 50  0001 C CNN
-	1    3200 19750
-	1    0    0    -1  
-$EndComp
-Connection ~ 3200 20050
-Wire Wire Line
-	3200 20050 3650 20050
-$Comp
-L Transistor_FET:2N7000 Q47
-U 1 1 5B679061
-P 3850 23800
-F 0 "Q47" H 4055 23846 50  0000 L CNN
-F 1 "2N7000" H 4055 23755 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4050 23725 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 23800 50  0001 L CNN
-	1    3850 23800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q41
-U 1 1 5B679068
-P 3100 21250
-F 0 "Q41" H 3305 21296 50  0000 L CNN
-F 1 "2N7000" H 3305 21205 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 21175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 21250 50  0001 L CNN
-	1    3100 21250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q42
-U 1 1 5B67906F
-P 3100 21650
-F 0 "Q42" H 3305 21696 50  0000 L CNN
-F 1 "2N7000" H 3305 21605 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 21575 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 21650 50  0001 L CNN
-	1    3100 21650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR043
-U 1 1 5B679076
-P 3200 21850
-F 0 "#PWR043" H 3200 21600 50  0001 C CNN
-F 1 "GND" H 3205 21677 50  0000 C CNN
-F 2 "" H 3200 21850 50  0001 C CNN
-F 3 "" H 3200 21850 50  0001 C CNN
-	1    3200 21850
-	1    0    0    -1  
-$EndComp
-Text Label 2900 21250 0    50   ~ 0
-b3
-Text Label 2900 21650 0    50   ~ 0
-sb
-Wire Wire Line
-	3200 21050 3650 21050
-$Comp
-L Device:R R15
-U 1 1 5B67907F
-P 3950 23450
-F 0 "R15" H 4020 23496 50  0000 L CNN
-F 1 "R" H 4020 23405 50  0000 L CNN
-F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3880 23450 50  0001 C CNN
-F 3 "~" H 3950 23450 50  0001 C CNN
-	1    3950 23450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR045
-U 1 1 5B679086
-P 3950 23300
-F 0 "#PWR045" H 3950 23150 50  0001 C CNN
-F 1 "VCC" H 3967 23473 50  0000 C CNN
-F 2 "" H 3950 23300 50  0001 C CNN
-F 3 "" H 3950 23300 50  0001 C CNN
-	1    3950 23300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR047
-U 1 1 5B67908C
-P 3950 24000
-F 0 "#PWR047" H 3950 23750 50  0001 C CNN
-F 1 "GND" H 3955 23827 50  0000 C CNN
-F 2 "" H 3950 24000 50  0001 C CNN
-F 3 "" H 3950 24000 50  0001 C CNN
-	1    3950 24000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 23600 4450 23600
-Connection ~ 3950 23600
-Text Label 4450 23600 0    50   ~ 0
-o3
-$Comp
-L Transistor_FET:2N7000 Q43
-U 1 1 5B679095
-P 3100 22250
-F 0 "Q43" H 3305 22296 50  0000 L CNN
-F 1 "2N7000" H 3305 22205 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 22175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 22250 50  0001 L CNN
-	1    3100 22250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q44
-U 1 1 5B67909C
-P 3100 22650
-F 0 "Q44" H 3305 22696 50  0000 L CNN
-F 1 "2N7000" H 3305 22605 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 22575 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 22650 50  0001 L CNN
-	1    3100 22650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR044
-U 1 1 5B6790A3
-P 3200 22850
-F 0 "#PWR044" H 3200 22600 50  0001 C CNN
-F 1 "GND" H 3205 22677 50  0000 C CNN
-F 2 "" H 3200 22850 50  0001 C CNN
-F 3 "" H 3200 22850 50  0001 C CNN
-	1    3200 22850
-	1    0    0    -1  
-$EndComp
-Text Label 2900 22250 0    50   ~ 0
-c3
-Text Label 2900 22650 0    50   ~ 0
-sc
-$Comp
-L Transistor_FET:2N7000 Q45
-U 1 1 5B6790AB
-P 3100 23250
-F 0 "Q45" H 3305 23296 50  0000 L CNN
-F 1 "2N7000" H 3305 23205 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 23175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 23250 50  0001 L CNN
-	1    3100 23250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q46
-U 1 1 5B6790B2
-P 3100 23650
-F 0 "Q46" H 3305 23696 50  0000 L CNN
-F 1 "2N7000" H 3305 23605 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 23575 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 23650 50  0001 L CNN
-	1    3100 23650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR046
-U 1 1 5B6790B9
-P 3200 23850
-F 0 "#PWR046" H 3200 23600 50  0001 C CNN
-F 1 "GND" H 3205 23677 50  0000 C CNN
-F 2 "" H 3200 23850 50  0001 C CNN
-F 3 "" H 3200 23850 50  0001 C CNN
-	1    3200 23850
-	1    0    0    -1  
-$EndComp
-Text Label 2900 23250 0    50   ~ 0
-d3
-Text Label 2900 23650 0    50   ~ 0
-sd
-Wire Wire Line
-	3200 23050 3650 23050
-Wire Wire Line
-	3200 22050 3650 22050
-Connection ~ 3650 21050
-Wire Wire Line
-	3650 21050 3650 20050
-Wire Wire Line
-	3650 21050 3650 22050
-Connection ~ 3650 22050
-Wire Wire Line
-	3650 22050 3650 23050
-Wire Wire Line
-	3650 23050 3650 23800
-Connection ~ 3650 23050
 Wire Wire Line
 	1900 1750 1900 4050
 Connection ~ 1900 1750
 Wire Wire Line
 	1900 1750 1950 1750
 $Comp
-L power:GND #PWR084
+L power:GND #PWR056
 U 1 1 5B76323C
-P 3300 44450
-F 0 "#PWR084" H 3300 44200 50  0001 C CNN
-F 1 "GND" H 3305 44277 50  0000 C CNN
-F 2 "" H 3300 44450 50  0001 C CNN
-F 3 "" H 3300 44450 50  0001 C CNN
-	1    3300 44450
+P 3300 16700
+F 0 "#PWR056" H 3300 16450 50  0001 C CNN
+F 1 "GND" H 3305 16527 50  0000 C CNN
+F 2 "" H 3300 16700 50  0001 C CNN
+F 3 "" H 3300 16700 50  0001 C CNN
+	1    3300 16700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5B763243
-P 3300 43600
-F 0 "D1" V 3338 43483 50  0000 R CNN
-F 1 "LED" V 3247 43483 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3300 43600 50  0001 C CNN
-F 3 "~" H 3300 43600 50  0001 C CNN
-	1    3300 43600
-	0    -1   -1   0   
+P 3300 15850
+F 0 "D1" V 3338 15733 50  0000 R CNN
+F 1 "LED" V 3247 15733 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3300 15850 50  0001 C CNN
+F 3 "~" H 3300 15850 50  0001 C CNN
+	1    3300 15850
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R24
 U 1 1 5B76324A
-P 3300 43900
-F 0 "R24" H 3370 43946 50  0000 L CNN
-F 1 "R" H 3370 43855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3230 43900 50  0001 C CNN
-F 3 "~" H 3300 43900 50  0001 C CNN
-	1    3300 43900
+P 3300 16150
+F 0 "R24" H 3370 16196 50  0000 L CNN
+F 1 "R" H 3370 16105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3230 16150 50  0001 C CNN
+F 3 "~" H 3300 16150 50  0001 C CNN
+	1    3300 16150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D2
 U 1 1 5B763251
-P 3950 43600
-F 0 "D2" V 3988 43483 50  0000 R CNN
-F 1 "LED" V 3897 43483 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3950 43600 50  0001 C CNN
-F 3 "~" H 3950 43600 50  0001 C CNN
-	1    3950 43600
-	0    -1   -1   0   
+P 3950 15850
+F 0 "D2" V 3988 15733 50  0000 R CNN
+F 1 "LED" V 3897 15733 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3950 15850 50  0001 C CNN
+F 3 "~" H 3950 15850 50  0001 C CNN
+	1    3950 15850
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R25
 U 1 1 5B763258
-P 3950 43900
-F 0 "R25" H 4020 43946 50  0000 L CNN
-F 1 "R" H 4020 43855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3880 43900 50  0001 C CNN
-F 3 "~" H 3950 43900 50  0001 C CNN
-	1    3950 43900
+P 3950 16150
+F 0 "R25" H 4020 16196 50  0000 L CNN
+F 1 "R" H 4020 16105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3880 16150 50  0001 C CNN
+F 3 "~" H 3950 16150 50  0001 C CNN
+	1    3950 16150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D3
 U 1 1 5B76325F
-P 4600 43600
-F 0 "D3" V 4638 43483 50  0000 R CNN
-F 1 "LED" V 4547 43483 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4600 43600 50  0001 C CNN
-F 3 "~" H 4600 43600 50  0001 C CNN
-	1    4600 43600
-	0    -1   -1   0   
+P 4600 15850
+F 0 "D3" V 4638 15733 50  0000 R CNN
+F 1 "LED" V 4547 15733 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4600 15850 50  0001 C CNN
+F 3 "~" H 4600 15850 50  0001 C CNN
+	1    4600 15850
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R26
 U 1 1 5B763266
-P 4600 43900
-F 0 "R26" H 4670 43946 50  0000 L CNN
-F 1 "R" H 4670 43855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 4530 43900 50  0001 C CNN
-F 3 "~" H 4600 43900 50  0001 C CNN
-	1    4600 43900
+P 4600 16150
+F 0 "R26" H 4670 16196 50  0000 L CNN
+F 1 "R" H 4670 16105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 4530 16150 50  0001 C CNN
+F 3 "~" H 4600 16150 50  0001 C CNN
+	1    4600 16150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D4
 U 1 1 5B76326D
-P 5250 43600
-F 0 "D4" V 5288 43483 50  0000 R CNN
-F 1 "LED" V 5197 43483 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5250 43600 50  0001 C CNN
-F 3 "~" H 5250 43600 50  0001 C CNN
-	1    5250 43600
-	0    -1   -1   0   
+P 5250 15850
+F 0 "D4" V 5288 15733 50  0000 R CNN
+F 1 "LED" V 5197 15733 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5250 15850 50  0001 C CNN
+F 3 "~" H 5250 15850 50  0001 C CNN
+	1    5250 15850
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R27
 U 1 1 5B763274
-P 5250 43900
-F 0 "R27" H 5320 43946 50  0000 L CNN
-F 1 "R" H 5320 43855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5180 43900 50  0001 C CNN
-F 3 "~" H 5250 43900 50  0001 C CNN
-	1    5250 43900
+P 5250 16150
+F 0 "R27" H 5320 16196 50  0000 L CNN
+F 1 "R" H 5320 16105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5180 16150 50  0001 C CNN
+F 3 "~" H 5250 16150 50  0001 C CNN
+	1    5250 16150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D5
 U 1 1 5B76327B
-P 5900 43600
-F 0 "D5" V 5938 43483 50  0000 R CNN
-F 1 "LED" V 5847 43483 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5900 43600 50  0001 C CNN
-F 3 "~" H 5900 43600 50  0001 C CNN
-	1    5900 43600
-	0    -1   -1   0   
+P 5900 15850
+F 0 "D5" V 5938 15733 50  0000 R CNN
+F 1 "LED" V 5847 15733 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5900 15850 50  0001 C CNN
+F 3 "~" H 5900 15850 50  0001 C CNN
+	1    5900 15850
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R28
 U 1 1 5B763282
-P 5900 43900
-F 0 "R28" H 5970 43946 50  0000 L CNN
-F 1 "R" H 5970 43855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5830 43900 50  0001 C CNN
-F 3 "~" H 5900 43900 50  0001 C CNN
-	1    5900 43900
+P 5900 16150
+F 0 "R28" H 5970 16196 50  0000 L CNN
+F 1 "R" H 5970 16105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5830 16150 50  0001 C CNN
+F 3 "~" H 5900 16150 50  0001 C CNN
+	1    5900 16150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D6
 U 1 1 5B763289
-P 6550 43600
-F 0 "D6" V 6588 43483 50  0000 R CNN
-F 1 "LED" V 6497 43483 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6550 43600 50  0001 C CNN
-F 3 "~" H 6550 43600 50  0001 C CNN
-	1    6550 43600
-	0    -1   -1   0   
+P 6550 15850
+F 0 "D6" V 6588 15733 50  0000 R CNN
+F 1 "LED" V 6497 15733 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6550 15850 50  0001 C CNN
+F 3 "~" H 6550 15850 50  0001 C CNN
+	1    6550 15850
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R29
 U 1 1 5B763290
-P 6550 43900
-F 0 "R29" H 6620 43946 50  0000 L CNN
-F 1 "R" H 6620 43855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 6480 43900 50  0001 C CNN
-F 3 "~" H 6550 43900 50  0001 C CNN
-	1    6550 43900
+P 6550 16150
+F 0 "R29" H 6620 16196 50  0000 L CNN
+F 1 "R" H 6620 16105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 6480 16150 50  0001 C CNN
+F 3 "~" H 6550 16150 50  0001 C CNN
+	1    6550 16150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D7
 U 1 1 5B763297
-P 7200 43600
-F 0 "D7" V 7238 43483 50  0000 R CNN
-F 1 "LED" V 7147 43483 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7200 43600 50  0001 C CNN
-F 3 "~" H 7200 43600 50  0001 C CNN
-	1    7200 43600
-	0    -1   -1   0   
+P 7200 15850
+F 0 "D7" V 7238 15733 50  0000 R CNN
+F 1 "LED" V 7147 15733 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7200 15850 50  0001 C CNN
+F 3 "~" H 7200 15850 50  0001 C CNN
+	1    7200 15850
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R30
 U 1 1 5B76329E
-P 7200 43900
-F 0 "R30" H 7270 43946 50  0000 L CNN
-F 1 "R" H 7270 43855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7130 43900 50  0001 C CNN
-F 3 "~" H 7200 43900 50  0001 C CNN
-	1    7200 43900
+P 7200 16150
+F 0 "R30" H 7270 16196 50  0000 L CNN
+F 1 "R" H 7270 16105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7130 16150 50  0001 C CNN
+F 3 "~" H 7200 16150 50  0001 C CNN
+	1    7200 16150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D8
 U 1 1 5B7632A5
-P 7850 43600
-F 0 "D8" V 7888 43483 50  0000 R CNN
-F 1 "LED" V 7797 43483 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7850 43600 50  0001 C CNN
-F 3 "~" H 7850 43600 50  0001 C CNN
-	1    7850 43600
-	0    -1   -1   0   
+P 7850 15850
+F 0 "D8" V 7888 15733 50  0000 R CNN
+F 1 "LED" V 7797 15733 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7850 15850 50  0001 C CNN
+F 3 "~" H 7850 15850 50  0001 C CNN
+	1    7850 15850
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R31
 U 1 1 5B7632AC
-P 7850 43900
-F 0 "R31" H 7920 43946 50  0000 L CNN
-F 1 "R" H 7920 43855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7780 43900 50  0001 C CNN
-F 3 "~" H 7850 43900 50  0001 C CNN
-	1    7850 43900
+P 7850 16150
+F 0 "R31" H 7920 16196 50  0000 L CNN
+F 1 "R" H 7920 16105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7780 16150 50  0001 C CNN
+F 3 "~" H 7850 16150 50  0001 C CNN
+	1    7850 16150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q84
+L Transistor_FET:2N7000 Q56
 U 1 1 5B7632C3
-P 3200 44250
-F 0 "Q84" H 3405 44296 50  0000 L CNN
-F 1 "2N7000" H 3405 44205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3400 44175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3200 44250 50  0001 L CNN
-	1    3200 44250
+P 3200 16500
+F 0 "Q56" H 3405 16546 50  0000 L CNN
+F 1 "2N7000" H 3405 16455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3400 16425 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3200 16500 50  0001 L CNN
+	1    3200 16500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q85
+L Transistor_FET:2N7000 Q57
 U 1 1 5B7632CA
-P 3850 44250
-F 0 "Q85" H 4055 44296 50  0000 L CNN
-F 1 "2N7000" H 4055 44205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4050 44175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 44250 50  0001 L CNN
-	1    3850 44250
+P 3850 16500
+F 0 "Q57" H 4055 16546 50  0000 L CNN
+F 1 "2N7000" H 4055 16455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4050 16425 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 16500 50  0001 L CNN
+	1    3850 16500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q86
+L Transistor_FET:2N7000 Q58
 U 1 1 5B7632D1
-P 4500 44250
-F 0 "Q86" H 4705 44296 50  0000 L CNN
-F 1 "2N7000" H 4705 44205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4700 44175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 44250 50  0001 L CNN
-	1    4500 44250
+P 4500 16500
+F 0 "Q58" H 4705 16546 50  0000 L CNN
+F 1 "2N7000" H 4705 16455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4700 16425 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 16500 50  0001 L CNN
+	1    4500 16500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q87
+L Transistor_FET:2N7000 Q59
 U 1 1 5B7632D8
-P 5150 44250
-F 0 "Q87" H 5355 44296 50  0000 L CNN
-F 1 "2N7000" H 5355 44205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5350 44175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5150 44250 50  0001 L CNN
-	1    5150 44250
+P 5150 16500
+F 0 "Q59" H 5355 16546 50  0000 L CNN
+F 1 "2N7000" H 5355 16455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5350 16425 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5150 16500 50  0001 L CNN
+	1    5150 16500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q88
+L Transistor_FET:2N7000 Q60
 U 1 1 5B7632DF
-P 5800 44250
-F 0 "Q88" H 6005 44296 50  0000 L CNN
-F 1 "2N7000" H 6005 44205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6000 44175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5800 44250 50  0001 L CNN
-	1    5800 44250
+P 5800 16500
+F 0 "Q60" H 6005 16546 50  0000 L CNN
+F 1 "2N7000" H 6005 16455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6000 16425 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5800 16500 50  0001 L CNN
+	1    5800 16500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q89
+L Transistor_FET:2N7000 Q61
 U 1 1 5B7632E6
-P 6450 44250
-F 0 "Q89" H 6655 44296 50  0000 L CNN
-F 1 "2N7000" H 6655 44205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6650 44175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 6450 44250 50  0001 L CNN
-	1    6450 44250
+P 6450 16500
+F 0 "Q61" H 6655 16546 50  0000 L CNN
+F 1 "2N7000" H 6655 16455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6650 16425 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 6450 16500 50  0001 L CNN
+	1    6450 16500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q90
+L Transistor_FET:2N7000 Q62
 U 1 1 5B7632ED
-P 7100 44250
-F 0 "Q90" H 7305 44296 50  0000 L CNN
-F 1 "2N7000" H 7305 44205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7300 44175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7100 44250 50  0001 L CNN
-	1    7100 44250
+P 7100 16500
+F 0 "Q62" H 7305 16546 50  0000 L CNN
+F 1 "2N7000" H 7305 16455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7300 16425 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7100 16500 50  0001 L CNN
+	1    7100 16500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q91
+L Transistor_FET:2N7000 Q63
 U 1 1 5B7632F4
-P 7750 44250
-F 0 "Q91" H 7955 44296 50  0000 L CNN
-F 1 "2N7000" H 7955 44205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7950 44175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7750 44250 50  0001 L CNN
-	1    7750 44250
+P 7750 16500
+F 0 "Q63" H 7955 16546 50  0000 L CNN
+F 1 "2N7000" H 7955 16455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7950 16425 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7750 16500 50  0001 L CNN
+	1    7750 16500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 44450 7200 44450
+	7850 16700 7200 16700
 Wire Wire Line
-	7200 44450 6550 44450
-Connection ~ 7200 44450
+	7200 16700 6550 16700
+Connection ~ 7200 16700
 Wire Wire Line
-	6550 44450 5900 44450
-Connection ~ 6550 44450
+	6550 16700 5900 16700
+Connection ~ 6550 16700
 Wire Wire Line
-	5900 44450 5250 44450
-Connection ~ 5900 44450
+	5900 16700 5250 16700
+Connection ~ 5900 16700
 Wire Wire Line
-	5250 44450 4600 44450
-Connection ~ 5250 44450
+	5250 16700 4600 16700
+Connection ~ 5250 16700
 Wire Wire Line
-	4600 44450 3950 44450
-Connection ~ 4600 44450
+	4600 16700 3950 16700
+Connection ~ 4600 16700
 Wire Wire Line
-	3950 44450 3300 44450
-Connection ~ 3950 44450
+	3950 16700 3300 16700
+Connection ~ 3950 16700
 Wire Wire Line
-	2900 43250 3650 43250
+	2900 15500 3650 15500
 Wire Wire Line
-	2900 43150 4300 43150
+	2900 15400 4300 15400
 Wire Wire Line
-	2900 43050 4950 43050
+	2900 15300 4950 15300
 Wire Wire Line
-	2900 42950 5600 42950
+	2900 15200 5600 15200
 Wire Wire Line
-	2900 42850 6250 42850
+	2900 15100 6250 15100
 Wire Wire Line
-	2900 42750 6900 42750
+	2900 15000 6900 15000
 Wire Wire Line
-	2900 42650 7550 42650
+	2900 14900 7550 14900
 $Comp
-L power:VCC #PWR076
+L power:VCC #PWR048
 U 1 1 5B834D9A
-P 3300 43450
-F 0 "#PWR076" H 3300 43300 50  0001 C CNN
-F 1 "VCC" H 3317 43623 50  0000 C CNN
-F 2 "" H 3300 43450 50  0001 C CNN
-F 3 "" H 3300 43450 50  0001 C CNN
-	1    3300 43450
+P 3300 15700
+F 0 "#PWR048" H 3300 15550 50  0001 C CNN
+F 1 "VCC" H 3317 15873 50  0000 C CNN
+F 2 "" H 3300 15700 50  0001 C CNN
+F 3 "" H 3300 15700 50  0001 C CNN
+	1    3300 15700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 42650 7550 44250
+	7550 14900 7550 16500
 Wire Wire Line
-	6250 42850 6250 44250
+	6250 15100 6250 16500
 Wire Wire Line
-	5600 42950 5600 44250
+	5600 15200 5600 16500
 Wire Wire Line
-	4950 43050 4950 44250
+	4950 15300 4950 16500
 Wire Wire Line
-	4300 43150 4300 44250
+	4300 15400 4300 16500
 Wire Wire Line
-	3650 43250 3650 44250
+	3650 15500 3650 16500
 $Comp
-L power:VCC #PWR077
+L power:VCC #PWR049
 U 1 1 5B88691A
-P 3950 43450
-F 0 "#PWR077" H 3950 43300 50  0001 C CNN
-F 1 "VCC" H 3967 43623 50  0000 C CNN
-F 2 "" H 3950 43450 50  0001 C CNN
-F 3 "" H 3950 43450 50  0001 C CNN
-	1    3950 43450
+P 3950 15700
+F 0 "#PWR049" H 3950 15550 50  0001 C CNN
+F 1 "VCC" H 3967 15873 50  0000 C CNN
+F 2 "" H 3950 15700 50  0001 C CNN
+F 3 "" H 3950 15700 50  0001 C CNN
+	1    3950 15700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR078
+L power:VCC #PWR050
 U 1 1 5B886A77
-P 4600 43450
-F 0 "#PWR078" H 4600 43300 50  0001 C CNN
-F 1 "VCC" H 4617 43623 50  0000 C CNN
-F 2 "" H 4600 43450 50  0001 C CNN
-F 3 "" H 4600 43450 50  0001 C CNN
-	1    4600 43450
+P 4600 15700
+F 0 "#PWR050" H 4600 15550 50  0001 C CNN
+F 1 "VCC" H 4617 15873 50  0000 C CNN
+F 2 "" H 4600 15700 50  0001 C CNN
+F 3 "" H 4600 15700 50  0001 C CNN
+	1    4600 15700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR079
+L power:VCC #PWR051
 U 1 1 5B886BD4
-P 5250 43450
-F 0 "#PWR079" H 5250 43300 50  0001 C CNN
-F 1 "VCC" H 5267 43623 50  0000 C CNN
-F 2 "" H 5250 43450 50  0001 C CNN
-F 3 "" H 5250 43450 50  0001 C CNN
-	1    5250 43450
+P 5250 15700
+F 0 "#PWR051" H 5250 15550 50  0001 C CNN
+F 1 "VCC" H 5267 15873 50  0000 C CNN
+F 2 "" H 5250 15700 50  0001 C CNN
+F 3 "" H 5250 15700 50  0001 C CNN
+	1    5250 15700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR080
+L power:VCC #PWR052
 U 1 1 5B886D31
-P 5900 43450
-F 0 "#PWR080" H 5900 43300 50  0001 C CNN
-F 1 "VCC" H 5917 43623 50  0000 C CNN
-F 2 "" H 5900 43450 50  0001 C CNN
-F 3 "" H 5900 43450 50  0001 C CNN
-	1    5900 43450
+P 5900 15700
+F 0 "#PWR052" H 5900 15550 50  0001 C CNN
+F 1 "VCC" H 5917 15873 50  0000 C CNN
+F 2 "" H 5900 15700 50  0001 C CNN
+F 3 "" H 5900 15700 50  0001 C CNN
+	1    5900 15700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR081
+L power:VCC #PWR053
 U 1 1 5B886E8E
-P 6550 43450
-F 0 "#PWR081" H 6550 43300 50  0001 C CNN
-F 1 "VCC" H 6567 43623 50  0000 C CNN
-F 2 "" H 6550 43450 50  0001 C CNN
-F 3 "" H 6550 43450 50  0001 C CNN
-	1    6550 43450
+P 6550 15700
+F 0 "#PWR053" H 6550 15550 50  0001 C CNN
+F 1 "VCC" H 6567 15873 50  0000 C CNN
+F 2 "" H 6550 15700 50  0001 C CNN
+F 3 "" H 6550 15700 50  0001 C CNN
+	1    6550 15700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR082
+L power:VCC #PWR054
 U 1 1 5B886FEB
-P 7200 43450
-F 0 "#PWR082" H 7200 43300 50  0001 C CNN
-F 1 "VCC" H 7217 43623 50  0000 C CNN
-F 2 "" H 7200 43450 50  0001 C CNN
-F 3 "" H 7200 43450 50  0001 C CNN
-	1    7200 43450
+P 7200 15700
+F 0 "#PWR054" H 7200 15550 50  0001 C CNN
+F 1 "VCC" H 7217 15873 50  0000 C CNN
+F 2 "" H 7200 15700 50  0001 C CNN
+F 3 "" H 7200 15700 50  0001 C CNN
+	1    7200 15700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR083
+L power:VCC #PWR055
 U 1 1 5B887148
-P 7850 43450
-F 0 "#PWR083" H 7850 43300 50  0001 C CNN
-F 1 "VCC" H 7867 43623 50  0000 C CNN
-F 2 "" H 7850 43450 50  0001 C CNN
-F 3 "" H 7850 43450 50  0001 C CNN
-	1    7850 43450
+P 7850 15700
+F 0 "#PWR055" H 7850 15550 50  0001 C CNN
+F 1 "VCC" H 7867 15873 50  0000 C CNN
+F 2 "" H 7850 15700 50  0001 C CNN
+F 3 "" H 7850 15700 50  0001 C CNN
+	1    7850 15700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 43350 2900 43350
+	3000 15600 2900 15600
 Wire Wire Line
-	3000 43350 3000 44250
+	3000 15600 3000 16500
 $Comp
-L power:GND #PWR093
+L power:GND #PWR065
 U 1 1 5B8AF66D
-P 3300 46500
-F 0 "#PWR093" H 3300 46250 50  0001 C CNN
-F 1 "GND" H 3305 46327 50  0000 C CNN
-F 2 "" H 3300 46500 50  0001 C CNN
-F 3 "" H 3300 46500 50  0001 C CNN
-	1    3300 46500
+P 3300 18750
+F 0 "#PWR065" H 3300 18500 50  0001 C CNN
+F 1 "GND" H 3305 18577 50  0000 C CNN
+F 2 "" H 3300 18750 50  0001 C CNN
+F 3 "" H 3300 18750 50  0001 C CNN
+	1    3300 18750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D9
 U 1 1 5B8AF673
-P 3300 45650
-F 0 "D9" V 3338 45533 50  0000 R CNN
-F 1 "LED" V 3247 45533 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3300 45650 50  0001 C CNN
-F 3 "~" H 3300 45650 50  0001 C CNN
-	1    3300 45650
-	0    -1   -1   0   
+P 3300 17900
+F 0 "D9" V 3338 17783 50  0000 R CNN
+F 1 "LED" V 3247 17783 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3300 17900 50  0001 C CNN
+F 3 "~" H 3300 17900 50  0001 C CNN
+	1    3300 17900
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R32
 U 1 1 5B8AF67A
-P 3300 45950
-F 0 "R32" H 3370 45996 50  0000 L CNN
-F 1 "R" H 3370 45905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3230 45950 50  0001 C CNN
-F 3 "~" H 3300 45950 50  0001 C CNN
-	1    3300 45950
+P 3300 18200
+F 0 "R32" H 3370 18246 50  0000 L CNN
+F 1 "R" H 3370 18155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3230 18200 50  0001 C CNN
+F 3 "~" H 3300 18200 50  0001 C CNN
+	1    3300 18200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D10
 U 1 1 5B8AF681
-P 3950 45650
-F 0 "D10" V 3988 45533 50  0000 R CNN
-F 1 "LED" V 3897 45533 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3950 45650 50  0001 C CNN
-F 3 "~" H 3950 45650 50  0001 C CNN
-	1    3950 45650
-	0    -1   -1   0   
+P 3950 17900
+F 0 "D10" V 3988 17783 50  0000 R CNN
+F 1 "LED" V 3897 17783 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3950 17900 50  0001 C CNN
+F 3 "~" H 3950 17900 50  0001 C CNN
+	1    3950 17900
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R33
 U 1 1 5B8AF688
-P 3950 45950
-F 0 "R33" H 4020 45996 50  0000 L CNN
-F 1 "R" H 4020 45905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3880 45950 50  0001 C CNN
-F 3 "~" H 3950 45950 50  0001 C CNN
-	1    3950 45950
+P 3950 18200
+F 0 "R33" H 4020 18246 50  0000 L CNN
+F 1 "R" H 4020 18155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3880 18200 50  0001 C CNN
+F 3 "~" H 3950 18200 50  0001 C CNN
+	1    3950 18200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D11
 U 1 1 5B8AF68F
-P 4600 45650
-F 0 "D11" V 4638 45533 50  0000 R CNN
-F 1 "LED" V 4547 45533 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4600 45650 50  0001 C CNN
-F 3 "~" H 4600 45650 50  0001 C CNN
-	1    4600 45650
-	0    -1   -1   0   
+P 4600 17900
+F 0 "D11" V 4638 17783 50  0000 R CNN
+F 1 "LED" V 4547 17783 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4600 17900 50  0001 C CNN
+F 3 "~" H 4600 17900 50  0001 C CNN
+	1    4600 17900
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R34
 U 1 1 5B8AF696
-P 4600 45950
-F 0 "R34" H 4670 45996 50  0000 L CNN
-F 1 "R" H 4670 45905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 4530 45950 50  0001 C CNN
-F 3 "~" H 4600 45950 50  0001 C CNN
-	1    4600 45950
+P 4600 18200
+F 0 "R34" H 4670 18246 50  0000 L CNN
+F 1 "R" H 4670 18155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 4530 18200 50  0001 C CNN
+F 3 "~" H 4600 18200 50  0001 C CNN
+	1    4600 18200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D12
 U 1 1 5B8AF69D
-P 5250 45650
-F 0 "D12" V 5288 45533 50  0000 R CNN
-F 1 "LED" V 5197 45533 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5250 45650 50  0001 C CNN
-F 3 "~" H 5250 45650 50  0001 C CNN
-	1    5250 45650
-	0    -1   -1   0   
+P 5250 17900
+F 0 "D12" V 5288 17783 50  0000 R CNN
+F 1 "LED" V 5197 17783 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5250 17900 50  0001 C CNN
+F 3 "~" H 5250 17900 50  0001 C CNN
+	1    5250 17900
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R35
 U 1 1 5B8AF6A4
-P 5250 45950
-F 0 "R35" H 5320 45996 50  0000 L CNN
-F 1 "R" H 5320 45905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5180 45950 50  0001 C CNN
-F 3 "~" H 5250 45950 50  0001 C CNN
-	1    5250 45950
+P 5250 18200
+F 0 "R35" H 5320 18246 50  0000 L CNN
+F 1 "R" H 5320 18155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5180 18200 50  0001 C CNN
+F 3 "~" H 5250 18200 50  0001 C CNN
+	1    5250 18200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D13
 U 1 1 5B8AF6AB
-P 5900 45650
-F 0 "D13" V 5938 45533 50  0000 R CNN
-F 1 "LED" V 5847 45533 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5900 45650 50  0001 C CNN
-F 3 "~" H 5900 45650 50  0001 C CNN
-	1    5900 45650
-	0    -1   -1   0   
+P 5900 17900
+F 0 "D13" V 5938 17783 50  0000 R CNN
+F 1 "LED" V 5847 17783 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5900 17900 50  0001 C CNN
+F 3 "~" H 5900 17900 50  0001 C CNN
+	1    5900 17900
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R36
 U 1 1 5B8AF6B2
-P 5900 45950
-F 0 "R36" H 5970 45996 50  0000 L CNN
-F 1 "R" H 5970 45905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5830 45950 50  0001 C CNN
-F 3 "~" H 5900 45950 50  0001 C CNN
-	1    5900 45950
+P 5900 18200
+F 0 "R36" H 5970 18246 50  0000 L CNN
+F 1 "R" H 5970 18155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5830 18200 50  0001 C CNN
+F 3 "~" H 5900 18200 50  0001 C CNN
+	1    5900 18200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D14
 U 1 1 5B8AF6B9
-P 6550 45650
-F 0 "D14" V 6588 45533 50  0000 R CNN
-F 1 "LED" V 6497 45533 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6550 45650 50  0001 C CNN
-F 3 "~" H 6550 45650 50  0001 C CNN
-	1    6550 45650
-	0    -1   -1   0   
+P 6550 17900
+F 0 "D14" V 6588 17783 50  0000 R CNN
+F 1 "LED" V 6497 17783 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6550 17900 50  0001 C CNN
+F 3 "~" H 6550 17900 50  0001 C CNN
+	1    6550 17900
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R37
 U 1 1 5B8AF6C0
-P 6550 45950
-F 0 "R37" H 6620 45996 50  0000 L CNN
-F 1 "R" H 6620 45905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 6480 45950 50  0001 C CNN
-F 3 "~" H 6550 45950 50  0001 C CNN
-	1    6550 45950
+P 6550 18200
+F 0 "R37" H 6620 18246 50  0000 L CNN
+F 1 "R" H 6620 18155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 6480 18200 50  0001 C CNN
+F 3 "~" H 6550 18200 50  0001 C CNN
+	1    6550 18200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D15
 U 1 1 5B8AF6C7
-P 7200 45650
-F 0 "D15" V 7238 45533 50  0000 R CNN
-F 1 "LED" V 7147 45533 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7200 45650 50  0001 C CNN
-F 3 "~" H 7200 45650 50  0001 C CNN
-	1    7200 45650
-	0    -1   -1   0   
+P 7200 17900
+F 0 "D15" V 7238 17783 50  0000 R CNN
+F 1 "LED" V 7147 17783 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7200 17900 50  0001 C CNN
+F 3 "~" H 7200 17900 50  0001 C CNN
+	1    7200 17900
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R38
 U 1 1 5B8AF6CE
-P 7200 45950
-F 0 "R38" H 7270 45996 50  0000 L CNN
-F 1 "R" H 7270 45905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7130 45950 50  0001 C CNN
-F 3 "~" H 7200 45950 50  0001 C CNN
-	1    7200 45950
+P 7200 18200
+F 0 "R38" H 7270 18246 50  0000 L CNN
+F 1 "R" H 7270 18155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7130 18200 50  0001 C CNN
+F 3 "~" H 7200 18200 50  0001 C CNN
+	1    7200 18200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D16
 U 1 1 5B8AF6D5
-P 7850 45650
-F 0 "D16" V 7888 45533 50  0000 R CNN
-F 1 "LED" V 7797 45533 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7850 45650 50  0001 C CNN
-F 3 "~" H 7850 45650 50  0001 C CNN
-	1    7850 45650
-	0    -1   -1   0   
+P 7850 17900
+F 0 "D16" V 7888 17783 50  0000 R CNN
+F 1 "LED" V 7797 17783 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7850 17900 50  0001 C CNN
+F 3 "~" H 7850 17900 50  0001 C CNN
+	1    7850 17900
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R39
 U 1 1 5B8AF6DC
-P 7850 45950
-F 0 "R39" H 7920 45996 50  0000 L CNN
-F 1 "R" H 7920 45905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7780 45950 50  0001 C CNN
-F 3 "~" H 7850 45950 50  0001 C CNN
-	1    7850 45950
+P 7850 18200
+F 0 "R39" H 7920 18246 50  0000 L CNN
+F 1 "R" H 7920 18155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7780 18200 50  0001 C CNN
+F 3 "~" H 7850 18200 50  0001 C CNN
+	1    7850 18200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q92
+L Transistor_FET:2N7000 Q64
 U 1 1 5B8AF6E3
-P 3200 46300
-F 0 "Q92" H 3405 46346 50  0000 L CNN
-F 1 "2N7000" H 3405 46255 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3400 46225 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3200 46300 50  0001 L CNN
-	1    3200 46300
+P 3200 18550
+F 0 "Q64" H 3405 18596 50  0000 L CNN
+F 1 "2N7000" H 3405 18505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3400 18475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3200 18550 50  0001 L CNN
+	1    3200 18550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q93
+L Transistor_FET:2N7000 Q65
 U 1 1 5B8AF6EA
-P 3850 46300
-F 0 "Q93" H 4055 46346 50  0000 L CNN
-F 1 "2N7000" H 4055 46255 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4050 46225 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 46300 50  0001 L CNN
-	1    3850 46300
+P 3850 18550
+F 0 "Q65" H 4055 18596 50  0000 L CNN
+F 1 "2N7000" H 4055 18505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4050 18475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 18550 50  0001 L CNN
+	1    3850 18550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q94
+L Transistor_FET:2N7000 Q66
 U 1 1 5B8AF6F1
-P 4500 46300
-F 0 "Q94" H 4705 46346 50  0000 L CNN
-F 1 "2N7000" H 4705 46255 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4700 46225 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 46300 50  0001 L CNN
-	1    4500 46300
+P 4500 18550
+F 0 "Q66" H 4705 18596 50  0000 L CNN
+F 1 "2N7000" H 4705 18505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4700 18475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 18550 50  0001 L CNN
+	1    4500 18550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q95
+L Transistor_FET:2N7000 Q67
 U 1 1 5B8AF6F8
-P 5150 46300
-F 0 "Q95" H 5355 46346 50  0000 L CNN
-F 1 "2N7000" H 5355 46255 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5350 46225 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5150 46300 50  0001 L CNN
-	1    5150 46300
+P 5150 18550
+F 0 "Q67" H 5355 18596 50  0000 L CNN
+F 1 "2N7000" H 5355 18505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5350 18475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5150 18550 50  0001 L CNN
+	1    5150 18550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q96
+L Transistor_FET:2N7000 Q68
 U 1 1 5B8AF6FF
-P 5800 46300
-F 0 "Q96" H 6005 46346 50  0000 L CNN
-F 1 "2N7000" H 6005 46255 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6000 46225 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5800 46300 50  0001 L CNN
-	1    5800 46300
+P 5800 18550
+F 0 "Q68" H 6005 18596 50  0000 L CNN
+F 1 "2N7000" H 6005 18505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6000 18475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5800 18550 50  0001 L CNN
+	1    5800 18550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q97
+L Transistor_FET:2N7000 Q69
 U 1 1 5B8AF706
-P 6450 46300
-F 0 "Q97" H 6655 46346 50  0000 L CNN
-F 1 "2N7000" H 6655 46255 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6650 46225 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 6450 46300 50  0001 L CNN
-	1    6450 46300
+P 6450 18550
+F 0 "Q69" H 6655 18596 50  0000 L CNN
+F 1 "2N7000" H 6655 18505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6650 18475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 6450 18550 50  0001 L CNN
+	1    6450 18550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q98
+L Transistor_FET:2N7000 Q70
 U 1 1 5B8AF70D
-P 7100 46300
-F 0 "Q98" H 7305 46346 50  0000 L CNN
-F 1 "2N7000" H 7305 46255 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7300 46225 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7100 46300 50  0001 L CNN
-	1    7100 46300
+P 7100 18550
+F 0 "Q70" H 7305 18596 50  0000 L CNN
+F 1 "2N7000" H 7305 18505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7300 18475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7100 18550 50  0001 L CNN
+	1    7100 18550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q99
+L Transistor_FET:2N7000 Q71
 U 1 1 5B8AF714
-P 7750 46300
-F 0 "Q99" H 7955 46346 50  0000 L CNN
-F 1 "2N7000" H 7955 46255 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7950 46225 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7750 46300 50  0001 L CNN
-	1    7750 46300
+P 7750 18550
+F 0 "Q71" H 7955 18596 50  0000 L CNN
+F 1 "2N7000" H 7955 18505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7950 18475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7750 18550 50  0001 L CNN
+	1    7750 18550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 46500 7200 46500
+	7850 18750 7200 18750
 Wire Wire Line
-	7200 46500 6550 46500
-Connection ~ 7200 46500
+	7200 18750 6550 18750
+Connection ~ 7200 18750
 Wire Wire Line
-	6550 46500 5900 46500
-Connection ~ 6550 46500
+	6550 18750 5900 18750
+Connection ~ 6550 18750
 Wire Wire Line
-	5900 46500 5250 46500
-Connection ~ 5900 46500
+	5900 18750 5250 18750
+Connection ~ 5900 18750
 Wire Wire Line
-	5250 46500 4600 46500
-Connection ~ 5250 46500
+	5250 18750 4600 18750
+Connection ~ 5250 18750
 Wire Wire Line
-	4600 46500 3950 46500
-Connection ~ 4600 46500
+	4600 18750 3950 18750
+Connection ~ 4600 18750
 Wire Wire Line
-	3950 46500 3300 46500
-Connection ~ 3950 46500
+	3950 18750 3300 18750
+Connection ~ 3950 18750
 Wire Wire Line
-	2900 45300 3650 45300
+	2900 17550 3650 17550
 Wire Wire Line
-	2900 45200 4300 45200
+	2900 17450 4300 17450
 Wire Wire Line
-	2900 45100 4950 45100
+	2900 17350 4950 17350
 Wire Wire Line
-	2900 45000 5600 45000
+	2900 17250 5600 17250
 Wire Wire Line
-	2900 44900 6250 44900
+	2900 17150 6250 17150
 Wire Wire Line
-	2900 44800 6900 44800
+	2900 17050 6900 17050
 Wire Wire Line
-	2900 44700 7550 44700
+	2900 16950 7550 16950
 $Comp
-L power:VCC #PWR085
+L power:VCC #PWR057
 U 1 1 5B8AF731
-P 3300 45500
-F 0 "#PWR085" H 3300 45350 50  0001 C CNN
-F 1 "VCC" H 3317 45673 50  0000 C CNN
-F 2 "" H 3300 45500 50  0001 C CNN
-F 3 "" H 3300 45500 50  0001 C CNN
-	1    3300 45500
+P 3300 17750
+F 0 "#PWR057" H 3300 17600 50  0001 C CNN
+F 1 "VCC" H 3317 17923 50  0000 C CNN
+F 2 "" H 3300 17750 50  0001 C CNN
+F 3 "" H 3300 17750 50  0001 C CNN
+	1    3300 17750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 44700 7550 46300
+	7550 16950 7550 18550
 Wire Wire Line
-	6250 44900 6250 46300
+	6250 17150 6250 18550
 Wire Wire Line
-	5600 45000 5600 46300
+	5600 17250 5600 18550
 Wire Wire Line
-	4950 45100 4950 46300
+	4950 17350 4950 18550
 Wire Wire Line
-	4300 45200 4300 46300
+	4300 17450 4300 18550
 Wire Wire Line
-	3650 45300 3650 46300
+	3650 17550 3650 18550
 $Comp
-L power:VCC #PWR086
+L power:VCC #PWR058
 U 1 1 5B8AF73E
-P 3950 45500
-F 0 "#PWR086" H 3950 45350 50  0001 C CNN
-F 1 "VCC" H 3967 45673 50  0000 C CNN
-F 2 "" H 3950 45500 50  0001 C CNN
-F 3 "" H 3950 45500 50  0001 C CNN
-	1    3950 45500
+P 3950 17750
+F 0 "#PWR058" H 3950 17600 50  0001 C CNN
+F 1 "VCC" H 3967 17923 50  0000 C CNN
+F 2 "" H 3950 17750 50  0001 C CNN
+F 3 "" H 3950 17750 50  0001 C CNN
+	1    3950 17750
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR087
+L power:VCC #PWR059
 U 1 1 5B8AF744
-P 4600 45500
-F 0 "#PWR087" H 4600 45350 50  0001 C CNN
-F 1 "VCC" H 4617 45673 50  0000 C CNN
-F 2 "" H 4600 45500 50  0001 C CNN
-F 3 "" H 4600 45500 50  0001 C CNN
-	1    4600 45500
+P 4600 17750
+F 0 "#PWR059" H 4600 17600 50  0001 C CNN
+F 1 "VCC" H 4617 17923 50  0000 C CNN
+F 2 "" H 4600 17750 50  0001 C CNN
+F 3 "" H 4600 17750 50  0001 C CNN
+	1    4600 17750
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR088
+L power:VCC #PWR060
 U 1 1 5B8AF74A
-P 5250 45500
-F 0 "#PWR088" H 5250 45350 50  0001 C CNN
-F 1 "VCC" H 5267 45673 50  0000 C CNN
-F 2 "" H 5250 45500 50  0001 C CNN
-F 3 "" H 5250 45500 50  0001 C CNN
-	1    5250 45500
+P 5250 17750
+F 0 "#PWR060" H 5250 17600 50  0001 C CNN
+F 1 "VCC" H 5267 17923 50  0000 C CNN
+F 2 "" H 5250 17750 50  0001 C CNN
+F 3 "" H 5250 17750 50  0001 C CNN
+	1    5250 17750
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR089
+L power:VCC #PWR061
 U 1 1 5B8AF750
-P 5900 45500
-F 0 "#PWR089" H 5900 45350 50  0001 C CNN
-F 1 "VCC" H 5917 45673 50  0000 C CNN
-F 2 "" H 5900 45500 50  0001 C CNN
-F 3 "" H 5900 45500 50  0001 C CNN
-	1    5900 45500
+P 5900 17750
+F 0 "#PWR061" H 5900 17600 50  0001 C CNN
+F 1 "VCC" H 5917 17923 50  0000 C CNN
+F 2 "" H 5900 17750 50  0001 C CNN
+F 3 "" H 5900 17750 50  0001 C CNN
+	1    5900 17750
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR090
+L power:VCC #PWR062
 U 1 1 5B8AF756
-P 6550 45500
-F 0 "#PWR090" H 6550 45350 50  0001 C CNN
-F 1 "VCC" H 6567 45673 50  0000 C CNN
-F 2 "" H 6550 45500 50  0001 C CNN
-F 3 "" H 6550 45500 50  0001 C CNN
-	1    6550 45500
+P 6550 17750
+F 0 "#PWR062" H 6550 17600 50  0001 C CNN
+F 1 "VCC" H 6567 17923 50  0000 C CNN
+F 2 "" H 6550 17750 50  0001 C CNN
+F 3 "" H 6550 17750 50  0001 C CNN
+	1    6550 17750
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR091
+L power:VCC #PWR063
 U 1 1 5B8AF75C
-P 7200 45500
-F 0 "#PWR091" H 7200 45350 50  0001 C CNN
-F 1 "VCC" H 7217 45673 50  0000 C CNN
-F 2 "" H 7200 45500 50  0001 C CNN
-F 3 "" H 7200 45500 50  0001 C CNN
-	1    7200 45500
+P 7200 17750
+F 0 "#PWR063" H 7200 17600 50  0001 C CNN
+F 1 "VCC" H 7217 17923 50  0000 C CNN
+F 2 "" H 7200 17750 50  0001 C CNN
+F 3 "" H 7200 17750 50  0001 C CNN
+	1    7200 17750
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR092
+L power:VCC #PWR064
 U 1 1 5B8AF762
-P 7850 45500
-F 0 "#PWR092" H 7850 45350 50  0001 C CNN
-F 1 "VCC" H 7867 45673 50  0000 C CNN
-F 2 "" H 7850 45500 50  0001 C CNN
-F 3 "" H 7850 45500 50  0001 C CNN
-	1    7850 45500
+P 7850 17750
+F 0 "#PWR064" H 7850 17600 50  0001 C CNN
+F 1 "VCC" H 7867 17923 50  0000 C CNN
+F 2 "" H 7850 17750 50  0001 C CNN
+F 3 "" H 7850 17750 50  0001 C CNN
+	1    7850 17750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 45400 2900 45400
+	3000 17650 2900 17650
 Wire Wire Line
-	3000 45400 3000 46300
+	3000 17650 3000 18550
 $Comp
 L Device:LED D17
 U 1 1 5B8B8457
-P 3300 47700
-F 0 "D17" V 3338 47583 50  0000 R CNN
-F 1 "LED" V 3247 47583 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3300 47700 50  0001 C CNN
-F 3 "~" H 3300 47700 50  0001 C CNN
-	1    3300 47700
+P 3300 19950
+F 0 "D17" V 3338 19833 50  0000 R CNN
+F 1 "LED" V 3247 19833 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3300 19950 50  0001 C CNN
+F 3 "~" H 3300 19950 50  0001 C CNN
+	1    3300 19950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R40
 U 1 1 5B8B845E
-P 3300 48000
-F 0 "R40" H 3370 48046 50  0000 L CNN
-F 1 "R" H 3370 47955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3230 48000 50  0001 C CNN
-F 3 "~" H 3300 48000 50  0001 C CNN
-	1    3300 48000
+P 3300 20250
+F 0 "R40" H 3370 20296 50  0000 L CNN
+F 1 "R" H 3370 20205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3230 20250 50  0001 C CNN
+F 3 "~" H 3300 20250 50  0001 C CNN
+	1    3300 20250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D18
 U 1 1 5B8B8465
-P 3950 47700
-F 0 "D18" V 3988 47583 50  0000 R CNN
-F 1 "LED" V 3897 47583 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3950 47700 50  0001 C CNN
-F 3 "~" H 3950 47700 50  0001 C CNN
-	1    3950 47700
+P 3950 19950
+F 0 "D18" V 3988 19833 50  0000 R CNN
+F 1 "LED" V 3897 19833 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3950 19950 50  0001 C CNN
+F 3 "~" H 3950 19950 50  0001 C CNN
+	1    3950 19950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R41
 U 1 1 5B8B846C
-P 3950 48000
-F 0 "R41" H 4020 48046 50  0000 L CNN
-F 1 "R" H 4020 47955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3880 48000 50  0001 C CNN
-F 3 "~" H 3950 48000 50  0001 C CNN
-	1    3950 48000
+P 3950 20250
+F 0 "R41" H 4020 20296 50  0000 L CNN
+F 1 "R" H 4020 20205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3880 20250 50  0001 C CNN
+F 3 "~" H 3950 20250 50  0001 C CNN
+	1    3950 20250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D19
 U 1 1 5B8B8473
-P 4600 47700
-F 0 "D19" V 4638 47583 50  0000 R CNN
-F 1 "LED" V 4547 47583 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4600 47700 50  0001 C CNN
-F 3 "~" H 4600 47700 50  0001 C CNN
-	1    4600 47700
+P 4600 19950
+F 0 "D19" V 4638 19833 50  0000 R CNN
+F 1 "LED" V 4547 19833 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4600 19950 50  0001 C CNN
+F 3 "~" H 4600 19950 50  0001 C CNN
+	1    4600 19950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R42
 U 1 1 5B8B847A
-P 4600 48000
-F 0 "R42" H 4670 48046 50  0000 L CNN
-F 1 "R" H 4670 47955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 4530 48000 50  0001 C CNN
-F 3 "~" H 4600 48000 50  0001 C CNN
-	1    4600 48000
+P 4600 20250
+F 0 "R42" H 4670 20296 50  0000 L CNN
+F 1 "R" H 4670 20205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 4530 20250 50  0001 C CNN
+F 3 "~" H 4600 20250 50  0001 C CNN
+	1    4600 20250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D20
 U 1 1 5B8B8481
-P 5250 47700
-F 0 "D20" V 5288 47583 50  0000 R CNN
-F 1 "LED" V 5197 47583 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5250 47700 50  0001 C CNN
-F 3 "~" H 5250 47700 50  0001 C CNN
-	1    5250 47700
+P 5250 19950
+F 0 "D20" V 5288 19833 50  0000 R CNN
+F 1 "LED" V 5197 19833 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5250 19950 50  0001 C CNN
+F 3 "~" H 5250 19950 50  0001 C CNN
+	1    5250 19950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R43
 U 1 1 5B8B8488
-P 5250 48000
-F 0 "R43" H 5320 48046 50  0000 L CNN
-F 1 "R" H 5320 47955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5180 48000 50  0001 C CNN
-F 3 "~" H 5250 48000 50  0001 C CNN
-	1    5250 48000
+P 5250 20250
+F 0 "R43" H 5320 20296 50  0000 L CNN
+F 1 "R" H 5320 20205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5180 20250 50  0001 C CNN
+F 3 "~" H 5250 20250 50  0001 C CNN
+	1    5250 20250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D21
 U 1 1 5B8B848F
-P 5900 47700
-F 0 "D21" V 5938 47583 50  0000 R CNN
-F 1 "LED" V 5847 47583 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5900 47700 50  0001 C CNN
-F 3 "~" H 5900 47700 50  0001 C CNN
-	1    5900 47700
+P 5900 19950
+F 0 "D21" V 5938 19833 50  0000 R CNN
+F 1 "LED" V 5847 19833 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5900 19950 50  0001 C CNN
+F 3 "~" H 5900 19950 50  0001 C CNN
+	1    5900 19950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R44
 U 1 1 5B8B8496
-P 5900 48000
-F 0 "R44" H 5970 48046 50  0000 L CNN
-F 1 "R" H 5970 47955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5830 48000 50  0001 C CNN
-F 3 "~" H 5900 48000 50  0001 C CNN
-	1    5900 48000
+P 5900 20250
+F 0 "R44" H 5970 20296 50  0000 L CNN
+F 1 "R" H 5970 20205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5830 20250 50  0001 C CNN
+F 3 "~" H 5900 20250 50  0001 C CNN
+	1    5900 20250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D22
 U 1 1 5B8B849D
-P 6550 47700
-F 0 "D22" V 6588 47583 50  0000 R CNN
-F 1 "LED" V 6497 47583 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6550 47700 50  0001 C CNN
-F 3 "~" H 6550 47700 50  0001 C CNN
-	1    6550 47700
+P 6550 19950
+F 0 "D22" V 6588 19833 50  0000 R CNN
+F 1 "LED" V 6497 19833 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6550 19950 50  0001 C CNN
+F 3 "~" H 6550 19950 50  0001 C CNN
+	1    6550 19950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R45
 U 1 1 5B8B84A4
-P 6550 48000
-F 0 "R45" H 6620 48046 50  0000 L CNN
-F 1 "R" H 6620 47955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 6480 48000 50  0001 C CNN
-F 3 "~" H 6550 48000 50  0001 C CNN
-	1    6550 48000
+P 6550 20250
+F 0 "R45" H 6620 20296 50  0000 L CNN
+F 1 "R" H 6620 20205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 6480 20250 50  0001 C CNN
+F 3 "~" H 6550 20250 50  0001 C CNN
+	1    6550 20250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D23
 U 1 1 5B8B84AB
-P 7200 47700
-F 0 "D23" V 7238 47583 50  0000 R CNN
-F 1 "LED" V 7147 47583 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7200 47700 50  0001 C CNN
-F 3 "~" H 7200 47700 50  0001 C CNN
-	1    7200 47700
+P 7200 19950
+F 0 "D23" V 7238 19833 50  0000 R CNN
+F 1 "LED" V 7147 19833 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7200 19950 50  0001 C CNN
+F 3 "~" H 7200 19950 50  0001 C CNN
+	1    7200 19950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R46
 U 1 1 5B8B84B2
-P 7200 48000
-F 0 "R46" H 7270 48046 50  0000 L CNN
-F 1 "R" H 7270 47955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7130 48000 50  0001 C CNN
-F 3 "~" H 7200 48000 50  0001 C CNN
-	1    7200 48000
+P 7200 20250
+F 0 "R46" H 7270 20296 50  0000 L CNN
+F 1 "R" H 7270 20205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7130 20250 50  0001 C CNN
+F 3 "~" H 7200 20250 50  0001 C CNN
+	1    7200 20250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D24
 U 1 1 5B8B84B9
-P 7850 47700
-F 0 "D24" V 7888 47583 50  0000 R CNN
-F 1 "LED" V 7797 47583 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7850 47700 50  0001 C CNN
-F 3 "~" H 7850 47700 50  0001 C CNN
-	1    7850 47700
+P 7850 19950
+F 0 "D24" V 7888 19833 50  0000 R CNN
+F 1 "LED" V 7797 19833 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7850 19950 50  0001 C CNN
+F 3 "~" H 7850 19950 50  0001 C CNN
+	1    7850 19950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R47
 U 1 1 5B8B84C0
-P 7850 48000
-F 0 "R47" H 7920 48046 50  0000 L CNN
-F 1 "R" H 7920 47955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7780 48000 50  0001 C CNN
-F 3 "~" H 7850 48000 50  0001 C CNN
-	1    7850 48000
+P 7850 20250
+F 0 "R47" H 7920 20296 50  0000 L CNN
+F 1 "R" H 7920 20205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7780 20250 50  0001 C CNN
+F 3 "~" H 7850 20250 50  0001 C CNN
+	1    7850 20250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q100
+L Transistor_FET:2N7000 Q72
 U 1 1 5B8B84C7
-P 3200 48350
-F 0 "Q100" H 3405 48396 50  0000 L CNN
-F 1 "2N7000" H 3405 48305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3400 48275 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3200 48350 50  0001 L CNN
-	1    3200 48350
+P 3200 20600
+F 0 "Q72" H 3405 20646 50  0000 L CNN
+F 1 "2N7000" H 3405 20555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3400 20525 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3200 20600 50  0001 L CNN
+	1    3200 20600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q101
+L Transistor_FET:2N7000 Q73
 U 1 1 5B8B84CE
-P 3850 48350
-F 0 "Q101" H 4055 48396 50  0000 L CNN
-F 1 "2N7000" H 4055 48305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4050 48275 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 48350 50  0001 L CNN
-	1    3850 48350
+P 3850 20600
+F 0 "Q73" H 4055 20646 50  0000 L CNN
+F 1 "2N7000" H 4055 20555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4050 20525 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 20600 50  0001 L CNN
+	1    3850 20600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q102
+L Transistor_FET:2N7000 Q74
 U 1 1 5B8B84D5
-P 4500 48350
-F 0 "Q102" H 4705 48396 50  0000 L CNN
-F 1 "2N7000" H 4705 48305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4700 48275 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 48350 50  0001 L CNN
-	1    4500 48350
+P 4500 20600
+F 0 "Q74" H 4705 20646 50  0000 L CNN
+F 1 "2N7000" H 4705 20555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4700 20525 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 20600 50  0001 L CNN
+	1    4500 20600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q103
+L Transistor_FET:2N7000 Q75
 U 1 1 5B8B84DC
-P 5150 48350
-F 0 "Q103" H 5355 48396 50  0000 L CNN
-F 1 "2N7000" H 5355 48305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5350 48275 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5150 48350 50  0001 L CNN
-	1    5150 48350
+P 5150 20600
+F 0 "Q75" H 5355 20646 50  0000 L CNN
+F 1 "2N7000" H 5355 20555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5350 20525 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5150 20600 50  0001 L CNN
+	1    5150 20600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q104
+L Transistor_FET:2N7000 Q76
 U 1 1 5B8B84E3
-P 5800 48350
-F 0 "Q104" H 6005 48396 50  0000 L CNN
-F 1 "2N7000" H 6005 48305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6000 48275 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5800 48350 50  0001 L CNN
-	1    5800 48350
+P 5800 20600
+F 0 "Q76" H 6005 20646 50  0000 L CNN
+F 1 "2N7000" H 6005 20555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6000 20525 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5800 20600 50  0001 L CNN
+	1    5800 20600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q105
+L Transistor_FET:2N7000 Q77
 U 1 1 5B8B84EA
-P 6450 48350
-F 0 "Q105" H 6655 48396 50  0000 L CNN
-F 1 "2N7000" H 6655 48305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6650 48275 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 6450 48350 50  0001 L CNN
-	1    6450 48350
+P 6450 20600
+F 0 "Q77" H 6655 20646 50  0000 L CNN
+F 1 "2N7000" H 6655 20555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6650 20525 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 6450 20600 50  0001 L CNN
+	1    6450 20600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q106
+L Transistor_FET:2N7000 Q78
 U 1 1 5B8B84F1
-P 7100 48350
-F 0 "Q106" H 7305 48396 50  0000 L CNN
-F 1 "2N7000" H 7305 48305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7300 48275 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7100 48350 50  0001 L CNN
-	1    7100 48350
+P 7100 20600
+F 0 "Q78" H 7305 20646 50  0000 L CNN
+F 1 "2N7000" H 7305 20555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7300 20525 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7100 20600 50  0001 L CNN
+	1    7100 20600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q107
+L Transistor_FET:2N7000 Q79
 U 1 1 5B8B84F8
-P 7750 48350
-F 0 "Q107" H 7955 48396 50  0000 L CNN
-F 1 "2N7000" H 7955 48305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7950 48275 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7750 48350 50  0001 L CNN
-	1    7750 48350
+P 7750 20600
+F 0 "Q79" H 7955 20646 50  0000 L CNN
+F 1 "2N7000" H 7955 20555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7950 20525 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7750 20600 50  0001 L CNN
+	1    7750 20600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 48550 7200 48550
+	7850 20800 7200 20800
 Wire Wire Line
-	7200 48550 6550 48550
-Connection ~ 7200 48550
+	7200 20800 6550 20800
+Connection ~ 7200 20800
 Wire Wire Line
-	6550 48550 5900 48550
-Connection ~ 6550 48550
+	6550 20800 5900 20800
+Connection ~ 6550 20800
 Wire Wire Line
-	5900 48550 5250 48550
-Connection ~ 5900 48550
+	5900 20800 5250 20800
+Connection ~ 5900 20800
 Wire Wire Line
-	5250 48550 4600 48550
-Connection ~ 5250 48550
+	5250 20800 4600 20800
+Connection ~ 5250 20800
 Wire Wire Line
-	4600 48550 3950 48550
-Connection ~ 4600 48550
+	4600 20800 3950 20800
+Connection ~ 4600 20800
 Wire Wire Line
-	3950 48550 3300 48550
-Connection ~ 3950 48550
+	3950 20800 3300 20800
+Connection ~ 3950 20800
 Wire Wire Line
-	2900 47350 3650 47350
+	2900 19600 3650 19600
 Wire Wire Line
-	2900 47250 4300 47250
+	2900 19500 4300 19500
 Wire Wire Line
-	2900 47150 4950 47150
+	2900 19400 4950 19400
 Wire Wire Line
-	2900 47050 5600 47050
+	2900 19300 5600 19300
 Wire Wire Line
-	2900 46950 6250 46950
+	2900 19200 6250 19200
 Wire Wire Line
-	2900 46850 6900 46850
+	2900 19100 6900 19100
 Wire Wire Line
-	2900 46750 7550 46750
+	2900 19000 7550 19000
 $Comp
-L power:VCC #PWR094
+L power:VCC #PWR066
 U 1 1 5B8B8515
-P 3300 47550
-F 0 "#PWR094" H 3300 47400 50  0001 C CNN
-F 1 "VCC" H 3317 47723 50  0000 C CNN
-F 2 "" H 3300 47550 50  0001 C CNN
-F 3 "" H 3300 47550 50  0001 C CNN
-	1    3300 47550
+P 3300 19800
+F 0 "#PWR066" H 3300 19650 50  0001 C CNN
+F 1 "VCC" H 3317 19973 50  0000 C CNN
+F 2 "" H 3300 19800 50  0001 C CNN
+F 3 "" H 3300 19800 50  0001 C CNN
+	1    3300 19800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 46750 7550 48350
+	7550 19000 7550 20600
 Wire Wire Line
-	6250 46950 6250 48350
+	6250 19200 6250 20600
 Wire Wire Line
-	5600 47050 5600 48350
+	5600 19300 5600 20600
 Wire Wire Line
-	4950 47150 4950 48350
+	4950 19400 4950 20600
 Wire Wire Line
-	4300 47250 4300 48350
+	4300 19500 4300 20600
 Wire Wire Line
-	3650 47350 3650 48350
+	3650 19600 3650 20600
 $Comp
-L power:VCC #PWR095
+L power:VCC #PWR067
 U 1 1 5B8B8522
-P 3950 47550
-F 0 "#PWR095" H 3950 47400 50  0001 C CNN
-F 1 "VCC" H 3967 47723 50  0000 C CNN
-F 2 "" H 3950 47550 50  0001 C CNN
-F 3 "" H 3950 47550 50  0001 C CNN
-	1    3950 47550
+P 3950 19800
+F 0 "#PWR067" H 3950 19650 50  0001 C CNN
+F 1 "VCC" H 3967 19973 50  0000 C CNN
+F 2 "" H 3950 19800 50  0001 C CNN
+F 3 "" H 3950 19800 50  0001 C CNN
+	1    3950 19800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR096
+L power:VCC #PWR068
 U 1 1 5B8B8528
-P 4600 47550
-F 0 "#PWR096" H 4600 47400 50  0001 C CNN
-F 1 "VCC" H 4617 47723 50  0000 C CNN
-F 2 "" H 4600 47550 50  0001 C CNN
-F 3 "" H 4600 47550 50  0001 C CNN
-	1    4600 47550
+P 4600 19800
+F 0 "#PWR068" H 4600 19650 50  0001 C CNN
+F 1 "VCC" H 4617 19973 50  0000 C CNN
+F 2 "" H 4600 19800 50  0001 C CNN
+F 3 "" H 4600 19800 50  0001 C CNN
+	1    4600 19800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR097
+L power:VCC #PWR069
 U 1 1 5B8B852E
-P 5250 47550
-F 0 "#PWR097" H 5250 47400 50  0001 C CNN
-F 1 "VCC" H 5267 47723 50  0000 C CNN
-F 2 "" H 5250 47550 50  0001 C CNN
-F 3 "" H 5250 47550 50  0001 C CNN
-	1    5250 47550
+P 5250 19800
+F 0 "#PWR069" H 5250 19650 50  0001 C CNN
+F 1 "VCC" H 5267 19973 50  0000 C CNN
+F 2 "" H 5250 19800 50  0001 C CNN
+F 3 "" H 5250 19800 50  0001 C CNN
+	1    5250 19800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR098
+L power:VCC #PWR070
 U 1 1 5B8B8534
-P 5900 47550
-F 0 "#PWR098" H 5900 47400 50  0001 C CNN
-F 1 "VCC" H 5917 47723 50  0000 C CNN
-F 2 "" H 5900 47550 50  0001 C CNN
-F 3 "" H 5900 47550 50  0001 C CNN
-	1    5900 47550
+P 5900 19800
+F 0 "#PWR070" H 5900 19650 50  0001 C CNN
+F 1 "VCC" H 5917 19973 50  0000 C CNN
+F 2 "" H 5900 19800 50  0001 C CNN
+F 3 "" H 5900 19800 50  0001 C CNN
+	1    5900 19800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR099
+L power:VCC #PWR071
 U 1 1 5B8B853A
-P 6550 47550
-F 0 "#PWR099" H 6550 47400 50  0001 C CNN
-F 1 "VCC" H 6567 47723 50  0000 C CNN
-F 2 "" H 6550 47550 50  0001 C CNN
-F 3 "" H 6550 47550 50  0001 C CNN
-	1    6550 47550
+P 6550 19800
+F 0 "#PWR071" H 6550 19650 50  0001 C CNN
+F 1 "VCC" H 6567 19973 50  0000 C CNN
+F 2 "" H 6550 19800 50  0001 C CNN
+F 3 "" H 6550 19800 50  0001 C CNN
+	1    6550 19800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0100
+L power:VCC #PWR072
 U 1 1 5B8B8540
-P 7200 47550
-F 0 "#PWR0100" H 7200 47400 50  0001 C CNN
-F 1 "VCC" H 7217 47723 50  0000 C CNN
-F 2 "" H 7200 47550 50  0001 C CNN
-F 3 "" H 7200 47550 50  0001 C CNN
-	1    7200 47550
+P 7200 19800
+F 0 "#PWR072" H 7200 19650 50  0001 C CNN
+F 1 "VCC" H 7217 19973 50  0000 C CNN
+F 2 "" H 7200 19800 50  0001 C CNN
+F 3 "" H 7200 19800 50  0001 C CNN
+	1    7200 19800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0101
+L power:VCC #PWR073
 U 1 1 5B8B8546
-P 7850 47550
-F 0 "#PWR0101" H 7850 47400 50  0001 C CNN
-F 1 "VCC" H 7867 47723 50  0000 C CNN
-F 2 "" H 7850 47550 50  0001 C CNN
-F 3 "" H 7850 47550 50  0001 C CNN
-	1    7850 47550
+P 7850 19800
+F 0 "#PWR073" H 7850 19650 50  0001 C CNN
+F 1 "VCC" H 7867 19973 50  0000 C CNN
+F 2 "" H 7850 19800 50  0001 C CNN
+F 3 "" H 7850 19800 50  0001 C CNN
+	1    7850 19800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 47450 2900 47450
+	3000 19700 2900 19700
 Wire Wire Line
-	3000 47450 3000 48350
+	3000 19700 3000 20600
 $Comp
-L power:GND #PWR0111
+L power:GND #PWR083
 U 1 1 5B8C54A1
-P 3300 50600
-F 0 "#PWR0111" H 3300 50350 50  0001 C CNN
-F 1 "GND" H 3305 50427 50  0000 C CNN
-F 2 "" H 3300 50600 50  0001 C CNN
-F 3 "" H 3300 50600 50  0001 C CNN
-	1    3300 50600
+P 3300 22850
+F 0 "#PWR083" H 3300 22600 50  0001 C CNN
+F 1 "GND" H 3305 22677 50  0000 C CNN
+F 2 "" H 3300 22850 50  0001 C CNN
+F 3 "" H 3300 22850 50  0001 C CNN
+	1    3300 22850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D25
 U 1 1 5B8C54A7
-P 3300 49750
-F 0 "D25" V 3338 49633 50  0000 R CNN
-F 1 "LED" V 3247 49633 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3300 49750 50  0001 C CNN
-F 3 "~" H 3300 49750 50  0001 C CNN
-	1    3300 49750
+P 3300 22000
+F 0 "D25" V 3338 21883 50  0000 R CNN
+F 1 "LED" V 3247 21883 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3300 22000 50  0001 C CNN
+F 3 "~" H 3300 22000 50  0001 C CNN
+	1    3300 22000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R48
 U 1 1 5B8C54AE
-P 3300 50050
-F 0 "R48" H 3370 50096 50  0000 L CNN
-F 1 "R" H 3370 50005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3230 50050 50  0001 C CNN
-F 3 "~" H 3300 50050 50  0001 C CNN
-	1    3300 50050
+P 3300 22300
+F 0 "R48" H 3370 22346 50  0000 L CNN
+F 1 "R" H 3370 22255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3230 22300 50  0001 C CNN
+F 3 "~" H 3300 22300 50  0001 C CNN
+	1    3300 22300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D26
 U 1 1 5B8C54B5
-P 3950 49750
-F 0 "D26" V 3988 49633 50  0000 R CNN
-F 1 "LED" V 3897 49633 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3950 49750 50  0001 C CNN
-F 3 "~" H 3950 49750 50  0001 C CNN
-	1    3950 49750
+P 3950 22000
+F 0 "D26" V 3988 21883 50  0000 R CNN
+F 1 "LED" V 3897 21883 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3950 22000 50  0001 C CNN
+F 3 "~" H 3950 22000 50  0001 C CNN
+	1    3950 22000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R49
 U 1 1 5B8C54BC
-P 3950 50050
-F 0 "R49" H 4020 50096 50  0000 L CNN
-F 1 "R" H 4020 50005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3880 50050 50  0001 C CNN
-F 3 "~" H 3950 50050 50  0001 C CNN
-	1    3950 50050
+P 3950 22300
+F 0 "R49" H 4020 22346 50  0000 L CNN
+F 1 "R" H 4020 22255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3880 22300 50  0001 C CNN
+F 3 "~" H 3950 22300 50  0001 C CNN
+	1    3950 22300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D27
 U 1 1 5B8C54C3
-P 4600 49750
-F 0 "D27" V 4638 49633 50  0000 R CNN
-F 1 "LED" V 4547 49633 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4600 49750 50  0001 C CNN
-F 3 "~" H 4600 49750 50  0001 C CNN
-	1    4600 49750
+P 4600 22000
+F 0 "D27" V 4638 21883 50  0000 R CNN
+F 1 "LED" V 4547 21883 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4600 22000 50  0001 C CNN
+F 3 "~" H 4600 22000 50  0001 C CNN
+	1    4600 22000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R50
 U 1 1 5B8C54CA
-P 4600 50050
-F 0 "R50" H 4670 50096 50  0000 L CNN
-F 1 "R" H 4670 50005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 4530 50050 50  0001 C CNN
-F 3 "~" H 4600 50050 50  0001 C CNN
-	1    4600 50050
+P 4600 22300
+F 0 "R50" H 4670 22346 50  0000 L CNN
+F 1 "R" H 4670 22255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 4530 22300 50  0001 C CNN
+F 3 "~" H 4600 22300 50  0001 C CNN
+	1    4600 22300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D28
 U 1 1 5B8C54D1
-P 5250 49750
-F 0 "D28" V 5288 49633 50  0000 R CNN
-F 1 "LED" V 5197 49633 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5250 49750 50  0001 C CNN
-F 3 "~" H 5250 49750 50  0001 C CNN
-	1    5250 49750
+P 5250 22000
+F 0 "D28" V 5288 21883 50  0000 R CNN
+F 1 "LED" V 5197 21883 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5250 22000 50  0001 C CNN
+F 3 "~" H 5250 22000 50  0001 C CNN
+	1    5250 22000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R51
 U 1 1 5B8C54D8
-P 5250 50050
-F 0 "R51" H 5320 50096 50  0000 L CNN
-F 1 "R" H 5320 50005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5180 50050 50  0001 C CNN
-F 3 "~" H 5250 50050 50  0001 C CNN
-	1    5250 50050
+P 5250 22300
+F 0 "R51" H 5320 22346 50  0000 L CNN
+F 1 "R" H 5320 22255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5180 22300 50  0001 C CNN
+F 3 "~" H 5250 22300 50  0001 C CNN
+	1    5250 22300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D29
 U 1 1 5B8C54DF
-P 5900 49750
-F 0 "D29" V 5938 49633 50  0000 R CNN
-F 1 "LED" V 5847 49633 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5900 49750 50  0001 C CNN
-F 3 "~" H 5900 49750 50  0001 C CNN
-	1    5900 49750
+P 5900 22000
+F 0 "D29" V 5938 21883 50  0000 R CNN
+F 1 "LED" V 5847 21883 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5900 22000 50  0001 C CNN
+F 3 "~" H 5900 22000 50  0001 C CNN
+	1    5900 22000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R52
 U 1 1 5B8C54E6
-P 5900 50050
-F 0 "R52" H 5970 50096 50  0000 L CNN
-F 1 "R" H 5970 50005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5830 50050 50  0001 C CNN
-F 3 "~" H 5900 50050 50  0001 C CNN
-	1    5900 50050
+P 5900 22300
+F 0 "R52" H 5970 22346 50  0000 L CNN
+F 1 "R" H 5970 22255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5830 22300 50  0001 C CNN
+F 3 "~" H 5900 22300 50  0001 C CNN
+	1    5900 22300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D30
 U 1 1 5B8C54ED
-P 6550 49750
-F 0 "D30" V 6588 49633 50  0000 R CNN
-F 1 "LED" V 6497 49633 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6550 49750 50  0001 C CNN
-F 3 "~" H 6550 49750 50  0001 C CNN
-	1    6550 49750
+P 6550 22000
+F 0 "D30" V 6588 21883 50  0000 R CNN
+F 1 "LED" V 6497 21883 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6550 22000 50  0001 C CNN
+F 3 "~" H 6550 22000 50  0001 C CNN
+	1    6550 22000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R53
 U 1 1 5B8C54F4
-P 6550 50050
-F 0 "R53" H 6620 50096 50  0000 L CNN
-F 1 "R" H 6620 50005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 6480 50050 50  0001 C CNN
-F 3 "~" H 6550 50050 50  0001 C CNN
-	1    6550 50050
+P 6550 22300
+F 0 "R53" H 6620 22346 50  0000 L CNN
+F 1 "R" H 6620 22255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 6480 22300 50  0001 C CNN
+F 3 "~" H 6550 22300 50  0001 C CNN
+	1    6550 22300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D31
 U 1 1 5B8C54FB
-P 7200 49750
-F 0 "D31" V 7238 49633 50  0000 R CNN
-F 1 "LED" V 7147 49633 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7200 49750 50  0001 C CNN
-F 3 "~" H 7200 49750 50  0001 C CNN
-	1    7200 49750
+P 7200 22000
+F 0 "D31" V 7238 21883 50  0000 R CNN
+F 1 "LED" V 7147 21883 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7200 22000 50  0001 C CNN
+F 3 "~" H 7200 22000 50  0001 C CNN
+	1    7200 22000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R54
 U 1 1 5B8C5502
-P 7200 50050
-F 0 "R54" H 7270 50096 50  0000 L CNN
-F 1 "R" H 7270 50005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7130 50050 50  0001 C CNN
-F 3 "~" H 7200 50050 50  0001 C CNN
-	1    7200 50050
+P 7200 22300
+F 0 "R54" H 7270 22346 50  0000 L CNN
+F 1 "R" H 7270 22255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7130 22300 50  0001 C CNN
+F 3 "~" H 7200 22300 50  0001 C CNN
+	1    7200 22300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D32
 U 1 1 5B8C5509
-P 7850 49750
-F 0 "D32" V 7888 49633 50  0000 R CNN
-F 1 "LED" V 7797 49633 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7850 49750 50  0001 C CNN
-F 3 "~" H 7850 49750 50  0001 C CNN
-	1    7850 49750
+P 7850 22000
+F 0 "D32" V 7888 21883 50  0000 R CNN
+F 1 "LED" V 7797 21883 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7850 22000 50  0001 C CNN
+F 3 "~" H 7850 22000 50  0001 C CNN
+	1    7850 22000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R55
 U 1 1 5B8C5510
-P 7850 50050
-F 0 "R55" H 7920 50096 50  0000 L CNN
-F 1 "R" H 7920 50005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7780 50050 50  0001 C CNN
-F 3 "~" H 7850 50050 50  0001 C CNN
-	1    7850 50050
+P 7850 22300
+F 0 "R55" H 7920 22346 50  0000 L CNN
+F 1 "R" H 7920 22255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7780 22300 50  0001 C CNN
+F 3 "~" H 7850 22300 50  0001 C CNN
+	1    7850 22300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q108
+L Transistor_FET:2N7000 Q80
 U 1 1 5B8C5517
-P 3200 50400
-F 0 "Q108" H 3405 50446 50  0000 L CNN
-F 1 "2N7000" H 3405 50355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3400 50325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3200 50400 50  0001 L CNN
-	1    3200 50400
+P 3200 22650
+F 0 "Q80" H 3405 22696 50  0000 L CNN
+F 1 "2N7000" H 3405 22605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3400 22575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3200 22650 50  0001 L CNN
+	1    3200 22650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q109
+L Transistor_FET:2N7000 Q81
 U 1 1 5B8C551E
-P 3850 50400
-F 0 "Q109" H 4055 50446 50  0000 L CNN
-F 1 "2N7000" H 4055 50355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4050 50325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 50400 50  0001 L CNN
-	1    3850 50400
+P 3850 22650
+F 0 "Q81" H 4055 22696 50  0000 L CNN
+F 1 "2N7000" H 4055 22605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4050 22575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 22650 50  0001 L CNN
+	1    3850 22650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q110
+L Transistor_FET:2N7000 Q82
 U 1 1 5B8C5525
-P 4500 50400
-F 0 "Q110" H 4705 50446 50  0000 L CNN
-F 1 "2N7000" H 4705 50355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4700 50325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 50400 50  0001 L CNN
-	1    4500 50400
+P 4500 22650
+F 0 "Q82" H 4705 22696 50  0000 L CNN
+F 1 "2N7000" H 4705 22605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4700 22575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 22650 50  0001 L CNN
+	1    4500 22650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q111
+L Transistor_FET:2N7000 Q83
 U 1 1 5B8C552C
-P 5150 50400
-F 0 "Q111" H 5355 50446 50  0000 L CNN
-F 1 "2N7000" H 5355 50355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5350 50325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5150 50400 50  0001 L CNN
-	1    5150 50400
+P 5150 22650
+F 0 "Q83" H 5355 22696 50  0000 L CNN
+F 1 "2N7000" H 5355 22605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5350 22575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5150 22650 50  0001 L CNN
+	1    5150 22650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q112
+L Transistor_FET:2N7000 Q84
 U 1 1 5B8C5533
-P 5800 50400
-F 0 "Q112" H 6005 50446 50  0000 L CNN
-F 1 "2N7000" H 6005 50355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6000 50325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5800 50400 50  0001 L CNN
-	1    5800 50400
+P 5800 22650
+F 0 "Q84" H 6005 22696 50  0000 L CNN
+F 1 "2N7000" H 6005 22605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6000 22575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5800 22650 50  0001 L CNN
+	1    5800 22650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q113
+L Transistor_FET:2N7000 Q85
 U 1 1 5B8C553A
-P 6450 50400
-F 0 "Q113" H 6655 50446 50  0000 L CNN
-F 1 "2N7000" H 6655 50355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6650 50325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 6450 50400 50  0001 L CNN
-	1    6450 50400
+P 6450 22650
+F 0 "Q85" H 6655 22696 50  0000 L CNN
+F 1 "2N7000" H 6655 22605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6650 22575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 6450 22650 50  0001 L CNN
+	1    6450 22650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q114
+L Transistor_FET:2N7000 Q86
 U 1 1 5B8C5541
-P 7100 50400
-F 0 "Q114" H 7305 50446 50  0000 L CNN
-F 1 "2N7000" H 7305 50355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7300 50325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7100 50400 50  0001 L CNN
-	1    7100 50400
+P 7100 22650
+F 0 "Q86" H 7305 22696 50  0000 L CNN
+F 1 "2N7000" H 7305 22605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7300 22575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7100 22650 50  0001 L CNN
+	1    7100 22650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q115
+L Transistor_FET:2N7000 Q87
 U 1 1 5B8C5548
-P 7750 50400
-F 0 "Q115" H 7955 50446 50  0000 L CNN
-F 1 "2N7000" H 7955 50355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7950 50325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7750 50400 50  0001 L CNN
-	1    7750 50400
+P 7750 22650
+F 0 "Q87" H 7955 22696 50  0000 L CNN
+F 1 "2N7000" H 7955 22605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7950 22575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7750 22650 50  0001 L CNN
+	1    7750 22650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 50600 7200 50600
+	7850 22850 7200 22850
 Wire Wire Line
-	7200 50600 6550 50600
-Connection ~ 7200 50600
+	7200 22850 6550 22850
+Connection ~ 7200 22850
 Wire Wire Line
-	6550 50600 5900 50600
-Connection ~ 6550 50600
+	6550 22850 5900 22850
+Connection ~ 6550 22850
 Wire Wire Line
-	5900 50600 5250 50600
-Connection ~ 5900 50600
+	5900 22850 5250 22850
+Connection ~ 5900 22850
 Wire Wire Line
-	5250 50600 4600 50600
-Connection ~ 5250 50600
+	5250 22850 4600 22850
+Connection ~ 5250 22850
 Wire Wire Line
-	4600 50600 3950 50600
-Connection ~ 4600 50600
+	4600 22850 3950 22850
+Connection ~ 4600 22850
 Wire Wire Line
-	3950 50600 3300 50600
-Connection ~ 3950 50600
+	3950 22850 3300 22850
+Connection ~ 3950 22850
 Wire Wire Line
-	2900 49400 3650 49400
+	2900 21650 3650 21650
 Wire Wire Line
-	2900 49300 4300 49300
+	2900 21550 4300 21550
 Wire Wire Line
-	2900 49200 4950 49200
+	2900 21450 4950 21450
 Wire Wire Line
-	2900 49100 5600 49100
+	2900 21350 5600 21350
 Wire Wire Line
-	2900 49000 6250 49000
+	2900 21250 6250 21250
 Wire Wire Line
-	2900 48900 6900 48900
+	2900 21150 6900 21150
 Wire Wire Line
-	2900 48800 7550 48800
+	2900 21050 7550 21050
 $Comp
-L power:VCC #PWR0103
+L power:VCC #PWR075
 U 1 1 5B8C5565
-P 3300 49600
-F 0 "#PWR0103" H 3300 49450 50  0001 C CNN
-F 1 "VCC" H 3317 49773 50  0000 C CNN
-F 2 "" H 3300 49600 50  0001 C CNN
-F 3 "" H 3300 49600 50  0001 C CNN
-	1    3300 49600
+P 3300 21850
+F 0 "#PWR075" H 3300 21700 50  0001 C CNN
+F 1 "VCC" H 3317 22023 50  0000 C CNN
+F 2 "" H 3300 21850 50  0001 C CNN
+F 3 "" H 3300 21850 50  0001 C CNN
+	1    3300 21850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 48800 7550 50400
+	7550 21050 7550 22650
 Wire Wire Line
-	6250 49000 6250 50400
+	6250 21250 6250 22650
 Wire Wire Line
-	5600 49100 5600 50400
+	5600 21350 5600 22650
 Wire Wire Line
-	4950 49200 4950 50400
+	4950 21450 4950 22650
 Wire Wire Line
-	4300 49300 4300 50400
+	4300 21550 4300 22650
 Wire Wire Line
-	3650 49400 3650 50400
+	3650 21650 3650 22650
 $Comp
-L power:VCC #PWR0104
+L power:VCC #PWR076
 U 1 1 5B8C5572
-P 3950 49600
-F 0 "#PWR0104" H 3950 49450 50  0001 C CNN
-F 1 "VCC" H 3967 49773 50  0000 C CNN
-F 2 "" H 3950 49600 50  0001 C CNN
-F 3 "" H 3950 49600 50  0001 C CNN
-	1    3950 49600
+P 3950 21850
+F 0 "#PWR076" H 3950 21700 50  0001 C CNN
+F 1 "VCC" H 3967 22023 50  0000 C CNN
+F 2 "" H 3950 21850 50  0001 C CNN
+F 3 "" H 3950 21850 50  0001 C CNN
+	1    3950 21850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0105
+L power:VCC #PWR077
 U 1 1 5B8C5578
-P 4600 49600
-F 0 "#PWR0105" H 4600 49450 50  0001 C CNN
-F 1 "VCC" H 4617 49773 50  0000 C CNN
-F 2 "" H 4600 49600 50  0001 C CNN
-F 3 "" H 4600 49600 50  0001 C CNN
-	1    4600 49600
+P 4600 21850
+F 0 "#PWR077" H 4600 21700 50  0001 C CNN
+F 1 "VCC" H 4617 22023 50  0000 C CNN
+F 2 "" H 4600 21850 50  0001 C CNN
+F 3 "" H 4600 21850 50  0001 C CNN
+	1    4600 21850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0106
+L power:VCC #PWR078
 U 1 1 5B8C557E
-P 5250 49600
-F 0 "#PWR0106" H 5250 49450 50  0001 C CNN
-F 1 "VCC" H 5267 49773 50  0000 C CNN
-F 2 "" H 5250 49600 50  0001 C CNN
-F 3 "" H 5250 49600 50  0001 C CNN
-	1    5250 49600
+P 5250 21850
+F 0 "#PWR078" H 5250 21700 50  0001 C CNN
+F 1 "VCC" H 5267 22023 50  0000 C CNN
+F 2 "" H 5250 21850 50  0001 C CNN
+F 3 "" H 5250 21850 50  0001 C CNN
+	1    5250 21850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0107
+L power:VCC #PWR079
 U 1 1 5B8C5584
-P 5900 49600
-F 0 "#PWR0107" H 5900 49450 50  0001 C CNN
-F 1 "VCC" H 5917 49773 50  0000 C CNN
-F 2 "" H 5900 49600 50  0001 C CNN
-F 3 "" H 5900 49600 50  0001 C CNN
-	1    5900 49600
+P 5900 21850
+F 0 "#PWR079" H 5900 21700 50  0001 C CNN
+F 1 "VCC" H 5917 22023 50  0000 C CNN
+F 2 "" H 5900 21850 50  0001 C CNN
+F 3 "" H 5900 21850 50  0001 C CNN
+	1    5900 21850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0108
+L power:VCC #PWR080
 U 1 1 5B8C558A
-P 6550 49600
-F 0 "#PWR0108" H 6550 49450 50  0001 C CNN
-F 1 "VCC" H 6567 49773 50  0000 C CNN
-F 2 "" H 6550 49600 50  0001 C CNN
-F 3 "" H 6550 49600 50  0001 C CNN
-	1    6550 49600
+P 6550 21850
+F 0 "#PWR080" H 6550 21700 50  0001 C CNN
+F 1 "VCC" H 6567 22023 50  0000 C CNN
+F 2 "" H 6550 21850 50  0001 C CNN
+F 3 "" H 6550 21850 50  0001 C CNN
+	1    6550 21850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0109
+L power:VCC #PWR081
 U 1 1 5B8C5590
-P 7200 49600
-F 0 "#PWR0109" H 7200 49450 50  0001 C CNN
-F 1 "VCC" H 7217 49773 50  0000 C CNN
-F 2 "" H 7200 49600 50  0001 C CNN
-F 3 "" H 7200 49600 50  0001 C CNN
-	1    7200 49600
+P 7200 21850
+F 0 "#PWR081" H 7200 21700 50  0001 C CNN
+F 1 "VCC" H 7217 22023 50  0000 C CNN
+F 2 "" H 7200 21850 50  0001 C CNN
+F 3 "" H 7200 21850 50  0001 C CNN
+	1    7200 21850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0110
+L power:VCC #PWR082
 U 1 1 5B8C5596
-P 7850 49600
-F 0 "#PWR0110" H 7850 49450 50  0001 C CNN
-F 1 "VCC" H 7867 49773 50  0000 C CNN
-F 2 "" H 7850 49600 50  0001 C CNN
-F 3 "" H 7850 49600 50  0001 C CNN
-	1    7850 49600
+P 7850 21850
+F 0 "#PWR082" H 7850 21700 50  0001 C CNN
+F 1 "VCC" H 7867 22023 50  0000 C CNN
+F 2 "" H 7850 21850 50  0001 C CNN
+F 3 "" H 7850 21850 50  0001 C CNN
+	1    7850 21850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 49500 2900 49500
+	3000 21750 2900 21750
 Wire Wire Line
-	3000 49500 3000 50400
-Text Label 2900 43350 0    50   ~ 0
+	3000 21750 3000 22650
+Text Label 2900 15600 0    50   ~ 0
 a0
-Text Label 2900 43250 0    50   ~ 0
+Text Label 2900 15500 0    50   ~ 0
 a1
-Text Label 2900 43150 0    50   ~ 0
+Text Label 2900 15400 0    50   ~ 0
 a2
-Text Label 2900 43050 0    50   ~ 0
+Text Label 2900 15300 0    50   ~ 0
 a3
-Text Label 2900 42950 0    50   ~ 0
+Text Label 2900 15200 0    50   ~ 0
 a4
-Text Label 2900 42850 0    50   ~ 0
+Text Label 2900 15100 0    50   ~ 0
 a5
-Text Label 2900 42750 0    50   ~ 0
+Text Label 2900 15000 0    50   ~ 0
 a6
-Text Label 2900 42650 0    50   ~ 0
+Text Label 2900 14900 0    50   ~ 0
 a7
-Text Label 2900 45400 0    50   ~ 0
+Text Label 2900 17650 0    50   ~ 0
 b0
-Text Label 2900 45300 0    50   ~ 0
+Text Label 2900 17550 0    50   ~ 0
 b1
-Text Label 2900 45200 0    50   ~ 0
+Text Label 2900 17450 0    50   ~ 0
 b2
-Text Label 2900 45100 0    50   ~ 0
+Text Label 2900 17350 0    50   ~ 0
 b3
-Text Label 2900 45000 0    50   ~ 0
+Text Label 2900 17250 0    50   ~ 0
 b4
-Text Label 2900 44900 0    50   ~ 0
+Text Label 2900 17150 0    50   ~ 0
 b5
-Text Label 2900 44800 0    50   ~ 0
+Text Label 2900 17050 0    50   ~ 0
 b6
-Text Label 2900 44700 0    50   ~ 0
+Text Label 2900 16950 0    50   ~ 0
 b7
-Text Label 2900 47450 0    50   ~ 0
+Text Label 2900 19700 0    50   ~ 0
 c0
-Text Label 2900 47350 0    50   ~ 0
+Text Label 2900 19600 0    50   ~ 0
 c1
-Text Label 2900 47250 0    50   ~ 0
+Text Label 2900 19500 0    50   ~ 0
 c2
-Text Label 2900 47150 0    50   ~ 0
+Text Label 2900 19400 0    50   ~ 0
 c3
-Text Label 2900 47050 0    50   ~ 0
+Text Label 2900 19300 0    50   ~ 0
 c4
-Text Label 2900 46950 0    50   ~ 0
+Text Label 2900 19200 0    50   ~ 0
 c5
-Text Label 2900 46850 0    50   ~ 0
+Text Label 2900 19100 0    50   ~ 0
 c6
-Text Label 2900 46750 0    50   ~ 0
+Text Label 2900 19000 0    50   ~ 0
 c7
-Text Label 2900 49500 0    50   ~ 0
+Text Label 2900 21750 0    50   ~ 0
 d0
-Text Label 2900 49400 0    50   ~ 0
+Text Label 2900 21650 0    50   ~ 0
 d1
-Text Label 2900 49300 0    50   ~ 0
+Text Label 2900 21550 0    50   ~ 0
 d2
-Text Label 2900 49200 0    50   ~ 0
+Text Label 2900 21450 0    50   ~ 0
 d3
-Text Label 2900 49100 0    50   ~ 0
+Text Label 2900 21350 0    50   ~ 0
 d4
-Text Label 2900 49000 0    50   ~ 0
+Text Label 2900 21250 0    50   ~ 0
 d5
-Text Label 2900 48900 0    50   ~ 0
+Text Label 2900 21150 0    50   ~ 0
 d6
-Text Label 2900 48800 0    50   ~ 0
+Text Label 2900 21050 0    50   ~ 0
 d7
-Connection ~ 3300 50600
+Connection ~ 3300 22850
 $Comp
-L power:GND #PWR0102
+L power:GND #PWR074
 U 1 1 5B8B8451
-P 3300 48550
-F 0 "#PWR0102" H 3300 48300 50  0001 C CNN
-F 1 "GND" H 3305 48377 50  0000 C CNN
-F 2 "" H 3300 48550 50  0001 C CNN
-F 3 "" H 3300 48550 50  0001 C CNN
-	1    3300 48550
-	1    0    0    -1  
+P 3300 20800
+F 0 "#PWR074" H 3300 20550 50  0001 C CNN
+F 1 "GND" H 3305 20627 50  0000 C CNN
+F 2 "" H 3300 20800 50  0001 C CNN
+F 3 "" H 3300 20800 50  0001 C CNN
+	1    3300 20800
+	1    0    0    -1
 $EndComp
-Connection ~ 3300 48550
-Connection ~ 3300 46500
-Connection ~ 3300 44450
+Connection ~ 3300 20800
+Connection ~ 3300 18750
+Connection ~ 3300 16700
 $Comp
-L power:GND #PWR0125
+L power:GND #PWR097
 U 1 1 5B914424
-P 3300 54400
-F 0 "#PWR0125" H 3300 54150 50  0001 C CNN
-F 1 "GND" H 3305 54227 50  0000 C CNN
-F 2 "" H 3300 54400 50  0001 C CNN
-F 3 "" H 3300 54400 50  0001 C CNN
-	1    3300 54400
+P 3300 26650
+F 0 "#PWR097" H 3300 26400 50  0001 C CNN
+F 1 "GND" H 3305 26477 50  0000 C CNN
+F 2 "" H 3300 26650 50  0001 C CNN
+F 3 "" H 3300 26650 50  0001 C CNN
+	1    3300 26650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D37
 U 1 1 5B91442A
-P 3300 53550
-F 0 "D37" V 3338 53433 50  0000 R CNN
-F 1 "LED" V 3247 53433 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3300 53550 50  0001 C CNN
-F 3 "~" H 3300 53550 50  0001 C CNN
-	1    3300 53550
+P 3300 25800
+F 0 "D37" V 3338 25683 50  0000 R CNN
+F 1 "LED" V 3247 25683 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3300 25800 50  0001 C CNN
+F 3 "~" H 3300 25800 50  0001 C CNN
+	1    3300 25800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R60
 U 1 1 5B914431
-P 3300 53850
-F 0 "R60" H 3370 53896 50  0000 L CNN
-F 1 "R" H 3370 53805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3230 53850 50  0001 C CNN
-F 3 "~" H 3300 53850 50  0001 C CNN
-	1    3300 53850
+P 3300 26100
+F 0 "R60" H 3370 26146 50  0000 L CNN
+F 1 "R" H 3370 26055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3230 26100 50  0001 C CNN
+F 3 "~" H 3300 26100 50  0001 C CNN
+	1    3300 26100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D38
 U 1 1 5B914438
-P 3950 53550
-F 0 "D38" V 3988 53433 50  0000 R CNN
-F 1 "LED" V 3897 53433 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3950 53550 50  0001 C CNN
-F 3 "~" H 3950 53550 50  0001 C CNN
-	1    3950 53550
+P 3950 25800
+F 0 "D38" V 3988 25683 50  0000 R CNN
+F 1 "LED" V 3897 25683 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3950 25800 50  0001 C CNN
+F 3 "~" H 3950 25800 50  0001 C CNN
+	1    3950 25800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R61
 U 1 1 5B91443F
-P 3950 53850
-F 0 "R61" H 4020 53896 50  0000 L CNN
-F 1 "R" H 4020 53805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3880 53850 50  0001 C CNN
-F 3 "~" H 3950 53850 50  0001 C CNN
-	1    3950 53850
+P 3950 26100
+F 0 "R61" H 4020 26146 50  0000 L CNN
+F 1 "R" H 4020 26055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3880 26100 50  0001 C CNN
+F 3 "~" H 3950 26100 50  0001 C CNN
+	1    3950 26100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D39
 U 1 1 5B914446
-P 4600 53550
-F 0 "D39" V 4638 53433 50  0000 R CNN
-F 1 "LED" V 4547 53433 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4600 53550 50  0001 C CNN
-F 3 "~" H 4600 53550 50  0001 C CNN
-	1    4600 53550
+P 4600 25800
+F 0 "D39" V 4638 25683 50  0000 R CNN
+F 1 "LED" V 4547 25683 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4600 25800 50  0001 C CNN
+F 3 "~" H 4600 25800 50  0001 C CNN
+	1    4600 25800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R62
 U 1 1 5B91444D
-P 4600 53850
-F 0 "R62" H 4670 53896 50  0000 L CNN
-F 1 "R" H 4670 53805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 4530 53850 50  0001 C CNN
-F 3 "~" H 4600 53850 50  0001 C CNN
-	1    4600 53850
+P 4600 26100
+F 0 "R62" H 4670 26146 50  0000 L CNN
+F 1 "R" H 4670 26055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 4530 26100 50  0001 C CNN
+F 3 "~" H 4600 26100 50  0001 C CNN
+	1    4600 26100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D40
 U 1 1 5B914454
-P 5250 53550
-F 0 "D40" V 5288 53433 50  0000 R CNN
-F 1 "LED" V 5197 53433 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5250 53550 50  0001 C CNN
-F 3 "~" H 5250 53550 50  0001 C CNN
-	1    5250 53550
+P 5250 25800
+F 0 "D40" V 5288 25683 50  0000 R CNN
+F 1 "LED" V 5197 25683 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5250 25800 50  0001 C CNN
+F 3 "~" H 5250 25800 50  0001 C CNN
+	1    5250 25800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R63
 U 1 1 5B91445B
-P 5250 53850
-F 0 "R63" H 5320 53896 50  0000 L CNN
-F 1 "R" H 5320 53805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5180 53850 50  0001 C CNN
-F 3 "~" H 5250 53850 50  0001 C CNN
-	1    5250 53850
+P 5250 26100
+F 0 "R63" H 5320 26146 50  0000 L CNN
+F 1 "R" H 5320 26055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5180 26100 50  0001 C CNN
+F 3 "~" H 5250 26100 50  0001 C CNN
+	1    5250 26100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D41
 U 1 1 5B914462
-P 5900 53550
-F 0 "D41" V 5938 53433 50  0000 R CNN
-F 1 "LED" V 5847 53433 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5900 53550 50  0001 C CNN
-F 3 "~" H 5900 53550 50  0001 C CNN
-	1    5900 53550
+P 5900 25800
+F 0 "D41" V 5938 25683 50  0000 R CNN
+F 1 "LED" V 5847 25683 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5900 25800 50  0001 C CNN
+F 3 "~" H 5900 25800 50  0001 C CNN
+	1    5900 25800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R64
 U 1 1 5B914469
-P 5900 53850
-F 0 "R64" H 5970 53896 50  0000 L CNN
-F 1 "R" H 5970 53805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5830 53850 50  0001 C CNN
-F 3 "~" H 5900 53850 50  0001 C CNN
-	1    5900 53850
+P 5900 26100
+F 0 "R64" H 5970 26146 50  0000 L CNN
+F 1 "R" H 5970 26055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5830 26100 50  0001 C CNN
+F 3 "~" H 5900 26100 50  0001 C CNN
+	1    5900 26100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D42
 U 1 1 5B914470
-P 6550 53550
-F 0 "D42" V 6588 53433 50  0000 R CNN
-F 1 "LED" V 6497 53433 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6550 53550 50  0001 C CNN
-F 3 "~" H 6550 53550 50  0001 C CNN
-	1    6550 53550
+P 6550 25800
+F 0 "D42" V 6588 25683 50  0000 R CNN
+F 1 "LED" V 6497 25683 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6550 25800 50  0001 C CNN
+F 3 "~" H 6550 25800 50  0001 C CNN
+	1    6550 25800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R65
 U 1 1 5B914477
-P 6550 53850
-F 0 "R65" H 6620 53896 50  0000 L CNN
-F 1 "R" H 6620 53805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 6480 53850 50  0001 C CNN
-F 3 "~" H 6550 53850 50  0001 C CNN
-	1    6550 53850
+P 6550 26100
+F 0 "R65" H 6620 26146 50  0000 L CNN
+F 1 "R" H 6620 26055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 6480 26100 50  0001 C CNN
+F 3 "~" H 6550 26100 50  0001 C CNN
+	1    6550 26100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D43
 U 1 1 5B91447E
-P 7200 53550
-F 0 "D43" V 7238 53433 50  0000 R CNN
-F 1 "LED" V 7147 53433 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7200 53550 50  0001 C CNN
-F 3 "~" H 7200 53550 50  0001 C CNN
-	1    7200 53550
+P 7200 25800
+F 0 "D43" V 7238 25683 50  0000 R CNN
+F 1 "LED" V 7147 25683 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7200 25800 50  0001 C CNN
+F 3 "~" H 7200 25800 50  0001 C CNN
+	1    7200 25800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R66
 U 1 1 5B914485
-P 7200 53850
-F 0 "R66" H 7270 53896 50  0000 L CNN
-F 1 "R" H 7270 53805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7130 53850 50  0001 C CNN
-F 3 "~" H 7200 53850 50  0001 C CNN
-	1    7200 53850
+P 7200 26100
+F 0 "R66" H 7270 26146 50  0000 L CNN
+F 1 "R" H 7270 26055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7130 26100 50  0001 C CNN
+F 3 "~" H 7200 26100 50  0001 C CNN
+	1    7200 26100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D44
 U 1 1 5B91448C
-P 7850 53550
-F 0 "D44" V 7888 53433 50  0000 R CNN
-F 1 "LED" V 7797 53433 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7850 53550 50  0001 C CNN
-F 3 "~" H 7850 53550 50  0001 C CNN
-	1    7850 53550
-	0    -1   -1   0   
+P 7850 25800
+F 0 "D44" V 7888 25683 50  0000 R CNN
+F 1 "LED" V 7797 25683 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7850 25800 50  0001 C CNN
+F 3 "~" H 7850 25800 50  0001 C CNN
+	1    7850 25800
+	0    -1   -1   0
 $EndComp
 $Comp
 L Device:R R67
 U 1 1 5B914493
-P 7850 53850
-F 0 "R67" H 7920 53896 50  0000 L CNN
-F 1 "R" H 7920 53805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7780 53850 50  0001 C CNN
-F 3 "~" H 7850 53850 50  0001 C CNN
-	1    7850 53850
+P 7850 26100
+F 0 "R67" H 7920 26146 50  0000 L CNN
+F 1 "R" H 7920 26055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 7780 26100 50  0001 C CNN
+F 3 "~" H 7850 26100 50  0001 C CNN
+	1    7850 26100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q120
+L Transistor_FET:2N7000 Q92
 U 1 1 5B91449A
-P 3200 54200
-F 0 "Q120" H 3405 54246 50  0000 L CNN
-F 1 "2N7000" H 3405 54155 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3400 54125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3200 54200 50  0001 L CNN
-	1    3200 54200
+P 3200 26450
+F 0 "Q92" H 3405 26496 50  0000 L CNN
+F 1 "2N7000" H 3405 26405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3400 26375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3200 26450 50  0001 L CNN
+	1    3200 26450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q121
+L Transistor_FET:2N7000 Q93
 U 1 1 5B9144A1
-P 3850 54200
-F 0 "Q121" H 4055 54246 50  0000 L CNN
-F 1 "2N7000" H 4055 54155 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4050 54125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 54200 50  0001 L CNN
-	1    3850 54200
+P 3850 26450
+F 0 "Q93" H 4055 26496 50  0000 L CNN
+F 1 "2N7000" H 4055 26405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4050 26375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 26450 50  0001 L CNN
+	1    3850 26450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q122
+L Transistor_FET:2N7000 Q94
 U 1 1 5B9144A8
-P 4500 54200
-F 0 "Q122" H 4705 54246 50  0000 L CNN
-F 1 "2N7000" H 4705 54155 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4700 54125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 54200 50  0001 L CNN
-	1    4500 54200
+P 4500 26450
+F 0 "Q94" H 4705 26496 50  0000 L CNN
+F 1 "2N7000" H 4705 26405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4700 26375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 26450 50  0001 L CNN
+	1    4500 26450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q123
+L Transistor_FET:2N7000 Q95
 U 1 1 5B9144AF
-P 5150 54200
-F 0 "Q123" H 5355 54246 50  0000 L CNN
-F 1 "2N7000" H 5355 54155 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5350 54125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5150 54200 50  0001 L CNN
-	1    5150 54200
+P 5150 26450
+F 0 "Q95" H 5355 26496 50  0000 L CNN
+F 1 "2N7000" H 5355 26405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5350 26375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5150 26450 50  0001 L CNN
+	1    5150 26450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q124
+L Transistor_FET:2N7000 Q96
 U 1 1 5B9144B6
-P 5800 54200
-F 0 "Q124" H 6005 54246 50  0000 L CNN
-F 1 "2N7000" H 6005 54155 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6000 54125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5800 54200 50  0001 L CNN
-	1    5800 54200
+P 5800 26450
+F 0 "Q96" H 6005 26496 50  0000 L CNN
+F 1 "2N7000" H 6005 26405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6000 26375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5800 26450 50  0001 L CNN
+	1    5800 26450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q125
+L Transistor_FET:2N7000 Q97
 U 1 1 5B9144BD
-P 6450 54200
-F 0 "Q125" H 6655 54246 50  0000 L CNN
-F 1 "2N7000" H 6655 54155 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6650 54125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 6450 54200 50  0001 L CNN
-	1    6450 54200
-	1    0    0    -1  
+P 6450 26450
+F 0 "Q97" H 6655 26496 50  0000 L CNN
+F 1 "2N7000" H 6655 26405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6650 26375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 6450 26450 50  0001 L CNN
+	1    6450 26450
+	1    0    0    -1
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q126
+L Transistor_FET:2N7000 Q98
 U 1 1 5B9144C4
-P 7100 54200
-F 0 "Q126" H 7305 54246 50  0000 L CNN
-F 1 "2N7000" H 7305 54155 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7300 54125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7100 54200 50  0001 L CNN
-	1    7100 54200
-	1    0    0    -1  
+P 7100 26450
+F 0 "Q98" H 7305 26496 50  0000 L CNN
+F 1 "2N7000" H 7305 26405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7300 26375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7100 26450 50  0001 L CNN
+	1    7100 26450
+	1    0    0    -1
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q127
+L Transistor_FET:2N7000 Q99
 U 1 1 5B9144CB
-P 7750 54200
-F 0 "Q127" H 7955 54246 50  0000 L CNN
-F 1 "2N7000" H 7955 54155 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7950 54125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7750 54200 50  0001 L CNN
-	1    7750 54200
+P 7750 26450
+F 0 "Q99" H 7955 26496 50  0000 L CNN
+F 1 "2N7000" H 7955 26405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7950 26375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7750 26450 50  0001 L CNN
+	1    7750 26450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 54400 7200 54400
+	7850 26650 7200 26650
 Wire Wire Line
-	7200 54400 6550 54400
-Connection ~ 7200 54400
+	7200 26650 6550 26650
+Connection ~ 7200 26650
 Wire Wire Line
-	6550 54400 5900 54400
-Connection ~ 6550 54400
+	6550 26650 5900 26650
+Connection ~ 6550 26650
 Wire Wire Line
-	5900 54400 5250 54400
-Connection ~ 5900 54400
+	5900 26650 5250 26650
+Connection ~ 5900 26650
 Wire Wire Line
-	5250 54400 4600 54400
-Connection ~ 5250 54400
+	5250 26650 4600 26650
+Connection ~ 5250 26650
 Wire Wire Line
-	4600 54400 3950 54400
-Connection ~ 4600 54400
+	4600 26650 3950 26650
+Connection ~ 4600 26650
 Wire Wire Line
-	3950 54400 3300 54400
-Connection ~ 3950 54400
+	3950 26650 3300 26650
+Connection ~ 3950 26650
 Wire Wire Line
-	2900 53200 3650 53200
+	2900 25450 3650 25450
 Wire Wire Line
-	2900 53100 4300 53100
+	2900 25350 4300 25350
 Wire Wire Line
-	2900 53000 4950 53000
+	2900 25250 4950 25250
 Wire Wire Line
-	2900 52900 5600 52900
+	2900 25150 5600 25150
 Wire Wire Line
-	2900 52800 6250 52800
+	2900 25050 6250 25050
 Wire Wire Line
-	2900 52700 6900 52700
+	2900 24950 6900 24950
 Wire Wire Line
-	2900 52600 7550 52600
+	2900 24850 7550 24850
 $Comp
-L power:VCC #PWR0117
+L power:VCC #PWR089
 U 1 1 5B9144E6
-P 3300 53400
-F 0 "#PWR0117" H 3300 53250 50  0001 C CNN
-F 1 "VCC" H 3317 53573 50  0000 C CNN
-F 2 "" H 3300 53400 50  0001 C CNN
-F 3 "" H 3300 53400 50  0001 C CNN
-	1    3300 53400
+P 3300 25650
+F 0 "#PWR089" H 3300 25500 50  0001 C CNN
+F 1 "VCC" H 3317 25823 50  0000 C CNN
+F 2 "" H 3300 25650 50  0001 C CNN
+F 3 "" H 3300 25650 50  0001 C CNN
+	1    3300 25650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 52600 7550 54200
+	7550 24850 7550 26450
 Wire Wire Line
-	6250 52800 6250 54200
+	6250 25050 6250 26450
 Wire Wire Line
-	5600 52900 5600 54200
+	5600 25150 5600 26450
 Wire Wire Line
-	4950 53000 4950 54200
+	4950 25250 4950 26450
 Wire Wire Line
-	4300 53100 4300 54200
+	4300 25350 4300 26450
 Wire Wire Line
-	3650 53200 3650 54200
+	3650 25450 3650 26450
 $Comp
-L power:VCC #PWR0118
+L power:VCC #PWR090
 U 1 1 5B9144F3
-P 3950 53400
-F 0 "#PWR0118" H 3950 53250 50  0001 C CNN
-F 1 "VCC" H 3967 53573 50  0000 C CNN
-F 2 "" H 3950 53400 50  0001 C CNN
-F 3 "" H 3950 53400 50  0001 C CNN
-	1    3950 53400
+P 3950 25650
+F 0 "#PWR090" H 3950 25500 50  0001 C CNN
+F 1 "VCC" H 3967 25823 50  0000 C CNN
+F 2 "" H 3950 25650 50  0001 C CNN
+F 3 "" H 3950 25650 50  0001 C CNN
+	1    3950 25650
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0119
+L power:VCC #PWR091
 U 1 1 5B9144F9
-P 4600 53400
-F 0 "#PWR0119" H 4600 53250 50  0001 C CNN
-F 1 "VCC" H 4617 53573 50  0000 C CNN
-F 2 "" H 4600 53400 50  0001 C CNN
-F 3 "" H 4600 53400 50  0001 C CNN
-	1    4600 53400
+P 4600 25650
+F 0 "#PWR091" H 4600 25500 50  0001 C CNN
+F 1 "VCC" H 4617 25823 50  0000 C CNN
+F 2 "" H 4600 25650 50  0001 C CNN
+F 3 "" H 4600 25650 50  0001 C CNN
+	1    4600 25650
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0120
+L power:VCC #PWR092
 U 1 1 5B9144FF
-P 5250 53400
-F 0 "#PWR0120" H 5250 53250 50  0001 C CNN
-F 1 "VCC" H 5267 53573 50  0000 C CNN
-F 2 "" H 5250 53400 50  0001 C CNN
-F 3 "" H 5250 53400 50  0001 C CNN
-	1    5250 53400
+P 5250 25650
+F 0 "#PWR092" H 5250 25500 50  0001 C CNN
+F 1 "VCC" H 5267 25823 50  0000 C CNN
+F 2 "" H 5250 25650 50  0001 C CNN
+F 3 "" H 5250 25650 50  0001 C CNN
+	1    5250 25650
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0121
+L power:VCC #PWR093
 U 1 1 5B914505
-P 5900 53400
-F 0 "#PWR0121" H 5900 53250 50  0001 C CNN
-F 1 "VCC" H 5917 53573 50  0000 C CNN
-F 2 "" H 5900 53400 50  0001 C CNN
-F 3 "" H 5900 53400 50  0001 C CNN
-	1    5900 53400
+P 5900 25650
+F 0 "#PWR093" H 5900 25500 50  0001 C CNN
+F 1 "VCC" H 5917 25823 50  0000 C CNN
+F 2 "" H 5900 25650 50  0001 C CNN
+F 3 "" H 5900 25650 50  0001 C CNN
+	1    5900 25650
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0122
+L power:VCC #PWR094
 U 1 1 5B91450B
-P 6550 53400
-F 0 "#PWR0122" H 6550 53250 50  0001 C CNN
-F 1 "VCC" H 6567 53573 50  0000 C CNN
-F 2 "" H 6550 53400 50  0001 C CNN
-F 3 "" H 6550 53400 50  0001 C CNN
-	1    6550 53400
+P 6550 25650
+F 0 "#PWR094" H 6550 25500 50  0001 C CNN
+F 1 "VCC" H 6567 25823 50  0000 C CNN
+F 2 "" H 6550 25650 50  0001 C CNN
+F 3 "" H 6550 25650 50  0001 C CNN
+	1    6550 25650
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0123
+L power:VCC #PWR095
 U 1 1 5B914511
-P 7200 53400
-F 0 "#PWR0123" H 7200 53250 50  0001 C CNN
-F 1 "VCC" H 7217 53573 50  0000 C CNN
-F 2 "" H 7200 53400 50  0001 C CNN
-F 3 "" H 7200 53400 50  0001 C CNN
-	1    7200 53400
+P 7200 25650
+F 0 "#PWR095" H 7200 25500 50  0001 C CNN
+F 1 "VCC" H 7217 25823 50  0000 C CNN
+F 2 "" H 7200 25650 50  0001 C CNN
+F 3 "" H 7200 25650 50  0001 C CNN
+	1    7200 25650
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0124
+L power:VCC #PWR096
 U 1 1 5B914517
-P 7850 53400
-F 0 "#PWR0124" H 7850 53250 50  0001 C CNN
-F 1 "VCC" H 7867 53573 50  0000 C CNN
-F 2 "" H 7850 53400 50  0001 C CNN
-F 3 "" H 7850 53400 50  0001 C CNN
-	1    7850 53400
+P 7850 25650
+F 0 "#PWR096" H 7850 25500 50  0001 C CNN
+F 1 "VCC" H 7867 25823 50  0000 C CNN
+F 2 "" H 7850 25650 50  0001 C CNN
+F 3 "" H 7850 25650 50  0001 C CNN
+	1    7850 25650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 53300 2900 53300
+	3000 25550 2900 25550
 Wire Wire Line
-	3000 53300 3000 54200
-Connection ~ 3300 54400
+	3000 25550 3000 26450
+Connection ~ 3300 26650
 $Comp
-L power:GND #PWR0116
+L power:GND #PWR088
 U 1 1 5B92FB0F
-P 3300 52250
-F 0 "#PWR0116" H 3300 52000 50  0001 C CNN
-F 1 "GND" H 3305 52077 50  0000 C CNN
-F 2 "" H 3300 52250 50  0001 C CNN
-F 3 "" H 3300 52250 50  0001 C CNN
-	1    3300 52250
+P 3300 24500
+F 0 "#PWR088" H 3300 24250 50  0001 C CNN
+F 1 "GND" H 3305 24327 50  0000 C CNN
+F 2 "" H 3300 24500 50  0001 C CNN
+F 3 "" H 3300 24500 50  0001 C CNN
+	1    3300 24500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D33
 U 1 1 5B92FB15
-P 3300 51400
-F 0 "D33" V 3338 51283 50  0000 R CNN
-F 1 "LED" V 3247 51283 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3300 51400 50  0001 C CNN
-F 3 "~" H 3300 51400 50  0001 C CNN
-	1    3300 51400
+P 3300 23650
+F 0 "D33" V 3338 23533 50  0000 R CNN
+F 1 "LED" V 3247 23533 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3300 23650 50  0001 C CNN
+F 3 "~" H 3300 23650 50  0001 C CNN
+	1    3300 23650
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R56
 U 1 1 5B92FB1C
-P 3300 51700
-F 0 "R56" H 3370 51746 50  0000 L CNN
-F 1 "R" H 3370 51655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3230 51700 50  0001 C CNN
-F 3 "~" H 3300 51700 50  0001 C CNN
-	1    3300 51700
+P 3300 23950
+F 0 "R56" H 3370 23996 50  0000 L CNN
+F 1 "R" H 3370 23905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3230 23950 50  0001 C CNN
+F 3 "~" H 3300 23950 50  0001 C CNN
+	1    3300 23950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D34
 U 1 1 5B92FB23
-P 3950 51400
-F 0 "D34" V 3988 51283 50  0000 R CNN
-F 1 "LED" V 3897 51283 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3950 51400 50  0001 C CNN
-F 3 "~" H 3950 51400 50  0001 C CNN
-	1    3950 51400
+P 3950 23650
+F 0 "D34" V 3988 23533 50  0000 R CNN
+F 1 "LED" V 3897 23533 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3950 23650 50  0001 C CNN
+F 3 "~" H 3950 23650 50  0001 C CNN
+	1    3950 23650
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R57
 U 1 1 5B92FB2A
-P 3950 51700
-F 0 "R57" H 4020 51746 50  0000 L CNN
-F 1 "R" H 4020 51655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3880 51700 50  0001 C CNN
-F 3 "~" H 3950 51700 50  0001 C CNN
-	1    3950 51700
+P 3950 23950
+F 0 "R57" H 4020 23996 50  0000 L CNN
+F 1 "R" H 4020 23905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 3880 23950 50  0001 C CNN
+F 3 "~" H 3950 23950 50  0001 C CNN
+	1    3950 23950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D35
 U 1 1 5B92FB31
-P 4600 51400
-F 0 "D35" V 4638 51283 50  0000 R CNN
-F 1 "LED" V 4547 51283 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4600 51400 50  0001 C CNN
-F 3 "~" H 4600 51400 50  0001 C CNN
-	1    4600 51400
+P 4600 23650
+F 0 "D35" V 4638 23533 50  0000 R CNN
+F 1 "LED" V 4547 23533 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4600 23650 50  0001 C CNN
+F 3 "~" H 4600 23650 50  0001 C CNN
+	1    4600 23650
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R58
 U 1 1 5B92FB38
-P 4600 51700
-F 0 "R58" H 4670 51746 50  0000 L CNN
-F 1 "R" H 4670 51655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 4530 51700 50  0001 C CNN
-F 3 "~" H 4600 51700 50  0001 C CNN
-	1    4600 51700
+P 4600 23950
+F 0 "R58" H 4670 23996 50  0000 L CNN
+F 1 "R" H 4670 23905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 4530 23950 50  0001 C CNN
+F 3 "~" H 4600 23950 50  0001 C CNN
+	1    4600 23950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D36
 U 1 1 5B92FB3F
-P 5250 51400
-F 0 "D36" V 5288 51283 50  0000 R CNN
-F 1 "LED" V 5197 51283 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5250 51400 50  0001 C CNN
-F 3 "~" H 5250 51400 50  0001 C CNN
-	1    5250 51400
+P 5250 23650
+F 0 "D36" V 5288 23533 50  0000 R CNN
+F 1 "LED" V 5197 23533 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5250 23650 50  0001 C CNN
+F 3 "~" H 5250 23650 50  0001 C CNN
+	1    5250 23650
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R59
 U 1 1 5B92FB46
-P 5250 51700
-F 0 "R59" H 5320 51746 50  0000 L CNN
-F 1 "R" H 5320 51655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5180 51700 50  0001 C CNN
-F 3 "~" H 5250 51700 50  0001 C CNN
-	1    5250 51700
+P 5250 23950
+F 0 "R59" H 5320 23996 50  0000 L CNN
+F 1 "R" H 5320 23905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 5180 23950 50  0001 C CNN
+F 3 "~" H 5250 23950 50  0001 C CNN
+	1    5250 23950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q116
+L Transistor_FET:2N7000 Q88
 U 1 1 5B92FB85
-P 3200 52050
-F 0 "Q116" H 3405 52096 50  0000 L CNN
-F 1 "2N7000" H 3405 52005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3400 51975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3200 52050 50  0001 L CNN
-	1    3200 52050
+P 3200 24300
+F 0 "Q88" H 3405 24346 50  0000 L CNN
+F 1 "2N7000" H 3405 24255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3400 24225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3200 24300 50  0001 L CNN
+	1    3200 24300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q117
+L Transistor_FET:2N7000 Q89
 U 1 1 5B92FB8C
-P 3850 52050
-F 0 "Q117" H 4055 52096 50  0000 L CNN
-F 1 "2N7000" H 4055 52005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4050 51975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 52050 50  0001 L CNN
-	1    3850 52050
+P 3850 24300
+F 0 "Q89" H 4055 24346 50  0000 L CNN
+F 1 "2N7000" H 4055 24255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4050 24225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 24300 50  0001 L CNN
+	1    3850 24300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q118
+L Transistor_FET:2N7000 Q90
 U 1 1 5B92FB93
-P 4500 52050
-F 0 "Q118" H 4705 52096 50  0000 L CNN
-F 1 "2N7000" H 4705 52005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4700 51975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 52050 50  0001 L CNN
-	1    4500 52050
-	1    0    0    -1  
+P 4500 24300
+F 0 "Q90" H 4705 24346 50  0000 L CNN
+F 1 "2N7000" H 4705 24255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4700 24225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 24300 50  0001 L CNN
+	1    4500 24300
+	1    0    0    -1
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q119
+L Transistor_FET:2N7000 Q91
 U 1 1 5B92FB9A
-P 5150 52050
-F 0 "Q119" H 5355 52096 50  0000 L CNN
-F 1 "2N7000" H 5355 52005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5350 51975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5150 52050 50  0001 L CNN
-	1    5150 52050
+P 5150 24300
+F 0 "Q91" H 5355 24346 50  0000 L CNN
+F 1 "2N7000" H 5355 24255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5350 24225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5150 24300 50  0001 L CNN
+	1    5150 24300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 52250 4600 52250
+	5250 24500 4600 24500
 Wire Wire Line
-	4600 52250 3950 52250
-Connection ~ 4600 52250
+	4600 24500 3950 24500
+Connection ~ 4600 24500
 Wire Wire Line
-	3950 52250 3300 52250
-Connection ~ 3950 52250
+	3950 24500 3300 24500
+Connection ~ 3950 24500
 Wire Wire Line
-	2900 51050 3650 51050
+	2900 23300 3650 23300
 Wire Wire Line
-	2900 50950 4300 50950
+	2900 23200 4300 23200
 Wire Wire Line
-	2900 50850 4950 50850
+	2900 23100 4950 23100
 $Comp
-L power:VCC #PWR0112
+L power:VCC #PWR084
 U 1 1 5B92FBD1
-P 3300 51250
-F 0 "#PWR0112" H 3300 51100 50  0001 C CNN
-F 1 "VCC" H 3317 51423 50  0000 C CNN
-F 2 "" H 3300 51250 50  0001 C CNN
-F 3 "" H 3300 51250 50  0001 C CNN
-	1    3300 51250
-	1    0    0    -1  
+P 3300 23500
+F 0 "#PWR084" H 3300 23350 50  0001 C CNN
+F 1 "VCC" H 3317 23673 50  0000 C CNN
+F 2 "" H 3300 23500 50  0001 C CNN
+F 3 "" H 3300 23500 50  0001 C CNN
+	1    3300 23500
+	1    0    0    -1
 $EndComp
 Wire Wire Line
-	4950 50850 4950 52050
+	4950 23100 4950 24300
 Wire Wire Line
-	4300 50950 4300 52050
+	4300 23200 4300 24300
 Wire Wire Line
-	3650 51050 3650 52050
+	3650 23300 3650 24300
 $Comp
-L power:VCC #PWR0113
+L power:VCC #PWR085
 U 1 1 5B92FBDE
-P 3950 51250
-F 0 "#PWR0113" H 3950 51100 50  0001 C CNN
-F 1 "VCC" H 3967 51423 50  0000 C CNN
-F 2 "" H 3950 51250 50  0001 C CNN
-F 3 "" H 3950 51250 50  0001 C CNN
-	1    3950 51250
+P 3950 23500
+F 0 "#PWR085" H 3950 23350 50  0001 C CNN
+F 1 "VCC" H 3967 23673 50  0000 C CNN
+F 2 "" H 3950 23500 50  0001 C CNN
+F 3 "" H 3950 23500 50  0001 C CNN
+	1    3950 23500
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0114
+L power:VCC #PWR086
 U 1 1 5B92FBE4
-P 4600 51250
-F 0 "#PWR0114" H 4600 51100 50  0001 C CNN
-F 1 "VCC" H 4617 51423 50  0000 C CNN
-F 2 "" H 4600 51250 50  0001 C CNN
-F 3 "" H 4600 51250 50  0001 C CNN
-	1    4600 51250
+P 4600 23500
+F 0 "#PWR086" H 4600 23350 50  0001 C CNN
+F 1 "VCC" H 4617 23673 50  0000 C CNN
+F 2 "" H 4600 23500 50  0001 C CNN
+F 3 "" H 4600 23500 50  0001 C CNN
+	1    4600 23500
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0115
+L power:VCC #PWR087
 U 1 1 5B92FBEA
-P 5250 51250
-F 0 "#PWR0115" H 5250 51100 50  0001 C CNN
-F 1 "VCC" H 5267 51423 50  0000 C CNN
-F 2 "" H 5250 51250 50  0001 C CNN
-F 3 "" H 5250 51250 50  0001 C CNN
-	1    5250 51250
+P 5250 23500
+F 0 "#PWR087" H 5250 23350 50  0001 C CNN
+F 1 "VCC" H 5267 23673 50  0000 C CNN
+F 2 "" H 5250 23500 50  0001 C CNN
+F 3 "" H 5250 23500 50  0001 C CNN
+	1    5250 23500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 51150 2900 51150
+	3000 23400 2900 23400
 Wire Wire Line
-	3000 51150 3000 52050
-Connection ~ 3300 52250
-Text Label 2900 51150 0    50   ~ 0
+	3000 23400 3000 24300
+Connection ~ 3300 24500
+Text Label 2900 23400 0    50   ~ 0
 sa
-Text Label 2900 51050 0    50   ~ 0
+Text Label 2900 23300 0    50   ~ 0
 sb
-Text Label 2900 50950 0    50   ~ 0
+Text Label 2900 23200 0    50   ~ 0
 sc
-Text Label 2900 50850 0    50   ~ 0
+Text Label 2900 23100 0    50   ~ 0
 sd
-Text Label 2900 53300 0    50   ~ 0
+Text Label 2900 25550 0    50   ~ 0
 o0
-Text Label 2900 53200 0    50   ~ 0
+Text Label 2900 25450 0    50   ~ 0
 o1
-Text Label 2900 53100 0    50   ~ 0
+Text Label 2900 25350 0    50   ~ 0
 o2
-Text Label 2900 53000 0    50   ~ 0
+Text Label 2900 25250 0    50   ~ 0
 o3
-Text Label 2900 52900 0    50   ~ 0
+Text Label 2900 25150 0    50   ~ 0
 o4
-Text Label 2900 52800 0    50   ~ 0
+Text Label 2900 25050 0    50   ~ 0
 o5
-Text Label 2900 52700 0    50   ~ 0
+Text Label 2900 24950 0    50   ~ 0
 o6
-Text Label 2900 52600 0    50   ~ 0
+Text Label 2900 24850 0    50   ~ 0
 o7
 Wire Wire Line
-	6900 44800 6900 46300
+	6900 17050 6900 18550
 Wire Wire Line
-	6900 46850 6900 48350
+	6900 19100 6900 20600
 Wire Wire Line
-	6900 48900 6900 50400
+	6900 21150 6900 22650
 Wire Wire Line
-	6900 52700 6900 54200
+	6900 24950 6900 26450
 $Comp
-L power:GND #PWR017
+L power:GND #PWR021
 U 1 1 5B9BC0F5
 P 3950 5500
-F 0 "#PWR017" H 3950 5250 50  0001 C CNN
+F 0 "#PWR021" H 3950 5250 50  0001 C CNN
 F 1 "GND" H 3955 5327 50  0000 C CNN
 F 2 "" H 3950 5500 50  0001 C CNN
 F 3 "" H 3950 5500 50  0001 C CNN
@@ -4017,10 +3229,10 @@ F 3 "" H 3950 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR011
+L power:GND #PWR014
 U 1 1 5B9BEA9D
 P 2450 3850
-F 0 "#PWR011" H 2450 3600 50  0001 C CNN
+F 0 "#PWR014" H 2450 3600 50  0001 C CNN
 F 1 "GND" H 2455 3677 50  0000 C CNN
 F 2 "" H 2450 3850 50  0001 C CNN
 F 3 "" H 2450 3850 50  0001 C CNN
@@ -4028,7 +3240,7 @@ F 3 "" H 2450 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6900 42750 6900 44250
+	6900 15000 6900 16500
 Wire Wire Line
 	3700 2200 3700 2300
 Wire Wire Line
@@ -4038,960 +3250,1156 @@ Wire Wire Line
 Wire Wire Line
 	4000 2300 4450 2300
 Connection ~ 4450 2300
+Text Label 5050 950  0    50   ~ 0
+sa_and
+Text Label 3200 6650 0    50   ~ 0
+sa_and
+Wire Wire Line
+	3200 6600 3200 6650
+Text Label 5050 2000 0    50   ~ 0
+sb_and
+$Comp
+L Transistor_FET:2N7000 Q8
+U 1 1 5BE0807A
+P 4950 3450
+F 0 "Q8" H 5155 3496 50  0000 L CNN
+F 1 "2N7000" H 5155 3405 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 5150 3375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4950 3450 50  0001 L CNN
+	1    4950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5BE08081
+P 5050 3650
+F 0 "#PWR013" H 5050 3400 50  0001 C CNN
+F 1 "GND" H 5055 3477 50  0000 C CNN
+F 2 "" H 5050 3650 50  0001 C CNN
+F 3 "" H 5050 3650 50  0001 C CNN
+	1    5050 3650
+	1    0    0    -1  
+$EndComp
+Text Label 5050 3250 0    50   ~ 0
+sc_and
+$Comp
+L Transistor_FET:2N7000 Q12
+U 1 1 5BE19DAB
+P 4950 4600
+F 0 "Q12" H 5155 4646 50  0000 L CNN
+F 1 "2N7000" H 5155 4555 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 5150 4525 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4950 4600 50  0001 L CNN
+	1    4950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 5BE19DB2
+P 5050 4800
+F 0 "#PWR019" H 5050 4550 50  0001 C CNN
+F 1 "GND" H 5055 4627 50  0000 C CNN
+F 2 "" H 5050 4800 50  0001 C CNN
+F 3 "" H 5050 4800 50  0001 C CNN
+	1    5050 4800
+	1    0    0    -1  
+$EndComp
+Text Label 5050 4400 0    50   ~ 0
+sd_and
+Text Label 3900 6650 0    50   ~ 0
+sb_and
+Wire Wire Line
+	3900 6600 3900 6650
+Text Label 4600 6650 0    50   ~ 0
+sc_and
+Wire Wire Line
+	4600 6600 4600 6650
+Text Label 5300 6650 0    50   ~ 0
+sd_and
+Wire Wire Line
+	5300 6600 5300 6650
+Wire Wire Line
+	3200 6200 3900 6200
+Wire Wire Line
+	3900 6200 4600 6200
+Connection ~ 3900 6200
+Wire Wire Line
+	4600 6200 5300 6200
+Connection ~ 4600 6200
+Wire Wire Line
+	5300 6200 5700 6200
+Wire Wire Line
+	5700 6200 5700 6400
+Connection ~ 5300 6200
+$Comp
+L Transistor_FET:2N7000 Q21
+U 1 1 5C1B1286
+P 3100 7550
+F 0 "Q21" H 3305 7596 50  0000 L CNN
+F 1 "2N7000" H 3305 7505 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 7475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 7550 50  0001 L CNN
+	1    3100 7550
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5C1B128E
+P 3200 7200
+F 0 "R10" H 3270 7246 50  0000 L CNN
+F 1 "R" H 3270 7155 50  0000 L CNN
+F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 7200 50  0001 C CNN
+F 3 "~" H 3200 7200 50  0001 C CNN
+	1    3200 7200
+	1    0    0    -1
+$EndComp
+$Comp
+L power:VCC #PWR027
+U 1 1 5C1B1295
+P 3200 7050
+F 0 "#PWR027" H 3200 6900 50  0001 C CNN
+F 1 "VCC" H 3217 7223 50  0000 C CNN
+F 2 "" H 3200 7050 50  0001 C CNN
+F 3 "" H 3200 7050 50  0001 C CNN
+	1    3200 7050
+	1    0    0    -1
+$EndComp
+Connection ~ 3200 7350
+$Comp
+L Transistor_FET:2N7000 Q25
+U 1 1 5C1B129C
+P 5900 7550
+F 0 "Q25" H 6105 7596 50  0000 L CNN
+F 1 "2N7000" H 6105 7505 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 6100 7475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5900 7550 50  0001 L CNN
+	1    5900 7550
+	1    0    0    -1
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q22
+U 1 1 5C1B12A3
+P 3800 7550
+F 0 "Q22" H 4005 7596 50  0000 L CNN
+F 1 "2N7000" H 4005 7505 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4000 7475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3800 7550 50  0001 L CNN
+	1    3800 7550
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5C1B12AB
+P 6000 7200
+F 0 "R11" H 6070 7246 50  0000 L CNN
+F 1 "R" H 6070 7155 50  0000 L CNN
+F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5930 7200 50  0001 C CNN
+F 3 "~" H 6000 7200 50  0001 C CNN
+	1    6000 7200
+	1    0    0    -1
+$EndComp
+$Comp
+L power:VCC #PWR028
+U 1 1 5C1B12B2
+P 6000 7050
+F 0 "#PWR028" H 6000 6900 50  0001 C CNN
+F 1 "VCC" H 6017 7223 50  0000 C CNN
+F 2 "" H 6000 7050 50  0001 C CNN
+F 3 "" H 6000 7050 50  0001 C CNN
+	1    6000 7050
+	1    0    0    -1
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 5C1B12B8
+P 6000 7750
+F 0 "#PWR029" H 6000 7500 50  0001 C CNN
+F 1 "GND" H 6005 7577 50  0000 C CNN
+F 2 "" H 6000 7750 50  0001 C CNN
+F 3 "" H 6000 7750 50  0001 C CNN
+	1    6000 7750
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	6000 7350 6500 7350
+Connection ~ 6000 7350
+$Comp
+L Transistor_FET:2N7000 Q23
+U 1 1 5C1B12C1
+P 4500 7550
+F 0 "Q23" H 4705 7596 50  0000 L CNN
+F 1 "2N7000" H 4705 7505 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4700 7475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 7550 50  0001 L CNN
+	1    4500 7550
+	1    0    0    -1
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q24
+U 1 1 5C1B12C9
+P 5200 7550
+F 0 "Q24" H 5405 7596 50  0000 L CNN
+F 1 "2N7000" H 5405 7505 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 5400 7475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5200 7550 50  0001 L CNN
+	1    5200 7550
+	1    0    0    -1  
+$EndComp
+Text Label 3200 7800 0    50   ~ 0
+sa_and
+Wire Wire Line
+	3200 7750 3200 7800
+Text Label 3900 7800 0    50   ~ 0
+sb_and
+Wire Wire Line
+	3900 7750 3900 7800
+Text Label 4600 7800 0    50   ~ 0
+sc_and
+Wire Wire Line
+	4600 7750 4600 7800
+Text Label 5300 7800 0    50   ~ 0
+sd_and
+Wire Wire Line
+	5300 7750 5300 7800
+Wire Wire Line
+	3200 7350 3900 7350
+Wire Wire Line
+	3900 7350 4600 7350
+Connection ~ 3900 7350
+Wire Wire Line
+	4600 7350 5300 7350
+Connection ~ 4600 7350
+Wire Wire Line
+	5300 7350 5700 7350
+Wire Wire Line
+	5700 7350 5700 7550
+Connection ~ 5300 7350
+$Comp
+L Transistor_FET:2N7000 Q26
+U 1 1 5C215299
+P 3100 8700
+F 0 "Q26" H 3305 8746 50  0000 L CNN
+F 1 "2N7000" H 3305 8655 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 8625 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 8700 50  0001 L CNN
+	1    3100 8700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5C2152A0
+P 3200 8350
+F 0 "R12" H 3270 8396 50  0000 L CNN
+F 1 "R" H 3270 8305 50  0000 L CNN
+F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 8350 50  0001 C CNN
+F 3 "~" H 3200 8350 50  0001 C CNN
+	1    3200 8350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR030
+U 1 1 5C2152A7
+P 3200 8200
+F 0 "#PWR030" H 3200 8050 50  0001 C CNN
+F 1 "VCC" H 3217 8373 50  0000 C CNN
+F 2 "" H 3200 8200 50  0001 C CNN
+F 3 "" H 3200 8200 50  0001 C CNN
+	1    3200 8200
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 8500
+$Comp
+L Transistor_FET:2N7000 Q30
+U 1 1 5C2152AE
+P 5900 8700
+F 0 "Q30" H 6105 8746 50  0000 L CNN
+F 1 "2N7000" H 6105 8655 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 6100 8625 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5900 8700 50  0001 L CNN
+	1    5900 8700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q27
+U 1 1 5C2152B5
+P 3800 8700
+F 0 "Q27" H 4005 8746 50  0000 L CNN
+F 1 "2N7000" H 4005 8655 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4000 8625 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3800 8700 50  0001 L CNN
+	1    3800 8700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5C2152BC
+P 6000 8350
+F 0 "R13" H 6070 8396 50  0000 L CNN
+F 1 "R" H 6070 8305 50  0000 L CNN
+F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5930 8350 50  0001 C CNN
+F 3 "~" H 6000 8350 50  0001 C CNN
+	1    6000 8350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR031
+U 1 1 5C2152C3
+P 6000 8200
+F 0 "#PWR031" H 6000 8050 50  0001 C CNN
+F 1 "VCC" H 6017 8373 50  0000 C CNN
+F 2 "" H 6000 8200 50  0001 C CNN
+F 3 "" H 6000 8200 50  0001 C CNN
+	1    6000 8200
+	1    0    0    -1
+$EndComp
+$Comp
+L power:GND #PWR032
+U 1 1 5C2152C9
+P 6000 8900
+F 0 "#PWR032" H 6000 8650 50  0001 C CNN
+F 1 "GND" H 6005 8727 50  0000 C CNN
+F 2 "" H 6000 8900 50  0001 C CNN
+F 3 "" H 6000 8900 50  0001 C CNN
+	1    6000 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 8500 6500 8500
+Connection ~ 6000 8500
+$Comp
+L Transistor_FET:2N7000 Q28
+U 1 1 5C2152D1
+P 4500 8700
+F 0 "Q28" H 4705 8746 50  0000 L CNN
+F 1 "2N7000" H 4705 8655 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4700 8625 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 8700 50  0001 L CNN
+	1    4500 8700
+	1    0    0    -1
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q29
+U 1 1 5C2152D8
+P 5200 8700
+F 0 "Q29" H 5405 8746 50  0000 L CNN
+F 1 "2N7000" H 5405 8655 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 5400 8625 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5200 8700 50  0001 L CNN
+	1    5200 8700
+	1    0    0    -1
+$EndComp
+Text Label 3200 8950 0    50   ~ 0
+sa_and
+Wire Wire Line
+	3200 8900 3200 8950
+Text Label 3900 8950 0    50   ~ 0
+sb_and
+Wire Wire Line
+	3900 8900 3900 8950
+Text Label 4600 8950 0    50   ~ 0
+sc_and
+Wire Wire Line
+	4600 8900 4600 8950
+Text Label 5300 8950 0    50   ~ 0
+sd_and
+Wire Wire Line
+	5300 8900 5300 8950
+Wire Wire Line
+	3200 8500 3900 8500
+Wire Wire Line
+	3900 8500 4600 8500
+Connection ~ 3900 8500
+Wire Wire Line
+	4600 8500 5300 8500
+Connection ~ 4600 8500
+Wire Wire Line
+	5300 8500 5700 8500
+Wire Wire Line
+	5700 8500 5700 8700
+Connection ~ 5300 8500
+$Comp
+L Transistor_FET:2N7000 Q31
+U 1 1 5C2286FE
+P 3100 9850
+F 0 "Q31" H 3305 9896 50  0000 L CNN
+F 1 "2N7000" H 3305 9805 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 9775 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 9850 50  0001 L CNN
+	1    3100 9850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5C228705
+P 3200 9500
+F 0 "R14" H 3270 9546 50  0000 L CNN
+F 1 "R" H 3270 9455 50  0000 L CNN
+F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 9500 50  0001 C CNN
+F 3 "~" H 3200 9500 50  0001 C CNN
+	1    3200 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR033
+U 1 1 5C22870C
+P 3200 9350
+F 0 "#PWR033" H 3200 9200 50  0001 C CNN
+F 1 "VCC" H 3217 9523 50  0000 C CNN
+F 2 "" H 3200 9350 50  0001 C CNN
+F 3 "" H 3200 9350 50  0001 C CNN
+	1    3200 9350
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 9650
+$Comp
+L Transistor_FET:2N7000 Q35
+U 1 1 5C228713
+P 5900 9850
+F 0 "Q35" H 6105 9896 50  0000 L CNN
+F 1 "2N7000" H 6105 9805 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 6100 9775 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5900 9850 50  0001 L CNN
+	1    5900 9850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q32
+U 1 1 5C22871A
+P 3800 9850
+F 0 "Q32" H 4005 9896 50  0000 L CNN
+F 1 "2N7000" H 4005 9805 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4000 9775 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3800 9850 50  0001 L CNN
+	1    3800 9850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5C228721
+P 6000 9500
+F 0 "R15" H 6070 9546 50  0000 L CNN
+F 1 "R" H 6070 9455 50  0000 L CNN
+F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5930 9500 50  0001 C CNN
+F 3 "~" H 6000 9500 50  0001 C CNN
+	1    6000 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR034
+U 1 1 5C228728
+P 6000 9350
+F 0 "#PWR034" H 6000 9200 50  0001 C CNN
+F 1 "VCC" H 6017 9523 50  0000 C CNN
+F 2 "" H 6000 9350 50  0001 C CNN
+F 3 "" H 6000 9350 50  0001 C CNN
+	1    6000 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR035
+U 1 1 5C22872E
+P 6000 10050
+F 0 "#PWR035" H 6000 9800 50  0001 C CNN
+F 1 "GND" H 6005 9877 50  0000 C CNN
+F 2 "" H 6000 10050 50  0001 C CNN
+F 3 "" H 6000 10050 50  0001 C CNN
+	1    6000 10050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 9650 6500 9650
+Connection ~ 6000 9650
+$Comp
+L Transistor_FET:2N7000 Q33
+U 1 1 5C228736
+P 4500 9850
+F 0 "Q33" H 4705 9896 50  0000 L CNN
+F 1 "2N7000" H 4705 9805 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4700 9775 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 9850 50  0001 L CNN
+	1    4500 9850
+	1    0    0    -1
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q34
+U 1 1 5C22873D
+P 5200 9850
+F 0 "Q34" H 5405 9896 50  0000 L CNN
+F 1 "2N7000" H 5405 9805 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 5400 9775 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5200 9850 50  0001 L CNN
+	1    5200 9850
+	1    0    0    -1  
+$EndComp
+Text Label 3200 10100 0    50   ~ 0
+sa_and
+Wire Wire Line
+	3200 10050 3200 10100
+Text Label 3900 10100 0    50   ~ 0
+sb_and
+Wire Wire Line
+	3900 10050 3900 10100
+Text Label 4600 10100 0    50   ~ 0
+sc_and
+Wire Wire Line
+	4600 10050 4600 10100
+Text Label 5300 10100 0    50   ~ 0
+sd_and
+Wire Wire Line
+	5300 10050 5300 10100
+Wire Wire Line
+	3200 9650 3900 9650
+Wire Wire Line
+	3900 9650 4600 9650
+Connection ~ 3900 9650
+Wire Wire Line
+	4600 9650 5300 9650
+Connection ~ 4600 9650
+Wire Wire Line
+	5300 9650 5700 9650
+Wire Wire Line
+	5700 9650 5700 9850
+Connection ~ 5300 9650
+$Comp
+L Transistor_FET:2N7000 Q36
+U 1 1 5C265CDF
+P 3100 11000
+F 0 "Q36" H 3305 11046 50  0000 L CNN
+F 1 "2N7000" H 3305 10955 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 10925 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 11000 50  0001 L CNN
+	1    3100 11000
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5C265CE6
+P 3200 10650
+F 0 "R16" H 3270 10696 50  0000 L CNN
+F 1 "R" H 3270 10605 50  0000 L CNN
+F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 10650 50  0001 C CNN
+F 3 "~" H 3200 10650 50  0001 C CNN
+	1    3200 10650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR036
+U 1 1 5C265CED
+P 3200 10500
+F 0 "#PWR036" H 3200 10350 50  0001 C CNN
+F 1 "VCC" H 3217 10673 50  0000 C CNN
+F 2 "" H 3200 10500 50  0001 C CNN
+F 3 "" H 3200 10500 50  0001 C CNN
+	1    3200 10500
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 10800
+$Comp
+L Transistor_FET:2N7000 Q40
+U 1 1 5C265CF4
+P 5900 11000
+F 0 "Q40" H 6105 11046 50  0000 L CNN
+F 1 "2N7000" H 6105 10955 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 6100 10925 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5900 11000 50  0001 L CNN
+	1    5900 11000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q37
+U 1 1 5C265CFB
+P 3800 11000
+F 0 "Q37" H 4005 11046 50  0000 L CNN
+F 1 "2N7000" H 4005 10955 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4000 10925 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3800 11000 50  0001 L CNN
+	1    3800 11000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5C265D02
+P 6000 10650
+F 0 "R17" H 6070 10696 50  0000 L CNN
+F 1 "R" H 6070 10605 50  0000 L CNN
+F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5930 10650 50  0001 C CNN
+F 3 "~" H 6000 10650 50  0001 C CNN
+	1    6000 10650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR037
+U 1 1 5C265D09
+P 6000 10500
+F 0 "#PWR037" H 6000 10350 50  0001 C CNN
+F 1 "VCC" H 6017 10673 50  0000 C CNN
+F 2 "" H 6000 10500 50  0001 C CNN
+F 3 "" H 6000 10500 50  0001 C CNN
+	1    6000 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR038
+U 1 1 5C265D0F
+P 6000 11200
+F 0 "#PWR038" H 6000 10950 50  0001 C CNN
+F 1 "GND" H 6005 11027 50  0000 C CNN
+F 2 "" H 6000 11200 50  0001 C CNN
+F 3 "" H 6000 11200 50  0001 C CNN
+	1    6000 11200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 10800 6500 10800
+Connection ~ 6000 10800
+$Comp
+L Transistor_FET:2N7000 Q38
+U 1 1 5C265D17
+P 4500 11000
+F 0 "Q38" H 4705 11046 50  0000 L CNN
+F 1 "2N7000" H 4705 10955 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4700 10925 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 11000 50  0001 L CNN
+	1    4500 11000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q39
+U 1 1 5C265D1E
+P 5200 11000
+F 0 "Q39" H 5405 11046 50  0000 L CNN
+F 1 "2N7000" H 5405 10955 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 5400 10925 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5200 11000 50  0001 L CNN
+	1    5200 11000
+	1    0    0    -1  
+$EndComp
+Text Label 3200 11250 0    50   ~ 0
+sa_and
+Wire Wire Line
+	3200 11200 3200 11250
+Text Label 3900 11250 0    50   ~ 0
+sb_and
+Wire Wire Line
+	3900 11200 3900 11250
+Text Label 4600 11250 0    50   ~ 0
+sc_and
+Wire Wire Line
+	4600 11200 4600 11250
+Text Label 5300 11250 0    50   ~ 0
+sd_and
+Wire Wire Line
+	5300 11200 5300 11250
+Wire Wire Line
+	3200 10800 3900 10800
+Wire Wire Line
+	3900 10800 4600 10800
+Connection ~ 3900 10800
+Wire Wire Line
+	4600 10800 5300 10800
+Connection ~ 4600 10800
+Wire Wire Line
+	5300 10800 5700 10800
+Wire Wire Line
+	5700 10800 5700 11000
+Connection ~ 5300 10800
+$Comp
+L Transistor_FET:2N7000 Q41
+U 1 1 5C265D35
+P 3100 12150
+F 0 "Q41" H 3305 12196 50  0000 L CNN
+F 1 "2N7000" H 3305 12105 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 12075 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 12150 50  0001 L CNN
+	1    3100 12150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5C265D3C
+P 3200 11800
+F 0 "R18" H 3270 11846 50  0000 L CNN
+F 1 "R" H 3270 11755 50  0000 L CNN
+F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 11800 50  0001 C CNN
+F 3 "~" H 3200 11800 50  0001 C CNN
+	1    3200 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR039
+U 1 1 5C265D43
+P 3200 11650
+F 0 "#PWR039" H 3200 11500 50  0001 C CNN
+F 1 "VCC" H 3217 11823 50  0000 C CNN
+F 2 "" H 3200 11650 50  0001 C CNN
+F 3 "" H 3200 11650 50  0001 C CNN
+	1    3200 11650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 11950
+$Comp
+L Transistor_FET:2N7000 Q45
+U 1 1 5C265D4A
+P 5900 12150
+F 0 "Q45" H 6105 12196 50  0000 L CNN
+F 1 "2N7000" H 6105 12105 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 6100 12075 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5900 12150 50  0001 L CNN
+	1    5900 12150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q42
+U 1 1 5C265D51
+P 3800 12150
+F 0 "Q42" H 4005 12196 50  0000 L CNN
+F 1 "2N7000" H 4005 12105 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4000 12075 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3800 12150 50  0001 L CNN
+	1    3800 12150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5C265D58
+P 6000 11800
+F 0 "R19" H 6070 11846 50  0000 L CNN
+F 1 "R" H 6070 11755 50  0000 L CNN
+F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5930 11800 50  0001 C CNN
+F 3 "~" H 6000 11800 50  0001 C CNN
+	1    6000 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR040
+U 1 1 5C265D5F
+P 6000 11650
+F 0 "#PWR040" H 6000 11500 50  0001 C CNN
+F 1 "VCC" H 6017 11823 50  0000 C CNN
+F 2 "" H 6000 11650 50  0001 C CNN
+F 3 "" H 6000 11650 50  0001 C CNN
+	1    6000 11650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR041
+U 1 1 5C265D65
+P 6000 12350
+F 0 "#PWR041" H 6000 12100 50  0001 C CNN
+F 1 "GND" H 6005 12177 50  0000 C CNN
+F 2 "" H 6000 12350 50  0001 C CNN
+F 3 "" H 6000 12350 50  0001 C CNN
+	1    6000 12350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 11950 6500 11950
+Connection ~ 6000 11950
+$Comp
+L Transistor_FET:2N7000 Q43
+U 1 1 5C265D6D
+P 4500 12150
+F 0 "Q43" H 4705 12196 50  0000 L CNN
+F 1 "2N7000" H 4705 12105 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4700 12075 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 12150 50  0001 L CNN
+	1    4500 12150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q44
+U 1 1 5C265D74
+P 5200 12150
+F 0 "Q44" H 5405 12196 50  0000 L CNN
+F 1 "2N7000" H 5405 12105 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 5400 12075 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5200 12150 50  0001 L CNN
+	1    5200 12150
+	1    0    0    -1  
+$EndComp
+Text Label 3200 12400 0    50   ~ 0
+sa_and
+Wire Wire Line
+	3200 12350 3200 12400
+Text Label 3900 12400 0    50   ~ 0
+sb_and
+Wire Wire Line
+	3900 12350 3900 12400
+Text Label 4600 12400 0    50   ~ 0
+sc_and
+Wire Wire Line
+	4600 12350 4600 12400
+Text Label 5300 12400 0    50   ~ 0
+sd_and
+Wire Wire Line
+	5300 12350 5300 12400
+Wire Wire Line
+	3200 11950 3900 11950
+Wire Wire Line
+	3900 11950 4600 11950
+Connection ~ 3900 11950
+Wire Wire Line
+	4600 11950 5300 11950
+Connection ~ 4600 11950
+Wire Wire Line
+	5300 11950 5700 11950
+Wire Wire Line
+	5700 11950 5700 12150
+Connection ~ 5300 11950
+$Comp
+L Transistor_FET:2N7000 Q46
+U 1 1 5C275ABD
+P 3100 13300
+F 0 "Q46" H 3305 13346 50  0000 L CNN
+F 1 "2N7000" H 3305 13255 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 13225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 13300 50  0001 L CNN
+	1    3100 13300
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5C275AC4
+P 3200 12950
+F 0 "R20" H 3270 12996 50  0000 L CNN
+F 1 "R" H 3270 12905 50  0000 L CNN
+F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 12950 50  0001 C CNN
+F 3 "~" H 3200 12950 50  0001 C CNN
+	1    3200 12950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR042
+U 1 1 5C275ACB
+P 3200 12800
+F 0 "#PWR042" H 3200 12650 50  0001 C CNN
+F 1 "VCC" H 3217 12973 50  0000 C CNN
+F 2 "" H 3200 12800 50  0001 C CNN
+F 3 "" H 3200 12800 50  0001 C CNN
+	1    3200 12800
+	1    0    0    -1
+$EndComp
+Connection ~ 3200 13100
+$Comp
+L Transistor_FET:2N7000 Q50
+U 1 1 5C275AD2
+P 5900 13300
+F 0 "Q50" H 6105 13346 50  0000 L CNN
+F 1 "2N7000" H 6105 13255 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 6100 13225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5900 13300 50  0001 L CNN
+	1    5900 13300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q47
+U 1 1 5C275AD9
+P 3800 13300
+F 0 "Q47" H 4005 13346 50  0000 L CNN
+F 1 "2N7000" H 4005 13255 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4000 13225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3800 13300 50  0001 L CNN
+	1    3800 13300
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5C275AE0
+P 6000 12950
+F 0 "R21" H 6070 12996 50  0000 L CNN
+F 1 "R" H 6070 12905 50  0000 L CNN
+F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5930 12950 50  0001 C CNN
+F 3 "~" H 6000 12950 50  0001 C CNN
+	1    6000 12950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR043
+U 1 1 5C275AE7
+P 6000 12800
+F 0 "#PWR043" H 6000 12650 50  0001 C CNN
+F 1 "VCC" H 6017 12973 50  0000 C CNN
+F 2 "" H 6000 12800 50  0001 C CNN
+F 3 "" H 6000 12800 50  0001 C CNN
+	1    6000 12800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR044
+U 1 1 5C275AED
+P 6000 13500
+F 0 "#PWR044" H 6000 13250 50  0001 C CNN
+F 1 "GND" H 6005 13327 50  0000 C CNN
+F 2 "" H 6000 13500 50  0001 C CNN
+F 3 "" H 6000 13500 50  0001 C CNN
+	1    6000 13500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 13100 6500 13100
+Connection ~ 6000 13100
 $Comp
 L Transistor_FET:2N7000 Q48
-U 1 1 5BA6EB8D
-P 3100 24800
-F 0 "Q48" H 3305 24846 50  0000 L CNN
-F 1 "2N7000" H 3305 24755 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 24725 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 24800 50  0001 L CNN
-	1    3100 24800
-	1    0    0    -1
+U 1 1 5C275AF5
+P 4500 13300
+F 0 "Q48" H 4705 13346 50  0000 L CNN
+F 1 "2N7000" H 4705 13255 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4700 13225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 13300 50  0001 L CNN
+	1    4500 13300
+	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_FET:2N7000 Q49
-U 1 1 5BA6EB94
-P 3100 25200
-F 0 "Q49" H 3305 25246 50  0000 L CNN
-F 1 "2N7000" H 3305 25155 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 25125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 25200 50  0001 L CNN
-	1    3100 25200
-	1    0    0    -1
+U 1 1 5C275AFC
+P 5200 13300
+F 0 "Q49" H 5405 13346 50  0000 L CNN
+F 1 "2N7000" H 5405 13255 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 5400 13225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5200 13300 50  0001 L CNN
+	1    5200 13300
+	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR049
-U 1 1 5BA6EB9B
-P 3200 25400
-F 0 "#PWR049" H 3200 25150 50  0001 C CNN
-F 1 "GND" H 3205 25227 50  0000 C CNN
-F 2 "" H 3200 25400 50  0001 C CNN
-F 3 "" H 3200 25400 50  0001 C CNN
-	1    3200 25400
-	1    0    0    -1
-$EndComp
-Text Label 2900 24800 0    50   ~ 0
-a4
-Text Label 2900 25200 0    50   ~ 0
-sa
-$Comp
-L Device:R R16
-U 1 1 5BA6EBA3
-P 3200 24450
-F 0 "R16" H 3270 24496 50  0000 L CNN
-F 1 "R" H 3270 24405 50  0000 L CNN
-F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 24450 50  0001 C CNN
-F 3 "~" H 3200 24450 50  0001 C CNN
-	1    3200 24450
-	1    0    0    -1
-$EndComp
-$Comp
-L power:VCC #PWR048
-U 1 1 5BA6EBAA
-P 3200 24300
-F 0 "#PWR048" H 3200 24150 50  0001 C CNN
-F 1 "VCC" H 3217 24473 50  0000 C CNN
-F 2 "" H 3200 24300 50  0001 C CNN
-F 3 "" H 3200 24300 50  0001 C CNN
-	1    3200 24300
-	1    0    0    -1
-$EndComp
-Connection ~ 3200 24600
+Text Label 3200 13550 0    50   ~ 0
+sa_and
 Wire Wire Line
-	3200 24600 3650 24600
-$Comp
-L Transistor_FET:2N7000 Q56
-U 1 1 5BA6EBB2
-P 3850 28350
-F 0 "Q56" H 4055 28396 50  0000 L CNN
-F 1 "2N7000" H 4055 28305 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4050 28275 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 28350 50  0001 L CNN
-	1    3850 28350
-	1    0    0    -1
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q50
-U 1 1 5BA6EBB9
-P 3100 25800
-F 0 "Q50" H 3305 25846 50  0000 L CNN
-F 1 "2N7000" H 3305 25755 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 25725 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 25800 50  0001 L CNN
-	1    3100 25800
-	1    0    0    -1
-$EndComp
+	3200 13500 3200 13550
+Text Label 3900 13550 0    50   ~ 0
+sb_and
+Wire Wire Line
+	3900 13500 3900 13550
+Text Label 4600 13550 0    50   ~ 0
+sc_and
+Wire Wire Line
+	4600 13500 4600 13550
+Text Label 5300 13550 0    50   ~ 0
+sd_and
+Wire Wire Line
+	5300 13500 5300 13550
+Wire Wire Line
+	3200 13100 3900 13100
+Wire Wire Line
+	3900 13100 4600 13100
+Connection ~ 3900 13100
+Wire Wire Line
+	4600 13100 5300 13100
+Connection ~ 4600 13100
+Wire Wire Line
+	5300 13100 5700 13100
+Wire Wire Line
+	5700 13100 5700 13300
+Connection ~ 5300 13100
 $Comp
 L Transistor_FET:2N7000 Q51
-U 1 1 5BA6EBC0
-P 3100 26200
-F 0 "Q51" H 3305 26246 50  0000 L CNN
-F 1 "2N7000" H 3305 26155 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 26125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 26200 50  0001 L CNN
-	1    3100 26200
-	1    0    0    -1
+U 1 1 5C275B13
+P 3100 14450
+F 0 "Q51" H 3305 14496 50  0000 L CNN
+F 1 "2N7000" H 3305 14405 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 14375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 14450 50  0001 L CNN
+	1    3100 14450
+	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR050
-U 1 1 5BA6EBC7
-P 3200 26400
-F 0 "#PWR050" H 3200 26150 50  0001 C CNN
-F 1 "GND" H 3205 26227 50  0000 C CNN
-F 2 "" H 3200 26400 50  0001 C CNN
-F 3 "" H 3200 26400 50  0001 C CNN
-	1    3200 26400
-	1    0    0    -1
-$EndComp
-Text Label 2900 25800 0    50   ~ 0
-b4
-Text Label 2900 26200 0    50   ~ 0
-sb
-Wire Wire Line
-	3200 25600 3650 25600
-$Comp
-L Device:R R17
-U 1 1 5BA6EBD0
-P 3950 28000
-F 0 "R17" H 4020 28046 50  0000 L CNN
-F 1 "R" H 4020 27955 50  0000 L CNN
-F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3880 28000 50  0001 C CNN
-F 3 "~" H 3950 28000 50  0001 C CNN
-	1    3950 28000
-	1    0    0    -1
-$EndComp
-$Comp
-L power:VCC #PWR052
-U 1 1 5BA6EBD7
-P 3950 27850
-F 0 "#PWR052" H 3950 27700 50  0001 C CNN
-F 1 "VCC" H 3967 28023 50  0000 C CNN
-F 2 "" H 3950 27850 50  0001 C CNN
-F 3 "" H 3950 27850 50  0001 C CNN
-	1    3950 27850
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR054
-U 1 1 5BA6EBDD
-P 3950 28550
-F 0 "#PWR054" H 3950 28300 50  0001 C CNN
-F 1 "GND" H 3955 28377 50  0000 C CNN
-F 2 "" H 3950 28550 50  0001 C CNN
-F 3 "" H 3950 28550 50  0001 C CNN
-	1    3950 28550
-	1    0    0    -1
-$EndComp
-Wire Wire Line
-	3950 28150 4450 28150
-Connection ~ 3950 28150
-Text Label 4450 28150 0    50   ~ 0
-o4
-$Comp
-L Transistor_FET:2N7000 Q52
-U 1 1 5BA6EBE6
-P 3100 26800
-F 0 "Q52" H 3305 26846 50  0000 L CNN
-F 1 "2N7000" H 3305 26755 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 26725 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 26800 50  0001 L CNN
-	1    3100 26800
-	1    0    0    -1
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q53
-U 1 1 5BA6EBED
-P 3100 27200
-F 0 "Q53" H 3305 27246 50  0000 L CNN
-F 1 "2N7000" H 3305 27155 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 27125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 27200 50  0001 L CNN
-	1    3100 27200
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR051
-U 1 1 5BA6EBF4
-P 3200 27400
-F 0 "#PWR051" H 3200 27150 50  0001 C CNN
-F 1 "GND" H 3205 27227 50  0000 C CNN
-F 2 "" H 3200 27400 50  0001 C CNN
-F 3 "" H 3200 27400 50  0001 C CNN
-	1    3200 27400
-	1    0    0    -1
-$EndComp
-Text Label 2900 26800 0    50   ~ 0
-c4
-Text Label 2900 27200 0    50   ~ 0
-sc
-$Comp
-L Transistor_FET:2N7000 Q54
-U 1 1 5BA6EBFC
-P 3100 27800
-F 0 "Q54" H 3305 27846 50  0000 L CNN
-F 1 "2N7000" H 3305 27755 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 27725 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 27800 50  0001 L CNN
-	1    3100 27800
-	1    0    0    -1
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q55
-U 1 1 5BA6EC03
-P 3100 28200
-F 0 "Q55" H 3305 28246 50  0000 L CNN
-F 1 "2N7000" H 3305 28155 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 28125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 28200 50  0001 L CNN
-	1    3100 28200
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR053
-U 1 1 5BA6EC0A
-P 3200 28400
-F 0 "#PWR053" H 3200 28150 50  0001 C CNN
-F 1 "GND" H 3205 28227 50  0000 C CNN
-F 2 "" H 3200 28400 50  0001 C CNN
-F 3 "" H 3200 28400 50  0001 C CNN
-	1    3200 28400
-	1    0    0    -1
-$EndComp
-Text Label 2900 27800 0    50   ~ 0
-d4
-Text Label 2900 28200 0    50   ~ 0
-sd
-Wire Wire Line
-	3200 27600 3650 27600
-Wire Wire Line
-	3200 26600 3650 26600
-Connection ~ 3650 25600
-Wire Wire Line
-	3650 25600 3650 24600
-Wire Wire Line
-	3650 25600 3650 26600
-Connection ~ 3650 26600
-Wire Wire Line
-	3650 26600 3650 27600
-Wire Wire Line
-	3650 27600 3650 28350
-Connection ~ 3650 27600
-$Comp
-L Transistor_FET:2N7000 Q57
-U 1 1 5BA6EC1B
-P 3100 29450
-F 0 "Q57" H 3305 29496 50  0000 L CNN
-F 1 "2N7000" H 3305 29405 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 29375 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 29450 50  0001 L CNN
-	1    3100 29450
-	1    0    0    -1
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q58
-U 1 1 5BA6EC22
-P 3100 29850
-F 0 "Q58" H 3305 29896 50  0000 L CNN
-F 1 "2N7000" H 3305 29805 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 29775 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 29850 50  0001 L CNN
-	1    3100 29850
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR056
-U 1 1 5BA6EC29
-P 3200 30050
-F 0 "#PWR056" H 3200 29800 50  0001 C CNN
-F 1 "GND" H 3205 29877 50  0000 C CNN
-F 2 "" H 3200 30050 50  0001 C CNN
-F 3 "" H 3200 30050 50  0001 C CNN
-	1    3200 30050
-	1    0    0    -1
-$EndComp
-Text Label 2900 29450 0    50   ~ 0
-a5
-Text Label 2900 29850 0    50   ~ 0
-sa
-$Comp
-L Device:R R18
-U 1 1 5BA6EC31
-P 3200 29100
-F 0 "R18" H 3270 29146 50  0000 L CNN
-F 1 "R" H 3270 29055 50  0000 L CNN
-F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 29100 50  0001 C CNN
-F 3 "~" H 3200 29100 50  0001 C CNN
-	1    3200 29100
-	1    0    0    -1
-$EndComp
-$Comp
-L power:VCC #PWR055
-U 1 1 5BA6EC38
-P 3200 28950
-F 0 "#PWR055" H 3200 28800 50  0001 C CNN
-F 1 "VCC" H 3217 29123 50  0000 C CNN
-F 2 "" H 3200 28950 50  0001 C CNN
-F 3 "" H 3200 28950 50  0001 C CNN
-	1    3200 28950
-	1    0    0    -1
-$EndComp
-Connection ~ 3200 29250
-Wire Wire Line
-	3200 29250 3650 29250
-$Comp
-L Transistor_FET:2N7000 Q65
-U 1 1 5BA6EC40
-P 3850 33000
-F 0 "Q65" H 4055 33046 50  0000 L CNN
-F 1 "2N7000" H 4055 32955 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4050 32925 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 33000 50  0001 L CNN
-	1    3850 33000
-	1    0    0    -1
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q59
-U 1 1 5BA6EC47
-P 3100 30450
-F 0 "Q59" H 3305 30496 50  0000 L CNN
-F 1 "2N7000" H 3305 30405 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 30375 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 30450 50  0001 L CNN
-	1    3100 30450
-	1    0    0    -1
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q60
-U 1 1 5BA6EC4E
-P 3100 30850
-F 0 "Q60" H 3305 30896 50  0000 L CNN
-F 1 "2N7000" H 3305 30805 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 30775 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 30850 50  0001 L CNN
-	1    3100 30850
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR057
-U 1 1 5BA6EC55
-P 3200 31050
-F 0 "#PWR057" H 3200 30800 50  0001 C CNN
-F 1 "GND" H 3205 30877 50  0000 C CNN
-F 2 "" H 3200 31050 50  0001 C CNN
-F 3 "" H 3200 31050 50  0001 C CNN
-	1    3200 31050
-	1    0    0    -1
-$EndComp
-Text Label 2900 30450 0    50   ~ 0
-b5
-Text Label 2900 30850 0    50   ~ 0
-sb
-Wire Wire Line
-	3200 30250 3650 30250
-$Comp
-L Device:R R19
-U 1 1 5BA6EC5E
-P 3950 32650
-F 0 "R19" H 4020 32696 50  0000 L CNN
-F 1 "R" H 4020 32605 50  0000 L CNN
-F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3880 32650 50  0001 C CNN
-F 3 "~" H 3950 32650 50  0001 C CNN
-	1    3950 32650
-	1    0    0    -1
-$EndComp
-$Comp
-L power:VCC #PWR059
-U 1 1 5BA6EC65
-P 3950 32500
-F 0 "#PWR059" H 3950 32350 50  0001 C CNN
-F 1 "VCC" H 3967 32673 50  0000 C CNN
-F 2 "" H 3950 32500 50  0001 C CNN
-F 3 "" H 3950 32500 50  0001 C CNN
-	1    3950 32500
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR061
-U 1 1 5BA6EC6B
-P 3950 33200
-F 0 "#PWR061" H 3950 32950 50  0001 C CNN
-F 1 "GND" H 3955 33027 50  0000 C CNN
-F 2 "" H 3950 33200 50  0001 C CNN
-F 3 "" H 3950 33200 50  0001 C CNN
-	1    3950 33200
-	1    0    0    -1
-$EndComp
-Wire Wire Line
-	3950 32800 4450 32800
-Connection ~ 3950 32800
-Text Label 4450 32800 0    50   ~ 0
-o5
-$Comp
-L Transistor_FET:2N7000 Q61
-U 1 1 5BA6EC74
-P 3100 31450
-F 0 "Q61" H 3305 31496 50  0000 L CNN
-F 1 "2N7000" H 3305 31405 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 31375 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 31450 50  0001 L CNN
-	1    3100 31450
-	1    0    0    -1
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q62
-U 1 1 5BA6EC7B
-P 3100 31850
-F 0 "Q62" H 3305 31896 50  0000 L CNN
-F 1 "2N7000" H 3305 31805 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 31775 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 31850 50  0001 L CNN
-	1    3100 31850
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR058
-U 1 1 5BA6EC82
-P 3200 32050
-F 0 "#PWR058" H 3200 31800 50  0001 C CNN
-F 1 "GND" H 3205 31877 50  0000 C CNN
-F 2 "" H 3200 32050 50  0001 C CNN
-F 3 "" H 3200 32050 50  0001 C CNN
-	1    3200 32050
-	1    0    0    -1
-$EndComp
-Text Label 2900 31450 0    50   ~ 0
-c5
-Text Label 2900 31850 0    50   ~ 0
-sc
-$Comp
-L Transistor_FET:2N7000 Q63
-U 1 1 5BA6EC8A
-P 3100 32450
-F 0 "Q63" H 3305 32496 50  0000 L CNN
-F 1 "2N7000" H 3305 32405 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 32375 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 32450 50  0001 L CNN
-	1    3100 32450
-	1    0    0    -1
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q64
-U 1 1 5BA6EC91
-P 3100 32850
-F 0 "Q64" H 3305 32896 50  0000 L CNN
-F 1 "2N7000" H 3305 32805 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 32775 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 32850 50  0001 L CNN
-	1    3100 32850
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR060
-U 1 1 5BA6EC98
-P 3200 33050
-F 0 "#PWR060" H 3200 32800 50  0001 C CNN
-F 1 "GND" H 3205 32877 50  0000 C CNN
-F 2 "" H 3200 33050 50  0001 C CNN
-F 3 "" H 3200 33050 50  0001 C CNN
-	1    3200 33050
-	1    0    0    -1
-$EndComp
-Text Label 2900 32450 0    50   ~ 0
-d5
-Text Label 2900 32850 0    50   ~ 0
-sd
-Wire Wire Line
-	3200 32250 3650 32250
-Wire Wire Line
-	3200 31250 3650 31250
-Connection ~ 3650 30250
-Wire Wire Line
-	3650 30250 3650 29250
-Wire Wire Line
-	3650 30250 3650 31250
-Connection ~ 3650 31250
-Wire Wire Line
-	3650 31250 3650 32250
-Wire Wire Line
-	3650 32250 3650 33000
-Connection ~ 3650 32250
-$Comp
-L Transistor_FET:2N7000 Q66
-U 1 1 5BA6ECA9
-P 3100 34000
-F 0 "Q66" H 3305 34046 50  0000 L CNN
-F 1 "2N7000" H 3305 33955 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 33925 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 34000 50  0001 L CNN
-	1    3100 34000
-	1    0    0    -1
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q67
-U 1 1 5BA6ECB0
-P 3100 34400
-F 0 "Q67" H 3305 34446 50  0000 L CNN
-F 1 "2N7000" H 3305 34355 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 34325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 34400 50  0001 L CNN
-	1    3100 34400
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR063
-U 1 1 5BA6ECB7
-P 3200 34600
-F 0 "#PWR063" H 3200 34350 50  0001 C CNN
-F 1 "GND" H 3205 34427 50  0000 C CNN
-F 2 "" H 3200 34600 50  0001 C CNN
-F 3 "" H 3200 34600 50  0001 C CNN
-	1    3200 34600
-	1    0    0    -1
-$EndComp
-Text Label 2900 34000 0    50   ~ 0
-a6
-Text Label 2900 34400 0    50   ~ 0
-sa
-$Comp
-L Device:R R20
-U 1 1 5BA6ECBF
-P 3200 33650
-F 0 "R20" H 3270 33696 50  0000 L CNN
-F 1 "R" H 3270 33605 50  0000 L CNN
-F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 33650 50  0001 C CNN
-F 3 "~" H 3200 33650 50  0001 C CNN
-	1    3200 33650
-	1    0    0    -1
-$EndComp
-$Comp
-L power:VCC #PWR062
-U 1 1 5BA6ECC6
-P 3200 33500
-F 0 "#PWR062" H 3200 33350 50  0001 C CNN
-F 1 "VCC" H 3217 33673 50  0000 C CNN
-F 2 "" H 3200 33500 50  0001 C CNN
-F 3 "" H 3200 33500 50  0001 C CNN
-	1    3200 33500
-	1    0    0    -1
-$EndComp
-Connection ~ 3200 33800
-Wire Wire Line
-	3200 33800 3650 33800
-$Comp
-L Transistor_FET:2N7000 Q74
-U 1 1 5BA6ECCE
-P 3850 37550
-F 0 "Q74" H 4055 37596 50  0000 L CNN
-F 1 "2N7000" H 4055 37505 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4050 37475 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 37550 50  0001 L CNN
-	1    3850 37550
-	1    0    0    -1
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q68
-U 1 1 5BA6ECD5
-P 3100 35000
-F 0 "Q68" H 3305 35046 50  0000 L CNN
-F 1 "2N7000" H 3305 34955 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 34925 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 35000 50  0001 L CNN
-	1    3100 35000
-	1    0    0    -1
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q69
-U 1 1 5BA6ECDC
-P 3100 35400
-F 0 "Q69" H 3305 35446 50  0000 L CNN
-F 1 "2N7000" H 3305 35355 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 35325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 35400 50  0001 L CNN
-	1    3100 35400
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR064
-U 1 1 5BA6ECE3
-P 3200 35600
-F 0 "#PWR064" H 3200 35350 50  0001 C CNN
-F 1 "GND" H 3205 35427 50  0000 C CNN
-F 2 "" H 3200 35600 50  0001 C CNN
-F 3 "" H 3200 35600 50  0001 C CNN
-	1    3200 35600
-	1    0    0    -1
-$EndComp
-Text Label 2900 35000 0    50   ~ 0
-b6
-Text Label 2900 35400 0    50   ~ 0
-sb
-Wire Wire Line
-	3200 34800 3650 34800
-$Comp
-L Device:R R21
-U 1 1 5BA6ECEC
-P 3950 37200
-F 0 "R21" H 4020 37246 50  0000 L CNN
-F 1 "R" H 4020 37155 50  0000 L CNN
-F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3880 37200 50  0001 C CNN
-F 3 "~" H 3950 37200 50  0001 C CNN
-	1    3950 37200
-	1    0    0    -1
-$EndComp
-$Comp
-L power:VCC #PWR066
-U 1 1 5BA6ECF3
-P 3950 37050
-F 0 "#PWR066" H 3950 36900 50  0001 C CNN
-F 1 "VCC" H 3967 37223 50  0000 C CNN
-F 2 "" H 3950 37050 50  0001 C CNN
-F 3 "" H 3950 37050 50  0001 C CNN
-	1    3950 37050
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR068
-U 1 1 5BA6ECF9
-P 3950 37750
-F 0 "#PWR068" H 3950 37500 50  0001 C CNN
-F 1 "GND" H 3955 37577 50  0000 C CNN
-F 2 "" H 3950 37750 50  0001 C CNN
-F 3 "" H 3950 37750 50  0001 C CNN
-	1    3950 37750
-	1    0    0    -1
-$EndComp
-Wire Wire Line
-	3950 37350 4450 37350
-Connection ~ 3950 37350
-Text Label 4450 37350 0    50   ~ 0
-o6
-$Comp
-L Transistor_FET:2N7000 Q70
-U 1 1 5BA6ED02
-P 3100 36000
-F 0 "Q70" H 3305 36046 50  0000 L CNN
-F 1 "2N7000" H 3305 35955 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 35925 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 36000 50  0001 L CNN
-	1    3100 36000
-	1    0    0    -1
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q71
-U 1 1 5BA6ED09
-P 3100 36400
-F 0 "Q71" H 3305 36446 50  0000 L CNN
-F 1 "2N7000" H 3305 36355 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 36325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 36400 50  0001 L CNN
-	1    3100 36400
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR065
-U 1 1 5BA6ED10
-P 3200 36600
-F 0 "#PWR065" H 3200 36350 50  0001 C CNN
-F 1 "GND" H 3205 36427 50  0000 C CNN
-F 2 "" H 3200 36600 50  0001 C CNN
-F 3 "" H 3200 36600 50  0001 C CNN
-	1    3200 36600
-	1    0    0    -1
-$EndComp
-Text Label 2900 36000 0    50   ~ 0
-c6
-Text Label 2900 36400 0    50   ~ 0
-sc
-$Comp
-L Transistor_FET:2N7000 Q72
-U 1 1 5BA6ED18
-P 3100 37000
-F 0 "Q72" H 3305 37046 50  0000 L CNN
-F 1 "2N7000" H 3305 36955 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 36925 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 37000 50  0001 L CNN
-	1    3100 37000
-	1    0    0    -1
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q73
-U 1 1 5BA6ED1F
-P 3100 37400
-F 0 "Q73" H 3305 37446 50  0000 L CNN
-F 1 "2N7000" H 3305 37355 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 37325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 37400 50  0001 L CNN
-	1    3100 37400
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR067
-U 1 1 5BA6ED26
-P 3200 37600
-F 0 "#PWR067" H 3200 37350 50  0001 C CNN
-F 1 "GND" H 3205 37427 50  0000 C CNN
-F 2 "" H 3200 37600 50  0001 C CNN
-F 3 "" H 3200 37600 50  0001 C CNN
-	1    3200 37600
-	1    0    0    -1
-$EndComp
-Text Label 2900 37000 0    50   ~ 0
-d6
-Text Label 2900 37400 0    50   ~ 0
-sd
-Wire Wire Line
-	3200 36800 3650 36800
-Wire Wire Line
-	3200 35800 3650 35800
-Connection ~ 3650 34800
-Wire Wire Line
-	3650 34800 3650 33800
-Wire Wire Line
-	3650 34800 3650 35800
-Connection ~ 3650 35800
-Wire Wire Line
-	3650 35800 3650 36800
-Wire Wire Line
-	3650 36800 3650 37550
-Connection ~ 3650 36800
-$Comp
-L Transistor_FET:2N7000 Q75
-U 1 1 5BA6ED37
-P 3100 38650
-F 0 "Q75" H 3305 38696 50  0000 L CNN
-F 1 "2N7000" H 3305 38605 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 38575 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 38650 50  0001 L CNN
-	1    3100 38650
-	1    0    0    -1
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q76
-U 1 1 5BA6ED3E
-P 3100 39050
-F 0 "Q76" H 3305 39096 50  0000 L CNN
-F 1 "2N7000" H 3305 39005 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 38975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 39050 50  0001 L CNN
-	1    3100 39050
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR070
-U 1 1 5BA6ED45
-P 3200 39250
-F 0 "#PWR070" H 3200 39000 50  0001 C CNN
-F 1 "GND" H 3205 39077 50  0000 C CNN
-F 2 "" H 3200 39250 50  0001 C CNN
-F 3 "" H 3200 39250 50  0001 C CNN
-	1    3200 39250
-	1    0    0    -1
-$EndComp
-Text Label 2900 38650 0    50   ~ 0
-a7
-Text Label 2900 39050 0    50   ~ 0
-sa
 $Comp
 L Device:R R22
-U 1 1 5BA6ED4D
-P 3200 38300
-F 0 "R22" H 3270 38346 50  0000 L CNN
-F 1 "R" H 3270 38255 50  0000 L CNN
-F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 38300 50  0001 C CNN
-F 3 "~" H 3200 38300 50  0001 C CNN
-	1    3200 38300
-	1    0    0    -1
+U 1 1 5C275B1A
+P 3200 14100
+F 0 "R22" H 3270 14146 50  0000 L CNN
+F 1 "R" H 3270 14055 50  0000 L CNN
+F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 14100 50  0001 C CNN
+F 3 "~" H 3200 14100 50  0001 C CNN
+	1    3200 14100
+	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR069
-U 1 1 5BA6ED54
-P 3200 38150
-F 0 "#PWR069" H 3200 38000 50  0001 C CNN
-F 1 "VCC" H 3217 38323 50  0000 C CNN
-F 2 "" H 3200 38150 50  0001 C CNN
-F 3 "" H 3200 38150 50  0001 C CNN
-	1    3200 38150
-	1    0    0    -1
+L power:VCC #PWR045
+U 1 1 5C275B21
+P 3200 13950
+F 0 "#PWR045" H 3200 13800 50  0001 C CNN
+F 1 "VCC" H 3217 14123 50  0000 C CNN
+F 2 "" H 3200 13950 50  0001 C CNN
+F 3 "" H 3200 13950 50  0001 C CNN
+	1    3200 13950
+	1    0    0    -1  
 $EndComp
-Connection ~ 3200 38450
-Wire Wire Line
-	3200 38450 3650 38450
+Connection ~ 3200 14250
 $Comp
-L Transistor_FET:2N7000 Q83
-U 1 1 5BA6ED5C
-P 3850 42200
-F 0 "Q83" H 4055 42246 50  0000 L CNN
-F 1 "2N7000" H 4055 42155 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4050 42125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3850 42200 50  0001 L CNN
-	1    3850 42200
-	1    0    0    -1
+L Transistor_FET:2N7000 Q55
+U 1 1 5C275B28
+P 5900 14450
+F 0 "Q55" H 6105 14496 50  0000 L CNN
+F 1 "2N7000" H 6105 14405 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 6100 14375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5900 14450 50  0001 L CNN
+	1    5900 14450
+	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q77
-U 1 1 5BA6ED63
-P 3100 39650
-F 0 "Q77" H 3305 39696 50  0000 L CNN
-F 1 "2N7000" H 3305 39605 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 39575 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 39650 50  0001 L CNN
-	1    3100 39650
-	1    0    0    -1
+L Transistor_FET:2N7000 Q52
+U 1 1 5C275B2F
+P 3800 14450
+F 0 "Q52" H 4005 14496 50  0000 L CNN
+F 1 "2N7000" H 4005 14405 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4000 14375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3800 14450 50  0001 L CNN
+	1    3800 14450
+	1    0    0    -1  
 $EndComp
-$Comp
-L Transistor_FET:2N7000 Q78
-U 1 1 5BA6ED6A
-P 3100 40050
-F 0 "Q78" H 3305 40096 50  0000 L CNN
-F 1 "2N7000" H 3305 40005 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 39975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 40050 50  0001 L CNN
-	1    3100 40050
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR071
-U 1 1 5BA6ED71
-P 3200 40250
-F 0 "#PWR071" H 3200 40000 50  0001 C CNN
-F 1 "GND" H 3205 40077 50  0000 C CNN
-F 2 "" H 3200 40250 50  0001 C CNN
-F 3 "" H 3200 40250 50  0001 C CNN
-	1    3200 40250
-	1    0    0    -1
-$EndComp
-Text Label 2900 39650 0    50   ~ 0
-b7
-Text Label 2900 40050 0    50   ~ 0
-sb
-Wire Wire Line
-	3200 39450 3650 39450
 $Comp
 L Device:R R23
-U 1 1 5BA6ED7A
-P 3950 41850
-F 0 "R23" H 4020 41896 50  0000 L CNN
-F 1 "R" H 4020 41805 50  0000 L CNN
-F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3880 41850 50  0001 C CNN
-F 3 "~" H 3950 41850 50  0001 C CNN
-	1    3950 41850
+U 1 1 5C275B36
+P 6000 14100
+F 0 "R23" H 6070 14146 50  0000 L CNN
+F 1 "R" H 6070 14055 50  0000 L CNN
+F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5930 14100 50  0001 C CNN
+F 3 "~" H 6000 14100 50  0001 C CNN
+	1    6000 14100
 	1    0    0    -1
 $EndComp
 $Comp
-L power:VCC #PWR073
-U 1 1 5BA6ED81
-P 3950 41700
-F 0 "#PWR073" H 3950 41550 50  0001 C CNN
-F 1 "VCC" H 3967 41873 50  0000 C CNN
-F 2 "" H 3950 41700 50  0001 C CNN
-F 3 "" H 3950 41700 50  0001 C CNN
-	1    3950 41700
+L power:VCC #PWR046
+U 1 1 5C275B3D
+P 6000 13950
+F 0 "#PWR046" H 6000 13800 50  0001 C CNN
+F 1 "VCC" H 6017 14123 50  0000 C CNN
+F 2 "" H 6000 13950 50  0001 C CNN
+F 3 "" H 6000 13950 50  0001 C CNN
+	1    6000 13950
 	1    0    0    -1
 $EndComp
 $Comp
-L power:GND #PWR075
-U 1 1 5BA6ED87
-P 3950 42400
-F 0 "#PWR075" H 3950 42150 50  0001 C CNN
-F 1 "GND" H 3955 42227 50  0000 C CNN
-F 2 "" H 3950 42400 50  0001 C CNN
-F 3 "" H 3950 42400 50  0001 C CNN
-	1    3950 42400
+L power:GND #PWR047
+U 1 1 5C275B43
+P 6000 14650
+F 0 "#PWR047" H 6000 14400 50  0001 C CNN
+F 1 "GND" H 6005 14477 50  0000 C CNN
+F 2 "" H 6000 14650 50  0001 C CNN
+F 3 "" H 6000 14650 50  0001 C CNN
+	1    6000 14650
 	1    0    0    -1
 $EndComp
 Wire Wire Line
-	3950 42000 4450 42000
-Connection ~ 3950 42000
-Text Label 4450 42000 0    50   ~ 0
-o7
+	6000 14250 6500 14250
+Connection ~ 6000 14250
 $Comp
-L Transistor_FET:2N7000 Q79
-U 1 1 5BA6ED90
-P 3100 40650
-F 0 "Q79" H 3305 40696 50  0000 L CNN
-F 1 "2N7000" H 3305 40605 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 40575 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 40650 50  0001 L CNN
-	1    3100 40650
+L Transistor_FET:2N7000 Q53
+U 1 1 5C275B4B
+P 4500 14450
+F 0 "Q53" H 4705 14496 50  0000 L CNN
+F 1 "2N7000" H 4705 14405 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 4700 14375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4500 14450 50  0001 L CNN
+	1    4500 14450
 	1    0    0    -1
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q80
-U 1 1 5BA6ED97
-P 3100 41050
-F 0 "Q80" H 3305 41096 50  0000 L CNN
-F 1 "2N7000" H 3305 41005 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 40975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 41050 50  0001 L CNN
-	1    3100 41050
+L Transistor_FET:2N7000 Q54
+U 1 1 5C275B52
+P 5200 14450
+F 0 "Q54" H 5405 14496 50  0000 L CNN
+F 1 "2N7000" H 5405 14405 50  0000 L CNN
+F 2 "electrokit:TO-92_Molded_Wide_Inline" H 5400 14375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 5200 14450 50  0001 L CNN
+	1    5200 14450
 	1    0    0    -1
 $EndComp
-$Comp
-L power:GND #PWR072
-U 1 1 5BA6ED9E
-P 3200 41250
-F 0 "#PWR072" H 3200 41000 50  0001 C CNN
-F 1 "GND" H 3205 41077 50  0000 C CNN
-F 2 "" H 3200 41250 50  0001 C CNN
-F 3 "" H 3200 41250 50  0001 C CNN
-	1    3200 41250
-	1    0    0    -1
-$EndComp
-Text Label 2900 40650 0    50   ~ 0
+Text Label 3200 14700 0    50   ~ 0
+sa_and
+Wire Wire Line
+	3200 14650 3200 14700
+Text Label 3900 14700 0    50   ~ 0
+sb_and
+Wire Wire Line
+	3900 14650 3900 14700
+Text Label 4600 14700 0    50   ~ 0
+sc_and
+Wire Wire Line
+	4600 14650 4600 14700
+Text Label 5300 14700 0    50   ~ 0
+sd_and
+Wire Wire Line
+	5300 14650 5300 14700
+Wire Wire Line
+	3200 14250 3900 14250
+Wire Wire Line
+	3900 14250 4600 14250
+Connection ~ 3900 14250
+Wire Wire Line
+	4600 14250 5300 14250
+Connection ~ 4600 14250
+Wire Wire Line
+	5300 14250 5700 14250
+Wire Wire Line
+	5700 14250 5700 14450
+Connection ~ 5300 14250
+Text Label 2900 7550 0    50   ~ 0
+a1
+Text Label 2900 8700 0    50   ~ 0
+a2
+Text Label 2900 9850 0    50   ~ 0
+a3
+Text Label 2900 11000 0    50   ~ 0
+a4
+Text Label 2900 12150 0    50   ~ 0
+a5
+Text Label 2900 13300 0    50   ~ 0
+a6
+Text Label 2900 14450 0    50   ~ 0
+a7
+Text Label 3600 7550 0    50   ~ 0
+b1
+Text Label 3600 8700 0    50   ~ 0
+b2
+Text Label 3600 9850 0    50   ~ 0
+b3
+Text Label 3600 11000 0    50   ~ 0
+b4
+Text Label 3600 12150 0    50   ~ 0
+b5
+Text Label 3600 13300 0    50   ~ 0
+b6
+Text Label 3600 14450 0    50   ~ 0
+b7
+Text Label 4300 7550 0    50   ~ 0
+c1
+Text Label 4300 8700 0    50   ~ 0
+c2
+Text Label 4300 9850 0    50   ~ 0
+c3
+Text Label 4300 11000 0    50   ~ 0
+c4
+Text Label 4300 12150 0    50   ~ 0
+c5
+Text Label 4300 13300 0    50   ~ 0
+c6
+Text Label 4300 14450 0    50   ~ 0
 c7
-Text Label 2900 41050 0    50   ~ 0
-sc
-$Comp
-L Transistor_FET:2N7000 Q81
-U 1 1 5BA6EDA6
-P 3100 41650
-F 0 "Q81" H 3305 41696 50  0000 L CNN
-F 1 "2N7000" H 3305 41605 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 41575 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 41650 50  0001 L CNN
-	1    3100 41650
-	1    0    0    -1
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q82
-U 1 1 5BA6EDAD
-P 3100 42050
-F 0 "Q82" H 3305 42096 50  0000 L CNN
-F 1 "2N7000" H 3305 42005 50  0000 L CNN
-F 2 "electrokit:TO-92_Molded_Wide_Inline" H 3300 41975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 42050 50  0001 L CNN
-	1    3100 42050
-	1    0    0    -1
-$EndComp
-$Comp
-L power:GND #PWR074
-U 1 1 5BA6EDB4
-P 3200 42250
-F 0 "#PWR074" H 3200 42000 50  0001 C CNN
-F 1 "GND" H 3205 42077 50  0000 C CNN
-F 2 "" H 3200 42250 50  0001 C CNN
-F 3 "" H 3200 42250 50  0001 C CNN
-	1    3200 42250
-	1    0    0    -1
-$EndComp
-Text Label 2900 41650 0    50   ~ 0
+Text Label 5000 7550 0    50   ~ 0
+d1
+Text Label 5000 8700 0    50   ~ 0
+d2
+Text Label 5000 9850 0    50   ~ 0
+d3
+Text Label 5000 11000 0    50   ~ 0
+d4
+Text Label 5000 12150 0    50   ~ 0
+d5
+Text Label 5000 13300 0    50   ~ 0
+d6
+Text Label 5000 14450 0    50   ~ 0
 d7
-Text Label 2900 42050 0    50   ~ 0
-sd
-Wire Wire Line
-	3200 41450 3650 41450
-Wire Wire Line
-	3200 40450 3650 40450
-Connection ~ 3650 39450
-Wire Wire Line
-	3650 39450 3650 38450
-Wire Wire Line
-	3650 39450 3650 40450
-Connection ~ 3650 40450
-Wire Wire Line
-	3650 40450 3650 41450
-Wire Wire Line
-	3650 41450 3650 42200
-Connection ~ 3650 41450
+Text Label 6500 7350 0    50   ~ 0
+o1
+Text Label 6500 8500 0    50   ~ 0
+o2
+Text Label 6500 9650 0    50   ~ 0
+o3
+Text Label 6500 10800 0    50   ~ 0
+o4
+Text Label 6500 11950 0    50   ~ 0
+o5
+Text Label 6500 13100 0    50   ~ 0
+o6
+Text Label 6500 14250 0    50   ~ 0
+o7
 $EndSCHEMATC
