@@ -22,8 +22,8 @@ F 0 "J1" H 970 1217 50  0000 C CNN
 F 1 "Conn_01x08" H 970 1126 50  0000 C CNN
 F 2 "emlun:J8x2-double_8_bit_bus_connector_1_indexed" H 1050 700 50  0001 C CNN
 F 3 "~" H 1050 700 50  0001 C CNN
-	1    1050 700
-	0    -1   -1   0
+	1    1050 700 
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x08 J6
@@ -33,8 +33,8 @@ F 0 "J6" H 5530 692 50  0000 L CNN
 F 1 "Conn_01x08" H 5530 601 50  0000 L CNN
 F 2 "emlun:J8x2-double_8_bit_bus_connector_1_indexed" H 5450 700 50  0001 C CNN
 F 3 "~" H 5450 700 50  0001 C CNN
-	1    5450 700
-	0    -1   -1   0
+	1    5450 700 
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x08 J2
@@ -44,8 +44,8 @@ F 0 "J2" H 1970 1217 50  0000 C CNN
 F 1 "Conn_01x08" H 1970 1126 50  0000 C CNN
 F 2 "emlun:J8x2-double_8_bit_bus_connector_1_indexed" H 2050 700 50  0001 C CNN
 F 3 "~" H 2050 700 50  0001 C CNN
-	1    2050 700
-	0    -1   -1   0
+	1    2050 700 
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x08 J3
@@ -55,8 +55,8 @@ F 0 "J3" H 2970 1217 50  0000 C CNN
 F 1 "Conn_01x08" H 2970 1126 50  0000 C CNN
 F 2 "emlun:J8x2-double_8_bit_bus_connector_1_indexed" H 3050 700 50  0001 C CNN
 F 3 "~" H 3050 700 50  0001 C CNN
-	1    3050 700
-	0    -1   -1   0
+	1    3050 700 
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x08 J4
@@ -66,8 +66,8 @@ F 0 "J4" H 3970 1217 50  0000 C CNN
 F 1 "Conn_01x08" H 3970 1126 50  0000 C CNN
 F 2 "emlun:J8x2-double_8_bit_bus_connector_1_indexed" H 4050 700 50  0001 C CNN
 F 3 "~" H 4050 700 50  0001 C CNN
-	1    4050 700
-	0    -1   -1   0
+	1    4050 700 
+	0    -1   -1   0   
 $EndComp
 Text Label 750  900  3    50   ~ 0
 a0
@@ -145,8 +145,8 @@ F 0 "J7" V 6292 769 60  0000 L CNN
 F 1 "PWR-2_pole_power_connector" V 6398 769 60  0000 L CNN
 F 2 "emlun:J2x2-double_2_pole_connector" H 6350 700 60  0001 C CNN
 F 3 "" H 6350 700 60  0001 C CNN
-	1    6350 700
-	1    0    0    -1
+	1    6350 700 
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR01
@@ -157,7 +157,7 @@ F 1 "GND" H 6305 827 50  0000 C CNN
 F 2 "" H 6300 1000 50  0001 C CNN
 F 3 "" H 6300 1000 50  0001 C CNN
 	1    6300 1000
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L power:VCC #PWR02
@@ -168,7 +168,7 @@ F 1 "VCC" H 6418 1173 50  0000 C CNN
 F 2 "" H 6400 1000 50  0001 C CNN
 F 3 "" H 6400 1000 50  0001 C CNN
 	1    6400 1000
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 Text Label 5150 900  3    50   ~ 0
 o0
@@ -779,8 +779,8 @@ F 0 "J5" H 4720 917 50  0000 C CNN
 F 1 "Conn_01x02" H 4720 826 50  0000 C CNN
 F 2 "emlun:J2x2-double_2_bit_bus" H 4800 700 50  0001 C CNN
 F 3 "~" H 4800 700 50  0001 C CNN
-	1    4800 700
-	0    -1   -1   0
+	1    4800 700 
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	1400 2700 1450 2700
@@ -4039,7 +4039,7 @@ F 1 "SolderJumper_2_Open" H 3300 28314 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3300 28200 50  0001 C CNN
 F 3 "~" H 3300 28200 50  0001 C CNN
 	1    3300 28200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3650 27850 3500 27850
@@ -4066,7 +4066,7 @@ F 1 "R" H 820 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 680 1200 50  0001 C CNN
 F 3 "~" H 750 1200 50  0001 C CNN
 	1    750  1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR03
@@ -4077,7 +4077,7 @@ F 1 "GND" H 755 1177 50  0000 C CNN
 F 2 "" H 750 1350 50  0001 C CNN
 F 3 "" H 750 1350 50  0001 C CNN
 	1    750  1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	850  900  850  1050
@@ -4090,7 +4090,7 @@ F 1 "R" H 920 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 780 1200 50  0001 C CNN
 F 3 "~" H 850 1200 50  0001 C CNN
 	1    850  1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR04
@@ -4101,7 +4101,7 @@ F 1 "GND" H 855 1177 50  0000 C CNN
 F 2 "" H 850 1350 50  0001 C CNN
 F 3 "" H 850 1350 50  0001 C CNN
 	1    850  1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	950  900  950  1050
@@ -4114,7 +4114,7 @@ F 1 "R" H 1020 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 880 1200 50  0001 C CNN
 F 3 "~" H 950 1200 50  0001 C CNN
 	1    950  1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR05
@@ -4125,7 +4125,7 @@ F 1 "GND" H 955 1177 50  0000 C CNN
 F 2 "" H 950 1350 50  0001 C CNN
 F 3 "" H 950 1350 50  0001 C CNN
 	1    950  1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1050 900  1050 1050
@@ -4138,7 +4138,7 @@ F 1 "R" H 1120 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 980 1200 50  0001 C CNN
 F 3 "~" H 1050 1200 50  0001 C CNN
 	1    1050 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR06
@@ -4149,7 +4149,7 @@ F 1 "GND" H 1055 1177 50  0000 C CNN
 F 2 "" H 1050 1350 50  0001 C CNN
 F 3 "" H 1050 1350 50  0001 C CNN
 	1    1050 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1150 900  1150 1050
@@ -4162,7 +4162,7 @@ F 1 "R" H 1220 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1080 1200 50  0001 C CNN
 F 3 "~" H 1150 1200 50  0001 C CNN
 	1    1150 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR07
@@ -4173,7 +4173,7 @@ F 1 "GND" H 1155 1177 50  0000 C CNN
 F 2 "" H 1150 1350 50  0001 C CNN
 F 3 "" H 1150 1350 50  0001 C CNN
 	1    1150 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1250 900  1250 1050
@@ -4186,7 +4186,7 @@ F 1 "R" H 1320 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1180 1200 50  0001 C CNN
 F 3 "~" H 1250 1200 50  0001 C CNN
 	1    1250 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR08
@@ -4197,7 +4197,7 @@ F 1 "GND" H 1255 1177 50  0000 C CNN
 F 2 "" H 1250 1350 50  0001 C CNN
 F 3 "" H 1250 1350 50  0001 C CNN
 	1    1250 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1350 900  1350 1050
@@ -4210,7 +4210,7 @@ F 1 "R" H 1420 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1280 1200 50  0001 C CNN
 F 3 "~" H 1350 1200 50  0001 C CNN
 	1    1350 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR09
@@ -4221,7 +4221,7 @@ F 1 "GND" H 1355 1177 50  0000 C CNN
 F 2 "" H 1350 1350 50  0001 C CNN
 F 3 "" H 1350 1350 50  0001 C CNN
 	1    1350 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1450 900  1450 1050
@@ -4234,7 +4234,7 @@ F 1 "R" H 1520 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1380 1200 50  0001 C CNN
 F 3 "~" H 1450 1200 50  0001 C CNN
 	1    1450 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR010
@@ -4245,7 +4245,7 @@ F 1 "GND" H 1455 1177 50  0000 C CNN
 F 2 "" H 1450 1350 50  0001 C CNN
 F 3 "" H 1450 1350 50  0001 C CNN
 	1    1450 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1750 900  1750 1050
@@ -4258,7 +4258,7 @@ F 1 "R" H 1820 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1680 1200 50  0001 C CNN
 F 3 "~" H 1750 1200 50  0001 C CNN
 	1    1750 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR011
@@ -4269,7 +4269,7 @@ F 1 "GND" H 1755 1177 50  0000 C CNN
 F 2 "" H 1750 1350 50  0001 C CNN
 F 3 "" H 1750 1350 50  0001 C CNN
 	1    1750 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1850 900  1850 1050
@@ -4282,7 +4282,7 @@ F 1 "R" H 1920 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1780 1200 50  0001 C CNN
 F 3 "~" H 1850 1200 50  0001 C CNN
 	1    1850 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR012
@@ -4293,7 +4293,7 @@ F 1 "GND" H 1855 1177 50  0000 C CNN
 F 2 "" H 1850 1350 50  0001 C CNN
 F 3 "" H 1850 1350 50  0001 C CNN
 	1    1850 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1950 900  1950 1050
@@ -4306,7 +4306,7 @@ F 1 "R" H 2020 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1880 1200 50  0001 C CNN
 F 3 "~" H 1950 1200 50  0001 C CNN
 	1    1950 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR013
@@ -4317,7 +4317,7 @@ F 1 "GND" H 1955 1177 50  0000 C CNN
 F 2 "" H 1950 1350 50  0001 C CNN
 F 3 "" H 1950 1350 50  0001 C CNN
 	1    1950 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2050 900  2050 1050
@@ -4330,7 +4330,7 @@ F 1 "R" H 2120 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1980 1200 50  0001 C CNN
 F 3 "~" H 2050 1200 50  0001 C CNN
 	1    2050 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR014
@@ -4341,7 +4341,7 @@ F 1 "GND" H 2055 1177 50  0000 C CNN
 F 2 "" H 2050 1350 50  0001 C CNN
 F 3 "" H 2050 1350 50  0001 C CNN
 	1    2050 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2150 900  2150 1050
@@ -4354,7 +4354,7 @@ F 1 "R" H 2220 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2080 1200 50  0001 C CNN
 F 3 "~" H 2150 1200 50  0001 C CNN
 	1    2150 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR015
@@ -4365,7 +4365,7 @@ F 1 "GND" H 2155 1177 50  0000 C CNN
 F 2 "" H 2150 1350 50  0001 C CNN
 F 3 "" H 2150 1350 50  0001 C CNN
 	1    2150 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2250 900  2250 1050
@@ -4378,7 +4378,7 @@ F 1 "R" H 2320 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2180 1200 50  0001 C CNN
 F 3 "~" H 2250 1200 50  0001 C CNN
 	1    2250 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR016
@@ -4389,7 +4389,7 @@ F 1 "GND" H 2255 1177 50  0000 C CNN
 F 2 "" H 2250 1350 50  0001 C CNN
 F 3 "" H 2250 1350 50  0001 C CNN
 	1    2250 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2350 900  2350 1050
@@ -4402,7 +4402,7 @@ F 1 "R" H 2420 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2280 1200 50  0001 C CNN
 F 3 "~" H 2350 1200 50  0001 C CNN
 	1    2350 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR017
@@ -4413,7 +4413,7 @@ F 1 "GND" H 2355 1177 50  0000 C CNN
 F 2 "" H 2350 1350 50  0001 C CNN
 F 3 "" H 2350 1350 50  0001 C CNN
 	1    2350 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2450 900  2450 1050
@@ -4426,7 +4426,7 @@ F 1 "R" H 2520 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2380 1200 50  0001 C CNN
 F 3 "~" H 2450 1200 50  0001 C CNN
 	1    2450 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR018
@@ -4437,7 +4437,7 @@ F 1 "GND" H 2455 1177 50  0000 C CNN
 F 2 "" H 2450 1350 50  0001 C CNN
 F 3 "" H 2450 1350 50  0001 C CNN
 	1    2450 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2750 900  2750 1050
@@ -4450,7 +4450,7 @@ F 1 "R" H 2820 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2680 1200 50  0001 C CNN
 F 3 "~" H 2750 1200 50  0001 C CNN
 	1    2750 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR019
@@ -4461,7 +4461,7 @@ F 1 "GND" H 2755 1177 50  0000 C CNN
 F 2 "" H 2750 1350 50  0001 C CNN
 F 3 "" H 2750 1350 50  0001 C CNN
 	1    2750 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2850 900  2850 1050
@@ -4474,7 +4474,7 @@ F 1 "R" H 2920 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2780 1200 50  0001 C CNN
 F 3 "~" H 2850 1200 50  0001 C CNN
 	1    2850 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR020
@@ -4485,7 +4485,7 @@ F 1 "GND" H 2855 1177 50  0000 C CNN
 F 2 "" H 2850 1350 50  0001 C CNN
 F 3 "" H 2850 1350 50  0001 C CNN
 	1    2850 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2950 900  2950 1050
@@ -4498,7 +4498,7 @@ F 1 "R" H 3020 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2880 1200 50  0001 C CNN
 F 3 "~" H 2950 1200 50  0001 C CNN
 	1    2950 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR021
@@ -4522,7 +4522,7 @@ F 1 "R" H 3120 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2980 1200 50  0001 C CNN
 F 3 "~" H 3050 1200 50  0001 C CNN
 	1    3050 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR022
@@ -4533,7 +4533,7 @@ F 1 "GND" H 3055 1177 50  0000 C CNN
 F 2 "" H 3050 1350 50  0001 C CNN
 F 3 "" H 3050 1350 50  0001 C CNN
 	1    3050 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3150 900  3150 1050
@@ -4546,7 +4546,7 @@ F 1 "R" H 3220 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3080 1200 50  0001 C CNN
 F 3 "~" H 3150 1200 50  0001 C CNN
 	1    3150 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR023
@@ -4557,7 +4557,7 @@ F 1 "GND" H 3155 1177 50  0000 C CNN
 F 2 "" H 3150 1350 50  0001 C CNN
 F 3 "" H 3150 1350 50  0001 C CNN
 	1    3150 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3250 900  3250 1050
@@ -4570,7 +4570,7 @@ F 1 "R" H 3320 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3180 1200 50  0001 C CNN
 F 3 "~" H 3250 1200 50  0001 C CNN
 	1    3250 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR024
@@ -4581,7 +4581,7 @@ F 1 "GND" H 3255 1177 50  0000 C CNN
 F 2 "" H 3250 1350 50  0001 C CNN
 F 3 "" H 3250 1350 50  0001 C CNN
 	1    3250 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3350 900  3350 1050
@@ -4594,7 +4594,7 @@ F 1 "R" H 3420 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3280 1200 50  0001 C CNN
 F 3 "~" H 3350 1200 50  0001 C CNN
 	1    3350 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR025
@@ -4605,7 +4605,7 @@ F 1 "GND" H 3355 1177 50  0000 C CNN
 F 2 "" H 3350 1350 50  0001 C CNN
 F 3 "" H 3350 1350 50  0001 C CNN
 	1    3350 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3450 900  3450 1050
@@ -4618,7 +4618,7 @@ F 1 "R" H 3520 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3380 1200 50  0001 C CNN
 F 3 "~" H 3450 1200 50  0001 C CNN
 	1    3450 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR026
@@ -4629,7 +4629,7 @@ F 1 "GND" H 3455 1177 50  0000 C CNN
 F 2 "" H 3450 1350 50  0001 C CNN
 F 3 "" H 3450 1350 50  0001 C CNN
 	1    3450 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3750 900  3750 1050
@@ -4642,7 +4642,7 @@ F 1 "R" H 3820 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3680 1200 50  0001 C CNN
 F 3 "~" H 3750 1200 50  0001 C CNN
 	1    3750 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR027
@@ -4653,7 +4653,7 @@ F 1 "GND" H 3755 1177 50  0000 C CNN
 F 2 "" H 3750 1350 50  0001 C CNN
 F 3 "" H 3750 1350 50  0001 C CNN
 	1    3750 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3850 900  3850 1050
@@ -4666,7 +4666,7 @@ F 1 "R" H 3920 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3780 1200 50  0001 C CNN
 F 3 "~" H 3850 1200 50  0001 C CNN
 	1    3850 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR028
@@ -4677,7 +4677,7 @@ F 1 "GND" H 3855 1177 50  0000 C CNN
 F 2 "" H 3850 1350 50  0001 C CNN
 F 3 "" H 3850 1350 50  0001 C CNN
 	1    3850 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3950 900  3950 1050
@@ -4690,7 +4690,7 @@ F 1 "R" H 4020 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3880 1200 50  0001 C CNN
 F 3 "~" H 3950 1200 50  0001 C CNN
 	1    3950 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR029
@@ -4701,7 +4701,7 @@ F 1 "GND" H 3955 1177 50  0000 C CNN
 F 2 "" H 3950 1350 50  0001 C CNN
 F 3 "" H 3950 1350 50  0001 C CNN
 	1    3950 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4050 900  4050 1050
@@ -4714,7 +4714,7 @@ F 1 "R" H 4120 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3980 1200 50  0001 C CNN
 F 3 "~" H 4050 1200 50  0001 C CNN
 	1    4050 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR030
@@ -4725,7 +4725,7 @@ F 1 "GND" H 4055 1177 50  0000 C CNN
 F 2 "" H 4050 1350 50  0001 C CNN
 F 3 "" H 4050 1350 50  0001 C CNN
 	1    4050 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4150 900  4150 1050
@@ -4738,7 +4738,7 @@ F 1 "R" H 4220 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4080 1200 50  0001 C CNN
 F 3 "~" H 4150 1200 50  0001 C CNN
 	1    4150 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR031
@@ -4749,7 +4749,7 @@ F 1 "GND" H 4155 1177 50  0000 C CNN
 F 2 "" H 4150 1350 50  0001 C CNN
 F 3 "" H 4150 1350 50  0001 C CNN
 	1    4150 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4250 900  4250 1050
@@ -4762,7 +4762,7 @@ F 1 "R" H 4320 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4180 1200 50  0001 C CNN
 F 3 "~" H 4250 1200 50  0001 C CNN
 	1    4250 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR032
@@ -4773,7 +4773,7 @@ F 1 "GND" H 4255 1177 50  0000 C CNN
 F 2 "" H 4250 1350 50  0001 C CNN
 F 3 "" H 4250 1350 50  0001 C CNN
 	1    4250 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4350 900  4350 1050
@@ -4786,7 +4786,7 @@ F 1 "R" H 4420 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4280 1200 50  0001 C CNN
 F 3 "~" H 4350 1200 50  0001 C CNN
 	1    4350 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR033
@@ -4797,7 +4797,7 @@ F 1 "GND" H 4355 1177 50  0000 C CNN
 F 2 "" H 4350 1350 50  0001 C CNN
 F 3 "" H 4350 1350 50  0001 C CNN
 	1    4350 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4450 900  4450 1050
@@ -4810,7 +4810,7 @@ F 1 "R" H 4520 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4380 1200 50  0001 C CNN
 F 3 "~" H 4450 1200 50  0001 C CNN
 	1    4450 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR034
@@ -4821,7 +4821,7 @@ F 1 "GND" H 4455 1177 50  0000 C CNN
 F 2 "" H 4450 1350 50  0001 C CNN
 F 3 "" H 4450 1350 50  0001 C CNN
 	1    4450 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1200 2300 1550 2300
@@ -4836,7 +4836,7 @@ F 1 "R" H 4870 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4730 1200 50  0001 C CNN
 F 3 "~" H 4800 1200 50  0001 C CNN
 	1    4800 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR035
@@ -4847,7 +4847,7 @@ F 1 "GND" H 4805 1177 50  0000 C CNN
 F 2 "" H 4800 1350 50  0001 C CNN
 F 3 "" H 4800 1350 50  0001 C CNN
 	1    4800 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4900 900  4900 1050
@@ -4860,7 +4860,7 @@ F 1 "R" H 4970 1155 50  0000 L CNN
 F 2 "emlun:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4830 1200 50  0001 C CNN
 F 3 "~" H 4900 1200 50  0001 C CNN
 	1    4900 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR036
@@ -4871,6 +4871,6 @@ F 1 "GND" H 4905 1177 50  0000 C CNN
 F 2 "" H 4900 1350 50  0001 C CNN
 F 3 "" H 4900 1350 50  0001 C CNN
 	1    4900 1350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
