@@ -168,21 +168,21 @@ Text Label 1550 3150 2    50   ~ 0
 a6
 Text Label 1550 3050 2    50   ~ 0
 a7
-Text Label 3250 3600 2    50   ~ 0
+Text Label 4150 4700 0    50   ~ 0
 nor0
-Text Label 3250 3500 2    50   ~ 0
+Text Label 4150 4800 0    50   ~ 0
 nor1
-Text Label 3250 3400 2    50   ~ 0
+Text Label 4150 4900 0    50   ~ 0
 nor2
-Text Label 3250 3300 2    50   ~ 0
+Text Label 4150 5000 0    50   ~ 0
 nor3
-Text Label 3250 3200 2    50   ~ 0
+Text Label 4150 5100 0    50   ~ 0
 nor4
-Text Label 3250 3100 2    50   ~ 0
+Text Label 4150 5200 0    50   ~ 0
 nor5
-Text Label 3250 3000 2    50   ~ 0
+Text Label 4150 5300 0    50   ~ 0
 nor6
-Text Label 3250 2900 2    50   ~ 0
+Text Label 4150 5400 0    50   ~ 0
 nor7
 Text Label 2600 4850 0    50   ~ 0
 nand0
@@ -200,53 +200,53 @@ Text Label 2600 5450 0    50   ~ 0
 nand6
 Text Label 2600 5550 0    50   ~ 0
 nand7
-Text Label 3250 4500 2    50   ~ 0
-nand0
-Text Label 3250 4400 2    50   ~ 0
-nand1
-Text Label 3250 4300 2    50   ~ 0
-nand2
-Text Label 3250 4200 2    50   ~ 0
-nand3
-Text Label 3250 4100 2    50   ~ 0
-nand4
-Text Label 3250 4000 2    50   ~ 0
-nand5
-Text Label 3250 3900 2    50   ~ 0
-nand6
-Text Label 3250 3800 2    50   ~ 0
-nand7
 Text Label 3250 5400 2    50   ~ 0
-and0
+nand0
 Text Label 3250 5300 2    50   ~ 0
-and1
+nand1
 Text Label 3250 5200 2    50   ~ 0
-and2
+nand2
 Text Label 3250 5100 2    50   ~ 0
-and3
+nand3
 Text Label 3250 5000 2    50   ~ 0
-and4
+nand4
 Text Label 3250 4900 2    50   ~ 0
-and5
+nand5
 Text Label 3250 4800 2    50   ~ 0
-and6
+nand6
 Text Label 3250 4700 2    50   ~ 0
+nand7
+Text Label 3250 4500 2    50   ~ 0
+and0
+Text Label 3250 4400 2    50   ~ 0
+and1
+Text Label 3250 4300 2    50   ~ 0
+and2
+Text Label 3250 4200 2    50   ~ 0
+and3
+Text Label 3250 4100 2    50   ~ 0
+and4
+Text Label 3250 4000 2    50   ~ 0
+and5
+Text Label 3250 3900 2    50   ~ 0
+and6
+Text Label 3250 3800 2    50   ~ 0
 and7
-Text Label 4150 4700 0    50   ~ 0
+Text Label 3250 3600 2    50   ~ 0
 or0
-Text Label 4150 4800 0    50   ~ 0
+Text Label 3250 3500 2    50   ~ 0
 or1
-Text Label 4150 4900 0    50   ~ 0
+Text Label 3250 3400 2    50   ~ 0
 or2
-Text Label 4150 5000 0    50   ~ 0
+Text Label 3250 3300 2    50   ~ 0
 or3
-Text Label 4150 5100 0    50   ~ 0
+Text Label 3250 3200 2    50   ~ 0
 or4
-Text Label 4150 5200 0    50   ~ 0
+Text Label 3250 3100 2    50   ~ 0
 or5
-Text Label 4150 5300 0    50   ~ 0
+Text Label 3250 3000 2    50   ~ 0
 or6
-Text Label 4150 5400 0    50   ~ 0
+Text Label 3250 2900 2    50   ~ 0
 or7
 Text Label 4150 3300 0    50   ~ 0
 logic_out0
@@ -264,21 +264,21 @@ Text Label 4150 3900 0    50   ~ 0
 logic_out6
 Text Label 4150 4000 0    50   ~ 0
 logic_out7
-Text Label 8050 3600 2    50   ~ 0
+Text Label 8050 5400 2    50   ~ 0
 logic_out0
-Text Label 8050 3500 2    50   ~ 0
+Text Label 8050 5300 2    50   ~ 0
 logic_out1
-Text Label 8050 3400 2    50   ~ 0
+Text Label 8050 5200 2    50   ~ 0
 logic_out2
-Text Label 8050 3300 2    50   ~ 0
+Text Label 8050 5100 2    50   ~ 0
 logic_out3
-Text Label 8050 3200 2    50   ~ 0
+Text Label 8050 5000 2    50   ~ 0
 logic_out4
-Text Label 8050 3100 2    50   ~ 0
+Text Label 8050 4900 2    50   ~ 0
 logic_out5
-Text Label 8050 3000 2    50   ~ 0
+Text Label 8050 4800 2    50   ~ 0
 logic_out6
-Text Label 8050 2900 2    50   ~ 0
+Text Label 8050 4700 2    50   ~ 0
 logic_out7
 $Comp
 L power:VCC #PWR04
@@ -524,21 +524,21 @@ F 3 "" H 7250 2900 50  0001 C CNN
 	1    7250 2900
 	0    -1   -1   0   
 $EndComp
-Text Label 8050 5400 2    50   ~ 0
+Text Label 8050 3600 2    50   ~ 0
 sum0
-Text Label 8050 5300 2    50   ~ 0
+Text Label 8050 3500 2    50   ~ 0
 sum1
-Text Label 8050 5200 2    50   ~ 0
+Text Label 8050 3400 2    50   ~ 0
 sum2
-Text Label 8050 5100 2    50   ~ 0
+Text Label 8050 3300 2    50   ~ 0
 sum3
-Text Label 8050 5000 2    50   ~ 0
+Text Label 8050 3200 2    50   ~ 0
 sum4
-Text Label 8050 4900 2    50   ~ 0
+Text Label 8050 3100 2    50   ~ 0
 sum5
-Text Label 8050 4800 2    50   ~ 0
+Text Label 8050 3000 2    50   ~ 0
 sum6
-Text Label 8050 4700 2    50   ~ 0
+Text Label 8050 2900 2    50   ~ 0
 sum7
 Text Label 9750 3300 2    50   ~ 0
 out0
@@ -631,13 +631,13 @@ Text Label 4750 2100 0    50   ~ 0
 b6
 Text Label 4750 2200 0    50   ~ 0
 b7
-Text Label 5300 2200 0    50   ~ 0
-ins0
-Text Label 5300 2100 0    50   ~ 0
-ins1
-Text Label 5300 2000 0    50   ~ 0
-ins2
 Text Label 5300 1900 0    50   ~ 0
+ins0
+Text Label 5300 2000 0    50   ~ 0
+ins1
+Text Label 5300 2100 0    50   ~ 0
+ins2
+Text Label 5300 2200 0    50   ~ 0
 ins3
 $Comp
 L Connector_Generic:Conn_01x08 J5
@@ -723,10 +723,10 @@ F 3 "~" H 6900 2100 50  0001 C CNN
 	1    6900 2100
 	-1   0    0    1   
 $EndComp
-Text Label 7100 2200 0    50   ~ 0
-out_zero
-Text Label 7100 2100 0    50   ~ 0
-ofl_uns
 Text Label 7100 2000 0    50   ~ 0
+out_zero
+Text Label 7100 2200 0    50   ~ 0
+ofl_uns
+Text Label 7100 2100 0    50   ~ 0
 ofl_sgn
 $EndSCHEMATC
