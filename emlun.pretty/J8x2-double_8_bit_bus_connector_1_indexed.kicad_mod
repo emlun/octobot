@@ -1,5 +1,5 @@
-(module J8x2-double_8_bit_bus_connector_1_indexed (layer F.Cu) (tedit 5B4E76D2)
-  (fp_text reference J6 (at 8.89 -2.04) (layer F.Fab)
+(module J8x2-double_8_bit_bus_connector_1_indexed (layer F.Cu) (tedit 5B60F9DB)
+  (fp_text reference REF** (at 8.89 -2.04) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value Conn_01x08 (at 8.89 -3.04) (layer F.Fab)
