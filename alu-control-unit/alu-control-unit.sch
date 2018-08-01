@@ -357,37 +357,37 @@ F 3 "" H 1550 2900 50  0001 C CNN
 	1    1550 2900
 	0    1    1    0   
 $EndComp
-Text Label 4800 4500 2    50   ~ 0
-b0
-Text Label 4800 4400 2    50   ~ 0
-b1
-Text Label 4800 4300 2    50   ~ 0
-b2
-Text Label 4800 4200 2    50   ~ 0
-b3
-Text Label 4800 4100 2    50   ~ 0
-b4
-Text Label 4800 4000 2    50   ~ 0
-b5
-Text Label 4800 3900 2    50   ~ 0
-b6
-Text Label 4800 3800 2    50   ~ 0
-b7
-Text Label 4800 3600 2    50   ~ 0
-a0
-Text Label 4800 3500 2    50   ~ 0
-a1
-Text Label 4800 3400 2    50   ~ 0
-a2
-Text Label 4800 3300 2    50   ~ 0
-a3
-Text Label 4800 3200 2    50   ~ 0
-a4
-Text Label 4800 3100 2    50   ~ 0
-a5
-Text Label 4800 3000 2    50   ~ 0
-a6
 Text Label 4800 2900 2    50   ~ 0
+b0
+Text Label 4800 3000 2    50   ~ 0
+b1
+Text Label 4800 3100 2    50   ~ 0
+b2
+Text Label 4800 3200 2    50   ~ 0
+b3
+Text Label 4800 3300 2    50   ~ 0
+b4
+Text Label 4800 3400 2    50   ~ 0
+b5
+Text Label 4800 3500 2    50   ~ 0
+b6
+Text Label 4800 3600 2    50   ~ 0
+b7
+Text Label 4800 3800 2    50   ~ 0
+a0
+Text Label 4800 3900 2    50   ~ 0
+a1
+Text Label 4800 4000 2    50   ~ 0
+a2
+Text Label 4800 4100 2    50   ~ 0
+a3
+Text Label 4800 4200 2    50   ~ 0
+a4
+Text Label 4800 4300 2    50   ~ 0
+a5
+Text Label 4800 4400 2    50   ~ 0
+a6
+Text Label 4800 4500 2    50   ~ 0
 a7
 $Comp
 L power:VCC #PWR06
@@ -411,21 +411,21 @@ F 3 "" H 5700 3200 50  0001 C CNN
 	1    5700 3200
 	0    -1   -1   0   
 $EndComp
-Text Label 5700 3800 0    50   ~ 0
-xor0
-Text Label 5700 3900 0    50   ~ 0
-xor1
-Text Label 5700 4000 0    50   ~ 0
-xor2
-Text Label 5700 4100 0    50   ~ 0
-xor3
-Text Label 5700 4200 0    50   ~ 0
-xor4
-Text Label 5700 4300 0    50   ~ 0
-xor5
-Text Label 5700 4400 0    50   ~ 0
-xor6
 Text Label 5700 4500 0    50   ~ 0
+xor0
+Text Label 5700 4400 0    50   ~ 0
+xor1
+Text Label 5700 4300 0    50   ~ 0
+xor2
+Text Label 5700 4200 0    50   ~ 0
+xor3
+Text Label 5700 4100 0    50   ~ 0
+xor4
+Text Label 5700 4000 0    50   ~ 0
+xor5
+Text Label 5700 3900 0    50   ~ 0
+xor6
+Text Label 5700 3800 0    50   ~ 0
 xor7
 Text Label 8050 4500 2    50   ~ 0
 xor0
