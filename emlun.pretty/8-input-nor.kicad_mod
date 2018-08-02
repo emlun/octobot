@@ -1,5 +1,5 @@
-(module 8-input-nor (layer F.Cu) (tedit 5B628D8F)
-  (fp_text reference U6 (at 11.43 -4.58) (layer F.SilkS)
+(module 8-input-nor (layer F.Cu) (tedit 5B6293AD)
+  (fp_text reference REF** (at 11.43 -4.58) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value 8-input-NOR (at 11.43 -5.58) (layer F.Fab)
