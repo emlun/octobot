@@ -672,7 +672,7 @@ U 1 1 5B616ECD
 P 7650 2200
 F 0 "J7" H 7778 2097 60  0000 L CNN
 F 1 "PWR-2_pole_power_connector" H 7778 1991 60  0000 L CNN
-F 2 "emlun:J2x2-double_2_pole_connector" H 7650 2250 60  0001 C CNN
+F 2 "emlun:PWR-double_2_pole_power_connector" H 7650 2250 60  0001 C CNN
 F 3 "" H 7650 2250 60  0001 C CNN
 	1    7650 2200
 	0    -1   -1   0   
