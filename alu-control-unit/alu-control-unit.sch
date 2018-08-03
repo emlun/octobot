@@ -558,14 +558,6 @@ Text Label 9750 4000 2    50   ~ 0
 out7
 Text Label 10400 3650 0    50   ~ 0
 out_zero
-NoConn ~ 8950 4700
-NoConn ~ 8950 4800
-NoConn ~ 8950 4900
-NoConn ~ 8950 5000
-NoConn ~ 8950 5100
-NoConn ~ 8950 5200
-NoConn ~ 8950 5300
-NoConn ~ 8950 5400
 $Comp
 L Connector_Generic:Conn_01x08 J1
 U 1 1 5B615379
@@ -729,4 +721,20 @@ Text Label 7100 2200 0    50   ~ 0
 ofl_uns
 Text Label 7100 2100 0    50   ~ 0
 ofl_sgn
+Text Label 8950 4700 0    50   ~ 0
+a0
+Text Label 8950 4800 0    50   ~ 0
+a1
+Text Label 8950 4900 0    50   ~ 0
+a2
+Text Label 8950 5000 0    50   ~ 0
+a3
+Text Label 8950 5100 0    50   ~ 0
+a4
+Text Label 8950 5200 0    50   ~ 0
+a5
+Text Label 8950 5300 0    50   ~ 0
+a6
+Text Label 8950 5400 0    50   ~ 0
+a7
 $EndSCHEMATC
