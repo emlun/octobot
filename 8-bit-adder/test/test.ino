@@ -15,15 +15,15 @@
 // 12. Connect the master reset terminals of the shift registers to high voltage
 
 
-int OUTPUT_START = 2;
-int OUTPUT_LENGTH = 9;
-int CARRY_PIN = 11;
-int DATA_PIN = 12;
-int CLOCK_PIN = 13;
-int STORAGE_CLOCK_PIN = 14;
-int DONE_PIN = 15;
+const int OUTPUT_START = 2;
+const int OUTPUT_LENGTH = 9;
+const int CARRY_PIN = 11;
+const int DATA_PIN = 12;
+const int CLOCK_PIN = 13;
+const int STORAGE_CLOCK_PIN = 14;
+const int DONE_PIN = 15;
 
-int PINS = DONE_PIN + 1;
+const int PINS = DONE_PIN + 1;
 
 void setup() {
   Serial.begin(9600);
