@@ -94,6 +94,17 @@ unsigned int test() {
           correct += 1;
         } else {
           wrong += 1;
+          Serial.print(a);
+          Serial.print(" + ");
+          Serial.print(b);
+          Serial.print(" + ");
+          Serial.print(carry);
+          Serial.print(" = ");
+          Serial.print(result);
+          Serial.print(" WRONG (expected ");
+          Serial.print(expected);
+          Serial.print(")");
+          Serial.println();
         }
 
         const int signed_result = unsigned_to_signed(result);
@@ -106,6 +117,23 @@ unsigned int test() {
           correct += 1;
         } else {
           wrong += 1;
+
+          Serial.print(a_signed);
+          Serial.print(" + ");
+          Serial.print(b_signed);
+          Serial.print(" + ");
+          Serial.print(carry);
+          Serial.print(" = ");
+          Serial.print(signed_result);
+          Serial.print(" (Os: ");
+          Serial.print(signed_overflow_result);
+          Serial.print(")");
+          Serial.print(" WRONG (expected ");
+          Serial.print(expected);
+          Serial.print(" (Os: ");
+          Serial.print(signed_overflow_expected);
+          Serial.print("))");
+          Serial.println();
         }
       }
     }
