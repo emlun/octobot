@@ -36,7 +36,7 @@ void setup() {
 }
 
 void writeByte(byte b, unsigned int start_pin, unsigned int length) {
-  for (int i = 0; i < length; ++i) {
+  for (unsigned int i = 0; i < length; ++i) {
     unsigned int c = (b >> i) % 2;
     digitalWrite(i + start_pin, c == 1 ? HIGH : LOW);
   }
@@ -44,7 +44,7 @@ void writeByte(byte b, unsigned int start_pin, unsigned int length) {
 
 int readParallel(unsigned int start_pin, unsigned int length) {
   unsigned int result = 0;
-  for (int i = 0; i < length; ++i) {
+  for (unsigned int i = 0; i < length; ++i) {
     unsigned int bit = digitalRead(i + start_pin) == HIGH ? 1 : 0;
     unsigned int c = bit << i;
     result |= c;
