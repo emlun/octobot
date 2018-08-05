@@ -86,7 +86,7 @@ unsigned int test() {
         writeSerialByte(a, DATA_PIN, CLOCK_PIN);
         flashPin(STORAGE_CLOCK_PIN);
         digitalWrite(CARRY_PIN, carry == 1 ? HIGH : LOW);
-        delay(0);
+        delay(1);
         const unsigned int expected = a + b + carry;
         const unsigned int result = readParallel(OUTPUT_START, OUTPUT_LENGTH);
 
