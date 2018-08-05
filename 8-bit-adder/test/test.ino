@@ -2,12 +2,12 @@
 //
 // Setup:
 //  1. Connect pins PD2 - PD7, PB0 and PB1 to bits 0-7 of the S output
-//  2. Connect pin PB2 to the OVERFLOW output
+//  2. Connect pin PB2 to the Ou (unsigned overflow) output
 //  3. Connect pin PB3 to the CARRY_IN input
 //  4. Connect pin PB4 to a shift register serial data input
 //  5. Connect pin PB5 to a shift register data clock input
 //  6. Connect pin PC0 to a shift register storage clock input
-//  7. Connect pin PC1 to an LED
+//  7. Connect pin PC1 to the Os (signed overflow) output
 //  8. Connect the serial data output of the shift register to the serial data input on a second shift register
 //  9. Connect parallel data outputs 0-7 of the first shift register to bits 0-7 of the A input
 // 10. Connect parallel data outputs 0-7 of the second shift register to bits 0-7 of the B input
@@ -21,9 +21,7 @@ const int CARRY_PIN = 11;
 const int DATA_PIN = 12;
 const int CLOCK_PIN = 13;
 const int STORAGE_CLOCK_PIN = 14;
-const int DONE_PIN = 15;
-
-const int PINS = DONE_PIN + 1;
+const int SIGNED_OVERFLOW_PIN = 15;
 
 void setup() {
   Serial.begin(9600);
@@ -31,7 +29,8 @@ void setup() {
   for (int i = OUTPUT_START; i < OUTPUT_START + OUTPUT_LENGTH; ++i) {
     pinMode(i, INPUT);
   }
-  for (int i = DATA_PIN; i < PINS; ++i) {
+  pinMode(SIGNED_OVERFLOW_PIN, INPUT);
+  for (int i = DATA_PIN; i <= STORAGE_CLOCK_PIN; ++i) {
     pinMode(i, OUTPUT);
   }
 }
@@ -103,7 +102,6 @@ void loop() {
   writeSerialByte(0, DATA_PIN, CLOCK_PIN);
   writeSerialByte(wrong, DATA_PIN, CLOCK_PIN);
   flashPin(STORAGE_CLOCK_PIN);
-  digitalWrite(DONE_PIN, HIGH);
 
   Serial.println("Done!");
   Serial.print("Wrong: ");
