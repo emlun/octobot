@@ -67,19 +67,42 @@ void writeSerialByte(unsigned int b, unsigned int data_pin, unsigned int clock_p
   }
 }
 
+int unsigned_to_signed(unsigned int i) {
+  const int j = i % 256;
+  return j < 128 ? j : j - 256;
+}
+
 unsigned int test() {
   unsigned int correct = 0;
   unsigned int wrong = 0;
-  for (int a = 0; a < 256; ++a) {
-    for (int b = 0; b < 256; ++b) {
-      for (int carry = 0; carry < 2; ++carry) {
+  for (unsigned int a = 0; a < 256; ++a) {
+    int a_signed = unsigned_to_signed(a);
+
+    for (unsigned int b = 0; b < 256; ++b) {
+      int b_signed = unsigned_to_signed(b);
+
+      for (unsigned int carry = 0; carry < 2; ++carry) {
         writeSerialByte(b, DATA_PIN, CLOCK_PIN);
         writeSerialByte(a, DATA_PIN, CLOCK_PIN);
         flashPin(STORAGE_CLOCK_PIN);
         digitalWrite(CARRY_PIN, carry == 1 ? HIGH : LOW);
         delay(0);
-        unsigned int expected = a + b + carry;
-        if (expected == readParallel(OUTPUT_START, OUTPUT_LENGTH)) {
+        const unsigned int expected = a + b + carry;
+        const unsigned int result = readParallel(OUTPUT_START, OUTPUT_LENGTH);
+
+        if (expected == result) {
+          correct += 1;
+        } else {
+          wrong += 1;
+        }
+
+        const int signed_result = unsigned_to_signed(result);
+        const int signed_expected_unwrapped = a_signed + b_signed + carry;
+        const int signed_expected = signed_expected_unwrapped > 127 ? signed_expected_unwrapped - 256 : signed_expected_unwrapped < -128 ? signed_expected_unwrapped + 256 : signed_expected_unwrapped;
+        const bool signed_overflow_result = digitalRead(SIGNED_OVERFLOW_PIN) == HIGH;
+        const bool signed_overflow_expected = signed_expected_unwrapped < -128 || signed_expected_unwrapped > 127;
+
+        if (signed_expected == signed_result && signed_overflow_result == signed_overflow_expected) {
           correct += 1;
         } else {
           wrong += 1;
