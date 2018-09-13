@@ -2654,7 +2654,7 @@
   (gr_text 0? (at 133.35 92.71) (layer F.SilkS) (tstamp 5B64F01A)
     (effects (font (size 8 8) (thickness 0.6)))
   )
-  (gr_text "Operation codes\n\n0000: Addition\n0100: XOR\n1000: NOR\n1001: NAND\n1010: AND\n1011: OR\n1100: Echo A" (at 67.945 85.09) (layer F.SilkS) (tstamp 5B725215)
+  (gr_text "Operation codes\n\n0000: Addition\n0100: XOR\n1000: OR\n1001: AND\n1010: NAND\n1011: NOR\n1100: Echo A" (at 67.945 85.09) (layer F.SilkS) (tstamp 5B725215)
     (effects (font (size 1 1) (thickness 0.12)) (justify left))
   )
   (gr_text "Outputs\n\nO: Result\nOu: Unsigned overflow\nOs: Signed overflow\nZ: Zero output" (at 85.725 78.105) (layer F.SilkS) (tstamp 5B94CAE2)
