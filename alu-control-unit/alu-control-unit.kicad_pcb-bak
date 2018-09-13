@@ -2639,10 +2639,10 @@
     )
   )
 
-  (gr_text GND (at 28.575 76.2) (layer F.SilkS) (tstamp 5B729316)
+  (gr_text GND (at 108.585 76.2) (layer F.SilkS) (tstamp 5B72930F)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text GND (at 108.585 76.2) (layer F.SilkS) (tstamp 5B72930F)
+  (gr_text GND (at 28.575 76.2) (layer F.SilkS) (tstamp 5B729316)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text VCC (at 108.585 73.66) (layer F.SilkS) (tstamp 5B72930F)
